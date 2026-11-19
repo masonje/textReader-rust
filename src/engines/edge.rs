@@ -312,6 +312,15 @@ impl Engine for Edge {
     fn missing(&self) -> Option<String> {
         None
     }
+    fn online(&self) -> Option<&'static str> {
+        Some("Microsoft")
+    }
+    fn quality(&self) -> u8 {
+        5
+    }
+    fn about(&self) -> &'static str {
+        "Microsoft's neural voices, the ones behind Edge's Read Aloud. The most natural-sounding option, with many accents."
+    }
     fn voices(&self) -> Vec<Voice> {
         self.voices
             .get_or_init(|| match fetch_voice_list() {

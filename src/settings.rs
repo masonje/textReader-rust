@@ -73,6 +73,19 @@ impl Settings {
             .to_string()
     }
 
+    /// Any saved value, as it is in the file.
+    pub fn get(&self, key: &str) -> Option<&Value> {
+        self.raw.get(key)
+    }
+
+    /// Change one top-level key and save it.
+    pub fn set(&mut self, key: &str, value: Value) {
+        self.raw.insert(key.into(), value.clone());
+        self.save(|file| {
+            file.insert(key.into(), value);
+        });
+    }
+
     pub fn set_engine(&mut self, engine: &str) {
         self.raw.insert("tts_engine".into(), json!(engine));
         self.save(|file| {

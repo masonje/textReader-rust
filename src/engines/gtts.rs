@@ -114,6 +114,12 @@ impl Engine for Gtts {
     fn missing(&self) -> Option<String> {
         None
     }
+    fn online(&self) -> Option<&'static str> {
+        Some("Google")
+    }
+    fn about(&self) -> &'static str {
+        "Google Translate's text-to-speech. A clear, natural female voice; the accent changes with the Google domain."
+    }
     fn voices(&self) -> Vec<Voice> {
         ACCENTS.iter().map(|(id, label)| (id.to_string(), label.to_string())).collect()
     }

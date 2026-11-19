@@ -1,0 +1,4922 @@
+{
+ "cases": [
+  {
+   "text": "https://github.com/masonje/textReader/pull/6",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "length"
+   },
+   "expected": "github.com path 6"
+  },
+  {
+   "text": "https://github.com/masonje/textReader/pull/6",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "github.com path 6"
+  },
+  {
+   "text": "https://github.com/masonje/textReader/pull/6",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "github.com weblink"
+  },
+  {
+   "text": "https://github.com/masonje/textReader/pull/6",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "link",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "link"
+  },
+  {
+   "text": "https://github.com/masonje/textReader/pull/6",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "https://github.com/masonje/textReader/pull/6"
+  },
+  {
+   "text": "https://github.com/masonje/textReader/pull/6",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "https://github.com/masonje/textReader/pull/6"
+  },
+  {
+   "text": "https://github.com/masonje/textReader/pull/6",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "user",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "https://github.com/masonje/textReader/pull/6"
+  },
+  {
+   "text": "https://github.com/masonje/textReader/pull/6",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "name",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "https://github.com/masonje/textReader/pull/6"
+  },
+  {
+   "text": "https://github.com/masonje/textReader/pull/6",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "email",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "https://github.com/masonje/textReader/pull/6"
+  },
+  {
+   "text": "https://github.com/masonje/textReader/pull/6",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "full"
+   },
+   "expected": "https://github.com/masonje/textReader/pull/6"
+  },
+  {
+   "text": "https://github.com/masonje/textReader/pull/6",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "file_path",
+    "codes": "full"
+   },
+   "expected": "https://github.com/masonje/textReader/pull/6"
+  },
+  {
+   "text": "https://github.com/masonje/textReader/pull/6",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "name",
+    "codes": "full"
+   },
+   "expected": "https://github.com/masonje/textReader/pull/6"
+  },
+  {
+   "text": "https://github.com/masonje/textReader/pull/6",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "path",
+    "codes": "full"
+   },
+   "expected": "https://github.com/masonje/textReader/pull/6"
+  },
+  {
+   "text": "https://github.com/masonje/textReader/pull/6",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_slash",
+    "codes": "full"
+   },
+   "expected": "https://github.com/masonje/textReader/pull/6"
+  },
+  {
+   "text": "https://github.com/masonje/textReader/pull/6",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_words",
+    "codes": "full"
+   },
+   "expected": "https://github.com/masonje/textReader/pull/6"
+  },
+  {
+   "text": "https://github.com/masonje/textReader/pull/6",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "length"
+   },
+   "expected": "https://github.com/masonje/textReader/pull/6"
+  },
+  {
+   "text": "https://github.com/masonje/textReader/pull/6",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "short"
+   },
+   "expected": "https://github.com/masonje/textReader/pull/6"
+  },
+  {
+   "text": "https://github.com/masonje/textReader/pull/6",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "code"
+   },
+   "expected": "https://github.com/masonje/textReader/pull/6"
+  },
+  {
+   "text": "https://github.com/masonje/textReader/pull/6",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "https://github.com/masonje/textReader/pull/6"
+  },
+  {
+   "text": "jane.doe@example.com",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "length"
+   },
+   "expected": "jane.doe@example.com"
+  },
+  {
+   "text": "jane.doe@example.com",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "jane.doe@example.com"
+  },
+  {
+   "text": "jane.doe@example.com",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "jane.doe@example.com"
+  },
+  {
+   "text": "jane.doe@example.com",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "link",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "jane.doe@example.com"
+  },
+  {
+   "text": "jane.doe@example.com",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "jane.doe@example.com"
+  },
+  {
+   "text": "jane.doe@example.com",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "jane.doe@example.com"
+  },
+  {
+   "text": "jane.doe@example.com",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "user",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "jane doe"
+  },
+  {
+   "text": "jane.doe@example.com",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "name",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "email to jane doe"
+  },
+  {
+   "text": "jane.doe@example.com",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "email",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "email address"
+  },
+  {
+   "text": "jane.doe@example.com",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "full"
+   },
+   "expected": "jane.doe@example.com"
+  },
+  {
+   "text": "jane.doe@example.com",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "file_path",
+    "codes": "full"
+   },
+   "expected": "jane.doe@example.com"
+  },
+  {
+   "text": "jane.doe@example.com",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "name",
+    "codes": "full"
+   },
+   "expected": "jane.doe@example.com"
+  },
+  {
+   "text": "jane.doe@example.com",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "path",
+    "codes": "full"
+   },
+   "expected": "jane.doe@example.com"
+  },
+  {
+   "text": "jane.doe@example.com",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_slash",
+    "codes": "full"
+   },
+   "expected": "jane.doe@example.com"
+  },
+  {
+   "text": "jane.doe@example.com",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_words",
+    "codes": "full"
+   },
+   "expected": "jane.doe@example.com"
+  },
+  {
+   "text": "jane.doe@example.com",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "length"
+   },
+   "expected": "jane.doe@example.com"
+  },
+  {
+   "text": "jane.doe@example.com",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "short"
+   },
+   "expected": "jane.doe@example.com"
+  },
+  {
+   "text": "jane.doe@example.com",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "code"
+   },
+   "expected": "jane.doe@example.com"
+  },
+  {
+   "text": "jane.doe@example.com",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "jane.doe@example.com"
+  },
+  {
+   "text": "/home/jane/projects/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "length"
+   },
+   "expected": "path slash textReader slash reader dot py"
+  },
+  {
+   "text": "/home/jane/projects/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "/home/jane/projects/textReader/reader.py"
+  },
+  {
+   "text": "/home/jane/projects/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "/home/jane/projects/textReader/reader.py"
+  },
+  {
+   "text": "/home/jane/projects/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "link",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "/home/jane/projects/textReader/reader.py"
+  },
+  {
+   "text": "/home/jane/projects/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "/home/jane/projects/textReader/reader.py"
+  },
+  {
+   "text": "/home/jane/projects/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "/home/jane/projects/textReader/reader.py"
+  },
+  {
+   "text": "/home/jane/projects/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "user",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "/home/jane/projects/textReader/reader.py"
+  },
+  {
+   "text": "/home/jane/projects/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "name",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "/home/jane/projects/textReader/reader.py"
+  },
+  {
+   "text": "/home/jane/projects/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "email",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "/home/jane/projects/textReader/reader.py"
+  },
+  {
+   "text": "/home/jane/projects/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "full"
+   },
+   "expected": "path slash textReader slash reader dot py"
+  },
+  {
+   "text": "/home/jane/projects/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "file_path",
+    "codes": "full"
+   },
+   "expected": "file path slash textReader slash reader.py"
+  },
+  {
+   "text": "/home/jane/projects/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "name",
+    "codes": "full"
+   },
+   "expected": "path to reader.py"
+  },
+  {
+   "text": "/home/jane/projects/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "path",
+    "codes": "full"
+   },
+   "expected": "file path"
+  },
+  {
+   "text": "/home/jane/projects/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_slash",
+    "codes": "full"
+   },
+   "expected": "file path home slash jane slash projects slash textReader slash reader.py"
+  },
+  {
+   "text": "/home/jane/projects/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_words",
+    "codes": "full"
+   },
+   "expected": "file path home jane projects textReader reader.py"
+  },
+  {
+   "text": "/home/jane/projects/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "length"
+   },
+   "expected": "/home/jane/projects/textReader/reader.py"
+  },
+  {
+   "text": "/home/jane/projects/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "short"
+   },
+   "expected": "/home/jane/projects/textReader/reader.py"
+  },
+  {
+   "text": "/home/jane/projects/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "code"
+   },
+   "expected": "/home/jane/projects/textReader/reader.py"
+  },
+  {
+   "text": "/home/jane/projects/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "/home/jane/projects/textReader/reader.py"
+  },
+  {
+   "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "length"
+   },
+   "expected": "40 character code six five seven zero"
+  },
+  {
+   "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+  },
+  {
+   "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+  },
+  {
+   "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "link",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+  },
+  {
+   "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+  },
+  {
+   "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+  },
+  {
+   "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "user",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+  },
+  {
+   "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "name",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+  },
+  {
+   "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "email",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+  },
+  {
+   "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "full"
+   },
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+  },
+  {
+   "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "file_path",
+    "codes": "full"
+   },
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+  },
+  {
+   "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "name",
+    "codes": "full"
+   },
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+  },
+  {
+   "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "path",
+    "codes": "full"
+   },
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+  },
+  {
+   "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_slash",
+    "codes": "full"
+   },
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+  },
+  {
+   "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_words",
+    "codes": "full"
+   },
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+  },
+  {
+   "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "length"
+   },
+   "expected": "40 character code six five seven zero"
+  },
+  {
+   "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "short"
+   },
+   "expected": "code six bee bee six"
+  },
+  {
+   "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "code"
+   },
+   "expected": "code"
+  },
+  {
+   "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+  },
+  {
+   "text": "4111111111111111",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "length"
+   },
+   "expected": "16 digit code one one one one"
+  },
+  {
+   "text": "4111111111111111",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "4111111111111111"
+  },
+  {
+   "text": "4111111111111111",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "4111111111111111"
+  },
+  {
+   "text": "4111111111111111",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "link",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "4111111111111111"
+  },
+  {
+   "text": "4111111111111111",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "4111111111111111"
+  },
+  {
+   "text": "4111111111111111",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "4111111111111111"
+  },
+  {
+   "text": "4111111111111111",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "user",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "4111111111111111"
+  },
+  {
+   "text": "4111111111111111",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "name",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "4111111111111111"
+  },
+  {
+   "text": "4111111111111111",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "email",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "4111111111111111"
+  },
+  {
+   "text": "4111111111111111",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "full"
+   },
+   "expected": "4111111111111111"
+  },
+  {
+   "text": "4111111111111111",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "file_path",
+    "codes": "full"
+   },
+   "expected": "4111111111111111"
+  },
+  {
+   "text": "4111111111111111",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "name",
+    "codes": "full"
+   },
+   "expected": "4111111111111111"
+  },
+  {
+   "text": "4111111111111111",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "path",
+    "codes": "full"
+   },
+   "expected": "4111111111111111"
+  },
+  {
+   "text": "4111111111111111",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_slash",
+    "codes": "full"
+   },
+   "expected": "4111111111111111"
+  },
+  {
+   "text": "4111111111111111",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_words",
+    "codes": "full"
+   },
+   "expected": "4111111111111111"
+  },
+  {
+   "text": "4111111111111111",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "length"
+   },
+   "expected": "16 digit code one one one one"
+  },
+  {
+   "text": "4111111111111111",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "short"
+   },
+   "expected": "code four one one one"
+  },
+  {
+   "text": "4111111111111111",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "code"
+   },
+   "expected": "code"
+  },
+  {
+   "text": "4111111111111111",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "4111111111111111"
+  },
+  {
+   "text": "~/github/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "length"
+   },
+   "expected": "path slash textReader slash reader dot py"
+  },
+  {
+   "text": "~/github/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "~/github/textReader/reader.py"
+  },
+  {
+   "text": "~/github/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "~/github/textReader/reader.py"
+  },
+  {
+   "text": "~/github/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "link",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "~/github/textReader/reader.py"
+  },
+  {
+   "text": "~/github/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "~/github/textReader/reader.py"
+  },
+  {
+   "text": "~/github/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "~/github/textReader/reader.py"
+  },
+  {
+   "text": "~/github/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "user",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "~/github/textReader/reader.py"
+  },
+  {
+   "text": "~/github/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "name",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "~/github/textReader/reader.py"
+  },
+  {
+   "text": "~/github/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "email",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "~/github/textReader/reader.py"
+  },
+  {
+   "text": "~/github/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "full"
+   },
+   "expected": "path slash textReader slash reader dot py"
+  },
+  {
+   "text": "~/github/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "file_path",
+    "codes": "full"
+   },
+   "expected": "file path slash textReader slash reader.py"
+  },
+  {
+   "text": "~/github/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "name",
+    "codes": "full"
+   },
+   "expected": "path to reader.py"
+  },
+  {
+   "text": "~/github/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "path",
+    "codes": "full"
+   },
+   "expected": "file path"
+  },
+  {
+   "text": "~/github/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_slash",
+    "codes": "full"
+   },
+   "expected": "file path home slash github slash textReader slash reader.py"
+  },
+  {
+   "text": "~/github/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_words",
+    "codes": "full"
+   },
+   "expected": "file path home github textReader reader.py"
+  },
+  {
+   "text": "~/github/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "length"
+   },
+   "expected": "~/github/textReader/reader.py"
+  },
+  {
+   "text": "~/github/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "short"
+   },
+   "expected": "~/github/textReader/reader.py"
+  },
+  {
+   "text": "~/github/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "code"
+   },
+   "expected": "~/github/textReader/reader.py"
+  },
+  {
+   "text": "~/github/textReader/reader.py",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "~/github/textReader/reader.py"
+  },
+  {
+   "text": "../notes/todo.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "length"
+   },
+   "expected": "path slash notes slash todo dot txt"
+  },
+  {
+   "text": "../notes/todo.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "../notes/todo.txt"
+  },
+  {
+   "text": "../notes/todo.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "../notes/todo.txt"
+  },
+  {
+   "text": "../notes/todo.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "link",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "../notes/todo.txt"
+  },
+  {
+   "text": "../notes/todo.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "../notes/todo.txt"
+  },
+  {
+   "text": "../notes/todo.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "../notes/todo.txt"
+  },
+  {
+   "text": "../notes/todo.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "user",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "../notes/todo.txt"
+  },
+  {
+   "text": "../notes/todo.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "name",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "../notes/todo.txt"
+  },
+  {
+   "text": "../notes/todo.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "email",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "../notes/todo.txt"
+  },
+  {
+   "text": "../notes/todo.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "full"
+   },
+   "expected": "path slash notes slash todo dot txt"
+  },
+  {
+   "text": "../notes/todo.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "file_path",
+    "codes": "full"
+   },
+   "expected": "file path slash notes slash todo.txt"
+  },
+  {
+   "text": "../notes/todo.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "name",
+    "codes": "full"
+   },
+   "expected": "path to todo.txt"
+  },
+  {
+   "text": "../notes/todo.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "path",
+    "codes": "full"
+   },
+   "expected": "file path"
+  },
+  {
+   "text": "../notes/todo.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_slash",
+    "codes": "full"
+   },
+   "expected": "file path up a folder slash notes slash todo.txt"
+  },
+  {
+   "text": "../notes/todo.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_words",
+    "codes": "full"
+   },
+   "expected": "file path up a folder notes todo.txt"
+  },
+  {
+   "text": "../notes/todo.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "length"
+   },
+   "expected": "../notes/todo.txt"
+  },
+  {
+   "text": "../notes/todo.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "short"
+   },
+   "expected": "../notes/todo.txt"
+  },
+  {
+   "text": "../notes/todo.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "code"
+   },
+   "expected": "../notes/todo.txt"
+  },
+  {
+   "text": "../notes/todo.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "../notes/todo.txt"
+  },
+  {
+   "text": "C:\\Users\\jane\\notes.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "length"
+   },
+   "expected": "path slash jane slash notes dot txt"
+  },
+  {
+   "text": "C:\\Users\\jane\\notes.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "C:\\Users\\jane\\notes.txt"
+  },
+  {
+   "text": "C:\\Users\\jane\\notes.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "C:\\Users\\jane\\notes.txt"
+  },
+  {
+   "text": "C:\\Users\\jane\\notes.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "link",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "C:\\Users\\jane\\notes.txt"
+  },
+  {
+   "text": "C:\\Users\\jane\\notes.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "C:\\Users\\jane\\notes.txt"
+  },
+  {
+   "text": "C:\\Users\\jane\\notes.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "C:\\Users\\jane\\notes.txt"
+  },
+  {
+   "text": "C:\\Users\\jane\\notes.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "user",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "C:\\Users\\jane\\notes.txt"
+  },
+  {
+   "text": "C:\\Users\\jane\\notes.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "name",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "C:\\Users\\jane\\notes.txt"
+  },
+  {
+   "text": "C:\\Users\\jane\\notes.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "email",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "C:\\Users\\jane\\notes.txt"
+  },
+  {
+   "text": "C:\\Users\\jane\\notes.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "full"
+   },
+   "expected": "path slash jane slash notes dot txt"
+  },
+  {
+   "text": "C:\\Users\\jane\\notes.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "file_path",
+    "codes": "full"
+   },
+   "expected": "file path slash jane slash notes.txt"
+  },
+  {
+   "text": "C:\\Users\\jane\\notes.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "name",
+    "codes": "full"
+   },
+   "expected": "path to notes.txt"
+  },
+  {
+   "text": "C:\\Users\\jane\\notes.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "path",
+    "codes": "full"
+   },
+   "expected": "file path"
+  },
+  {
+   "text": "C:\\Users\\jane\\notes.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_slash",
+    "codes": "full"
+   },
+   "expected": "file path C drive slash Users slash jane slash notes.txt"
+  },
+  {
+   "text": "C:\\Users\\jane\\notes.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_words",
+    "codes": "full"
+   },
+   "expected": "file path C drive Users jane notes.txt"
+  },
+  {
+   "text": "C:\\Users\\jane\\notes.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "length"
+   },
+   "expected": "C:\\Users\\jane\\notes.txt"
+  },
+  {
+   "text": "C:\\Users\\jane\\notes.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "short"
+   },
+   "expected": "C:\\Users\\jane\\notes.txt"
+  },
+  {
+   "text": "C:\\Users\\jane\\notes.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "code"
+   },
+   "expected": "C:\\Users\\jane\\notes.txt"
+  },
+  {
+   "text": "C:\\Users\\jane\\notes.txt",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "C:\\Users\\jane\\notes.txt"
+  },
+  {
+   "text": "See https://github.com/masonje/textReader/pull/6.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "length"
+   },
+   "expected": "See github.com path 6."
+  },
+  {
+   "text": "See https://github.com/masonje/textReader/pull/6.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "See github.com path 6."
+  },
+  {
+   "text": "See https://github.com/masonje/textReader/pull/6.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "See github.com weblink."
+  },
+  {
+   "text": "See https://github.com/masonje/textReader/pull/6.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "link",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "See link."
+  },
+  {
+   "text": "See https://github.com/masonje/textReader/pull/6.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "See https://github.com/masonje/textReader/pull/6."
+  },
+  {
+   "text": "See https://github.com/masonje/textReader/pull/6.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "See https://github.com/masonje/textReader/pull/6."
+  },
+  {
+   "text": "See https://github.com/masonje/textReader/pull/6.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "user",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "See https://github.com/masonje/textReader/pull/6."
+  },
+  {
+   "text": "See https://github.com/masonje/textReader/pull/6.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "name",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "See https://github.com/masonje/textReader/pull/6."
+  },
+  {
+   "text": "See https://github.com/masonje/textReader/pull/6.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "email",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "See https://github.com/masonje/textReader/pull/6."
+  },
+  {
+   "text": "See https://github.com/masonje/textReader/pull/6.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "full"
+   },
+   "expected": "See https://github.com/masonje/textReader/pull/6."
+  },
+  {
+   "text": "See https://github.com/masonje/textReader/pull/6.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "file_path",
+    "codes": "full"
+   },
+   "expected": "See https://github.com/masonje/textReader/pull/6."
+  },
+  {
+   "text": "See https://github.com/masonje/textReader/pull/6.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "name",
+    "codes": "full"
+   },
+   "expected": "See https://github.com/masonje/textReader/pull/6."
+  },
+  {
+   "text": "See https://github.com/masonje/textReader/pull/6.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "path",
+    "codes": "full"
+   },
+   "expected": "See https://github.com/masonje/textReader/pull/6."
+  },
+  {
+   "text": "See https://github.com/masonje/textReader/pull/6.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_slash",
+    "codes": "full"
+   },
+   "expected": "See https://github.com/masonje/textReader/pull/6."
+  },
+  {
+   "text": "See https://github.com/masonje/textReader/pull/6.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_words",
+    "codes": "full"
+   },
+   "expected": "See https://github.com/masonje/textReader/pull/6."
+  },
+  {
+   "text": "See https://github.com/masonje/textReader/pull/6.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "length"
+   },
+   "expected": "See https://github.com/masonje/textReader/pull/6."
+  },
+  {
+   "text": "See https://github.com/masonje/textReader/pull/6.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "short"
+   },
+   "expected": "See https://github.com/masonje/textReader/pull/6."
+  },
+  {
+   "text": "See https://github.com/masonje/textReader/pull/6.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "code"
+   },
+   "expected": "See https://github.com/masonje/textReader/pull/6."
+  },
+  {
+   "text": "See https://github.com/masonje/textReader/pull/6.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "See https://github.com/masonje/textReader/pull/6."
+  },
+  {
+   "text": "(see https://github.com/masonje/textReader/pull/6)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "length"
+   },
+   "expected": "(see github.com path 6)"
+  },
+  {
+   "text": "(see https://github.com/masonje/textReader/pull/6)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "(see github.com path 6)"
+  },
+  {
+   "text": "(see https://github.com/masonje/textReader/pull/6)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "(see github.com weblink)"
+  },
+  {
+   "text": "(see https://github.com/masonje/textReader/pull/6)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "link",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "(see link)"
+  },
+  {
+   "text": "(see https://github.com/masonje/textReader/pull/6)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+  },
+  {
+   "text": "(see https://github.com/masonje/textReader/pull/6)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+  },
+  {
+   "text": "(see https://github.com/masonje/textReader/pull/6)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "user",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+  },
+  {
+   "text": "(see https://github.com/masonje/textReader/pull/6)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "name",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+  },
+  {
+   "text": "(see https://github.com/masonje/textReader/pull/6)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "email",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+  },
+  {
+   "text": "(see https://github.com/masonje/textReader/pull/6)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "full"
+   },
+   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+  },
+  {
+   "text": "(see https://github.com/masonje/textReader/pull/6)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "file_path",
+    "codes": "full"
+   },
+   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+  },
+  {
+   "text": "(see https://github.com/masonje/textReader/pull/6)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "name",
+    "codes": "full"
+   },
+   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+  },
+  {
+   "text": "(see https://github.com/masonje/textReader/pull/6)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "path",
+    "codes": "full"
+   },
+   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+  },
+  {
+   "text": "(see https://github.com/masonje/textReader/pull/6)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_slash",
+    "codes": "full"
+   },
+   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+  },
+  {
+   "text": "(see https://github.com/masonje/textReader/pull/6)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_words",
+    "codes": "full"
+   },
+   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+  },
+  {
+   "text": "(see https://github.com/masonje/textReader/pull/6)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "length"
+   },
+   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+  },
+  {
+   "text": "(see https://github.com/masonje/textReader/pull/6)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "short"
+   },
+   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+  },
+  {
+   "text": "(see https://github.com/masonje/textReader/pull/6)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "code"
+   },
+   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+  },
+  {
+   "text": "(see https://github.com/masonje/textReader/pull/6)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+  },
+  {
+   "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "length"
+   },
+   "expected": "en.wikipedia.org path Python_(programming_language)"
+  },
+  {
+   "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "en.wikipedia.org path Python_(programming_language)"
+  },
+  {
+   "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "en.wikipedia.org weblink"
+  },
+  {
+   "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "link",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "link"
+  },
+  {
+   "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+  },
+  {
+   "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+  },
+  {
+   "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "user",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+  },
+  {
+   "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "name",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+  },
+  {
+   "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "email",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+  },
+  {
+   "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "full"
+   },
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+  },
+  {
+   "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "file_path",
+    "codes": "full"
+   },
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+  },
+  {
+   "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "name",
+    "codes": "full"
+   },
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+  },
+  {
+   "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "path",
+    "codes": "full"
+   },
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+  },
+  {
+   "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_slash",
+    "codes": "full"
+   },
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+  },
+  {
+   "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_words",
+    "codes": "full"
+   },
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+  },
+  {
+   "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "length"
+   },
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+  },
+  {
+   "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "short"
+   },
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+  },
+  {
+   "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "code"
+   },
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+  },
+  {
+   "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+  },
+  {
+   "text": "version 1.8.1 ships today",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "length"
+   },
+   "expected": "version 1.8.1 ships today"
+  },
+  {
+   "text": "version 1.8.1 ships today",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "version 1.8.1 ships today"
+  },
+  {
+   "text": "version 1.8.1 ships today",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "version 1.8.1 ships today"
+  },
+  {
+   "text": "version 1.8.1 ships today",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "link",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "version 1.8.1 ships today"
+  },
+  {
+   "text": "version 1.8.1 ships today",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "version 1.8.1 ships today"
+  },
+  {
+   "text": "version 1.8.1 ships today",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "version 1.8.1 ships today"
+  },
+  {
+   "text": "version 1.8.1 ships today",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "user",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "version 1.8.1 ships today"
+  },
+  {
+   "text": "version 1.8.1 ships today",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "name",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "version 1.8.1 ships today"
+  },
+  {
+   "text": "version 1.8.1 ships today",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "email",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "version 1.8.1 ships today"
+  },
+  {
+   "text": "version 1.8.1 ships today",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "full"
+   },
+   "expected": "version 1.8.1 ships today"
+  },
+  {
+   "text": "version 1.8.1 ships today",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "file_path",
+    "codes": "full"
+   },
+   "expected": "version 1.8.1 ships today"
+  },
+  {
+   "text": "version 1.8.1 ships today",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "name",
+    "codes": "full"
+   },
+   "expected": "version 1.8.1 ships today"
+  },
+  {
+   "text": "version 1.8.1 ships today",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "path",
+    "codes": "full"
+   },
+   "expected": "version 1.8.1 ships today"
+  },
+  {
+   "text": "version 1.8.1 ships today",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_slash",
+    "codes": "full"
+   },
+   "expected": "version 1.8.1 ships today"
+  },
+  {
+   "text": "version 1.8.1 ships today",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_words",
+    "codes": "full"
+   },
+   "expected": "version 1.8.1 ships today"
+  },
+  {
+   "text": "version 1.8.1 ships today",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "length"
+   },
+   "expected": "version 1.8.1 ships today"
+  },
+  {
+   "text": "version 1.8.1 ships today",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "short"
+   },
+   "expected": "version 1.8.1 ships today"
+  },
+  {
+   "text": "version 1.8.1 ships today",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "code"
+   },
+   "expected": "version 1.8.1 ships today"
+  },
+  {
+   "text": "version 1.8.1 ships today",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "version 1.8.1 ships today"
+  },
+  {
+   "text": "call 555-1234 now",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "length"
+   },
+   "expected": "call 555-1234 now"
+  },
+  {
+   "text": "call 555-1234 now",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "call 555-1234 now"
+  },
+  {
+   "text": "call 555-1234 now",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "call 555-1234 now"
+  },
+  {
+   "text": "call 555-1234 now",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "link",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "call 555-1234 now"
+  },
+  {
+   "text": "call 555-1234 now",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "call 555-1234 now"
+  },
+  {
+   "text": "call 555-1234 now",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "call 555-1234 now"
+  },
+  {
+   "text": "call 555-1234 now",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "user",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "call 555-1234 now"
+  },
+  {
+   "text": "call 555-1234 now",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "name",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "call 555-1234 now"
+  },
+  {
+   "text": "call 555-1234 now",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "email",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "call 555-1234 now"
+  },
+  {
+   "text": "call 555-1234 now",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "full"
+   },
+   "expected": "call 555-1234 now"
+  },
+  {
+   "text": "call 555-1234 now",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "file_path",
+    "codes": "full"
+   },
+   "expected": "call 555-1234 now"
+  },
+  {
+   "text": "call 555-1234 now",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "name",
+    "codes": "full"
+   },
+   "expected": "call 555-1234 now"
+  },
+  {
+   "text": "call 555-1234 now",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "path",
+    "codes": "full"
+   },
+   "expected": "call 555-1234 now"
+  },
+  {
+   "text": "call 555-1234 now",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_slash",
+    "codes": "full"
+   },
+   "expected": "call 555-1234 now"
+  },
+  {
+   "text": "call 555-1234 now",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_words",
+    "codes": "full"
+   },
+   "expected": "call 555-1234 now"
+  },
+  {
+   "text": "call 555-1234 now",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "length"
+   },
+   "expected": "call 555-1234 now"
+  },
+  {
+   "text": "call 555-1234 now",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "short"
+   },
+   "expected": "call 555-1234 now"
+  },
+  {
+   "text": "call 555-1234 now",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "code"
+   },
+   "expected": "call 555-1234 now"
+  },
+  {
+   "text": "call 555-1234 now",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "call 555-1234 now"
+  },
+  {
+   "text": "the and/or choice",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "length"
+   },
+   "expected": "the and/or choice"
+  },
+  {
+   "text": "the and/or choice",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "the and/or choice"
+  },
+  {
+   "text": "the and/or choice",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "the and/or choice"
+  },
+  {
+   "text": "the and/or choice",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "link",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "the and/or choice"
+  },
+  {
+   "text": "the and/or choice",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "the and/or choice"
+  },
+  {
+   "text": "the and/or choice",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "the and/or choice"
+  },
+  {
+   "text": "the and/or choice",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "user",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "the and/or choice"
+  },
+  {
+   "text": "the and/or choice",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "name",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "the and/or choice"
+  },
+  {
+   "text": "the and/or choice",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "email",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "the and/or choice"
+  },
+  {
+   "text": "the and/or choice",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "full"
+   },
+   "expected": "the and/or choice"
+  },
+  {
+   "text": "the and/or choice",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "file_path",
+    "codes": "full"
+   },
+   "expected": "the and/or choice"
+  },
+  {
+   "text": "the and/or choice",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "name",
+    "codes": "full"
+   },
+   "expected": "the and/or choice"
+  },
+  {
+   "text": "the and/or choice",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "path",
+    "codes": "full"
+   },
+   "expected": "the and/or choice"
+  },
+  {
+   "text": "the and/or choice",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_slash",
+    "codes": "full"
+   },
+   "expected": "the and/or choice"
+  },
+  {
+   "text": "the and/or choice",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_words",
+    "codes": "full"
+   },
+   "expected": "the and/or choice"
+  },
+  {
+   "text": "the and/or choice",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "length"
+   },
+   "expected": "the and/or choice"
+  },
+  {
+   "text": "the and/or choice",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "short"
+   },
+   "expected": "the and/or choice"
+  },
+  {
+   "text": "the and/or choice",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "code"
+   },
+   "expected": "the and/or choice"
+  },
+  {
+   "text": "the and/or choice",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "the and/or choice"
+  },
+  {
+   "text": "a well-known example",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "length"
+   },
+   "expected": "a well-known example"
+  },
+  {
+   "text": "a well-known example",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "a well-known example"
+  },
+  {
+   "text": "a well-known example",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "a well-known example"
+  },
+  {
+   "text": "a well-known example",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "link",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "a well-known example"
+  },
+  {
+   "text": "a well-known example",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "a well-known example"
+  },
+  {
+   "text": "a well-known example",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "a well-known example"
+  },
+  {
+   "text": "a well-known example",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "user",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "a well-known example"
+  },
+  {
+   "text": "a well-known example",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "name",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "a well-known example"
+  },
+  {
+   "text": "a well-known example",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "email",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "a well-known example"
+  },
+  {
+   "text": "a well-known example",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "full"
+   },
+   "expected": "a well-known example"
+  },
+  {
+   "text": "a well-known example",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "file_path",
+    "codes": "full"
+   },
+   "expected": "a well-known example"
+  },
+  {
+   "text": "a well-known example",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "name",
+    "codes": "full"
+   },
+   "expected": "a well-known example"
+  },
+  {
+   "text": "a well-known example",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "path",
+    "codes": "full"
+   },
+   "expected": "a well-known example"
+  },
+  {
+   "text": "a well-known example",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_slash",
+    "codes": "full"
+   },
+   "expected": "a well-known example"
+  },
+  {
+   "text": "a well-known example",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_words",
+    "codes": "full"
+   },
+   "expected": "a well-known example"
+  },
+  {
+   "text": "a well-known example",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "length"
+   },
+   "expected": "a well-known example"
+  },
+  {
+   "text": "a well-known example",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "short"
+   },
+   "expected": "a well-known example"
+  },
+  {
+   "text": "a well-known example",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "code"
+   },
+   "expected": "a well-known example"
+  },
+  {
+   "text": "a well-known example",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "a well-known example"
+  },
+  {
+   "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "length"
+   },
+   "expected": "Visit example.com path b, then email bob_smith+news@mail.example.co.uk or open path slash src slash main dot rs."
+  },
+  {
+   "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Visit example.com path b, then email bob_smith+news@mail.example.co.uk or open./src/main.rs."
+  },
+  {
+   "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Visit example.com weblink, then email bob_smith+news@mail.example.co.uk or open./src/main.rs."
+  },
+  {
+   "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "link",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Visit link, then email bob_smith+news@mail.example.co.uk or open./src/main.rs."
+  },
+  {
+   "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs."
+  },
+  {
+   "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs."
+  },
+  {
+   "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "user",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Visit www.example.com/a/b?x=1#top, then email bob smith news or open./src/main.rs."
+  },
+  {
+   "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "name",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Visit www.example.com/a/b?x=1#top, then email email to bob smith news or open./src/main.rs."
+  },
+  {
+   "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "email",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Visit www.example.com/a/b?x=1#top, then email email address or open./src/main.rs."
+  },
+  {
+   "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "full"
+   },
+   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open path slash src slash main dot rs."
+  },
+  {
+   "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "file_path",
+    "codes": "full"
+   },
+   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open file path slash src slash main.rs."
+  },
+  {
+   "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "name",
+    "codes": "full"
+   },
+   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open path to main.rs."
+  },
+  {
+   "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "path",
+    "codes": "full"
+   },
+   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open file path."
+  },
+  {
+   "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_slash",
+    "codes": "full"
+   },
+   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open file path src slash main.rs."
+  },
+  {
+   "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_words",
+    "codes": "full"
+   },
+   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open file path src main.rs."
+  },
+  {
+   "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "length"
+   },
+   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs."
+  },
+  {
+   "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "short"
+   },
+   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs."
+  },
+  {
+   "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "code"
+   },
+   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs."
+  },
+  {
+   "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs."
+  },
+  {
+   "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "length"
+   },
+   "expected": "Order 18 character code six seven eight four shipped; ticket 16 character code seven eight nine zero and uuid 32 character code four zero zero zero."
+  },
+  {
+   "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+  },
+  {
+   "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+  },
+  {
+   "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "link",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+  },
+  {
+   "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+  },
+  {
+   "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+  },
+  {
+   "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "user",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+  },
+  {
+   "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "name",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+  },
+  {
+   "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "email",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+  },
+  {
+   "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "full"
+   },
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+  },
+  {
+   "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "file_path",
+    "codes": "full"
+   },
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+  },
+  {
+   "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "name",
+    "codes": "full"
+   },
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+  },
+  {
+   "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "path",
+    "codes": "full"
+   },
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+  },
+  {
+   "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_slash",
+    "codes": "full"
+   },
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+  },
+  {
+   "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_words",
+    "codes": "full"
+   },
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+  },
+  {
+   "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "length"
+   },
+   "expected": "Order 18 character code six seven eight four shipped; ticket 16 character code seven eight nine zero and uuid 32 character code four zero zero zero."
+  },
+  {
+   "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "short"
+   },
+   "expected": "Order code one zee nine nine shipped; ticket code ay bee see one and uuid code one two three ee."
+  },
+  {
+   "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "code"
+   },
+   "expected": "Order code shipped; ticket code and uuid code."
+  },
+  {
+   "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+  },
+  {
+   "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "length"
+   },
+   "expected": "Ünïcode café 例え.jp path ファイル dot html and naïve path slash x86_64-linux-gnu slash libmpv dot so dot 2!"
+  },
+  {
+   "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Ünïcode café 例え.jp path ファイル dot html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+  },
+  {
+   "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Ünïcode café 例え.jp weblink and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+  },
+  {
+   "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "link",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Ünïcode café link and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+  },
+  {
+   "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+  },
+  {
+   "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+  },
+  {
+   "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "user",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+  },
+  {
+   "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "name",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+  },
+  {
+   "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "email",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+  },
+  {
+   "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "full"
+   },
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve path slash x86_64-linux-gnu slash libmpv dot so dot 2!"
+  },
+  {
+   "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "file_path",
+    "codes": "full"
+   },
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve file path slash x86_64-linux-gnu slash libmpv.so.2!"
+  },
+  {
+   "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "name",
+    "codes": "full"
+   },
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve path to libmpv.so.2!"
+  },
+  {
+   "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "path",
+    "codes": "full"
+   },
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve file path!"
+  },
+  {
+   "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_slash",
+    "codes": "full"
+   },
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve file path usr slash lib slash x86_64-linux-gnu slash libmpv.so.2!"
+  },
+  {
+   "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_words",
+    "codes": "full"
+   },
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve file path usr lib x86_64-linux-gnu libmpv.so.2!"
+  },
+  {
+   "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "length"
+   },
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+  },
+  {
+   "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "short"
+   },
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+  },
+  {
+   "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "code"
+   },
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+  },
+  {
+   "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+  },
+  {
+   "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "length"
+   },
+   "expected": "Files: path slash etc slash hosts, path slash run dot sh, path slash up slash one, path slash notes dot md; also path slash Games slash save1 dot dat."
+  },
+  {
+   "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat."
+  },
+  {
+   "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat."
+  },
+  {
+   "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "link",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat."
+  },
+  {
+   "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat."
+  },
+  {
+   "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat."
+  },
+  {
+   "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "user",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat."
+  },
+  {
+   "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "name",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat."
+  },
+  {
+   "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "email",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat."
+  },
+  {
+   "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "full"
+   },
+   "expected": "Files: path slash etc slash hosts, path slash run dot sh, path slash up slash one, path slash notes dot md; also path slash Games slash save1 dot dat."
+  },
+  {
+   "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "file_path",
+    "codes": "full"
+   },
+   "expected": "Files: file path slash etc slash hosts, file path slash run.sh, file path slash up slash one, file path slash notes.md; also file path slash Games slash save1.dat."
+  },
+  {
+   "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "name",
+    "codes": "full"
+   },
+   "expected": "Files: path to hosts, path to run.sh, path to one, path to notes.md; also path to save1.dat."
+  },
+  {
+   "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "path",
+    "codes": "full"
+   },
+   "expected": "Files: file path, file path, file path, file path; also file path."
+  },
+  {
+   "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_slash",
+    "codes": "full"
+   },
+   "expected": "Files: file path etc slash hosts, file path run.sh, file path up a folder slash up slash one, file path home slash notes.md; also file path D drive slash Games slash save1.dat."
+  },
+  {
+   "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_words",
+    "codes": "full"
+   },
+   "expected": "Files: file path etc hosts, file path run.sh, file path up a folder up one, file path home notes.md; also file path D drive Games save1.dat."
+  },
+  {
+   "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "length"
+   },
+   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat."
+  },
+  {
+   "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "short"
+   },
+   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat."
+  },
+  {
+   "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "code"
+   },
+   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat."
+  },
+  {
+   "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat."
+  },
+  {
+   "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "length"
+   },
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 12 character code eight nine ay bee gets read as a code."
+  },
+  {
+   "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+  },
+  {
+   "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "site",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+  },
+  {
+   "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "link",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+  },
+  {
+   "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+  },
+  {
+   "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+  },
+  {
+   "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "user",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+  },
+  {
+   "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "name",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+  },
+  {
+   "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "email",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+  },
+  {
+   "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "full"
+   },
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+  },
+  {
+   "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "file_path",
+    "codes": "full"
+   },
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+  },
+  {
+   "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "name",
+    "codes": "full"
+   },
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+  },
+  {
+   "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "path",
+    "codes": "full"
+   },
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+  },
+  {
+   "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_slash",
+    "codes": "full"
+   },
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+  },
+  {
+   "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full_words",
+    "codes": "full"
+   },
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+  },
+  {
+   "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "length"
+   },
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 12 character code eight nine ay bee gets read as a code."
+  },
+  {
+   "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "short"
+   },
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; code zero one two three gets read as a code."
+  },
+  {
+   "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "code"
+   },
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; code gets read as a code."
+  },
+  {
+   "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "rules": [],
+   "engine": null,
+   "filters": {
+    "urls": "full",
+    "emails": "full",
+    "paths": "full",
+    "codes": "full"
+   },
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+  },
+  {
+   "text": "Nguyen called.",
+   "rules": [
+    {
+     "text": "Nguyen",
+     "mode": "say",
+     "say": "win",
+     "whole_word": true,
+     "match_case": false,
+     "engine": "",
+     "enabled": true
+    }
+   ],
+   "engine": null,
+   "filters": null,
+   "expected": "win called."
+  },
+  {
+   "text": "Run the SQL query",
+   "rules": [
+    {
+     "text": "SQL",
+     "mode": "spell",
+     "say": "",
+     "whole_word": true,
+     "match_case": false,
+     "engine": "",
+     "enabled": true
+    }
+   ],
+   "engine": null,
+   "filters": null,
+   "expected": "Run the ess cue el query"
+  },
+  {
+   "text": "See York[1], then go.",
+   "rules": [
+    {
+     "text": "[1]",
+     "mode": "skip",
+     "say": "",
+     "whole_word": true,
+     "match_case": false,
+     "engine": "",
+     "enabled": true
+    }
+   ],
+   "engine": null,
+   "filters": null,
+   "expected": "See York, then go."
+  },
+  {
+   "text": "a GIF file",
+   "rules": [
+    {
+     "text": "GIF",
+     "mode": "say",
+     "say": "jif",
+     "whole_word": true,
+     "match_case": false,
+     "engine": "",
+     "enabled": true
+    }
+   ],
+   "engine": null,
+   "filters": null,
+   "expected": "a jif file"
+  },
+  {
+   "text": "GIFT shop",
+   "rules": [
+    {
+     "text": "GIF",
+     "mode": "say",
+     "say": "jif",
+     "whole_word": true,
+     "match_case": false,
+     "engine": "",
+     "enabled": true
+    }
+   ],
+   "engine": null,
+   "filters": null,
+   "expected": "GIFT shop"
+  },
+  {
+   "text": "GIFT shop",
+   "rules": [
+    {
+     "text": "GIF",
+     "mode": "say",
+     "say": "jif",
+     "whole_word": false,
+     "match_case": false,
+     "engine": "",
+     "enabled": true
+    }
+   ],
+   "engine": null,
+   "filters": null,
+   "expected": "jif T shop"
+  },
+  {
+   "text": "New York[1] is big",
+   "rules": [
+    {
+     "text": "[1]",
+     "mode": "skip",
+     "say": "",
+     "whole_word": true,
+     "match_case": false,
+     "engine": "",
+     "enabled": true
+    }
+   ],
+   "engine": null,
+   "filters": null,
+   "expected": "New York is big"
+  },
+  {
+   "text": "Rx filled",
+   "rules": [
+    {
+     "text": "Rx",
+     "mode": "say",
+     "say": "prescription",
+     "whole_word": true,
+     "match_case": true,
+     "engine": "",
+     "enabled": true
+    }
+   ],
+   "engine": null,
+   "filters": null,
+   "expected": "prescription filled"
+  },
+  {
+   "text": "RX filled",
+   "rules": [
+    {
+     "text": "Rx",
+     "mode": "say",
+     "say": "prescription",
+     "whole_word": true,
+     "match_case": true,
+     "engine": "",
+     "enabled": true
+    }
+   ],
+   "engine": null,
+   "filters": null,
+   "expected": "RX filled"
+  },
+  {
+   "text": "RX filled",
+   "rules": [
+    {
+     "text": "Rx",
+     "mode": "say",
+     "say": "prescription",
+     "whole_word": true,
+     "match_case": false,
+     "engine": "",
+     "enabled": true
+    }
+   ],
+   "engine": null,
+   "filters": null,
+   "expected": "prescription filled"
+  },
+  {
+   "text": "New York and New Jersey",
+   "rules": [
+    {
+     "text": "New",
+     "mode": "say",
+     "say": "knew",
+     "whole_word": true,
+     "match_case": false,
+     "engine": "",
+     "enabled": true
+    },
+    {
+     "text": "New York",
+     "mode": "say",
+     "say": "the big apple",
+     "whole_word": true,
+     "match_case": false,
+     "engine": "",
+     "enabled": true
+    }
+   ],
+   "engine": null,
+   "filters": null,
+   "expected": "the big apple and knew Jersey"
+  },
+  {
+   "text": "GIF",
+   "rules": [
+    {
+     "text": "GIF",
+     "mode": "say",
+     "say": "jif",
+     "whole_word": true,
+     "match_case": false,
+     "engine": "",
+     "enabled": false
+    }
+   ],
+   "engine": null,
+   "filters": null,
+   "expected": "GIF"
+  },
+  {
+   "text": "GIF",
+   "rules": [
+    {
+     "text": "GIF",
+     "mode": "say",
+     "say": "jif",
+     "whole_word": true,
+     "match_case": false,
+     "engine": "Piper",
+     "enabled": true
+    }
+   ],
+   "engine": "Piper",
+   "filters": null,
+   "expected": "jif"
+  },
+  {
+   "text": "GIF",
+   "rules": [
+    {
+     "text": "GIF",
+     "mode": "say",
+     "say": "jif",
+     "whole_word": true,
+     "match_case": false,
+     "engine": "Piper",
+     "enabled": true
+    }
+   ],
+   "engine": "gTTS",
+   "filters": null,
+   "expected": "GIF"
+  },
+  {
+   "text": "C++is fun & R&D, see [2] , or [3].",
+   "rules": [
+    {
+     "text": "C++",
+     "mode": "say",
+     "say": "see plus plus",
+     "whole_word": true,
+     "match_case": false,
+     "engine": "",
+     "enabled": true
+    },
+    {
+     "text": "&",
+     "mode": "say",
+     "say": "and",
+     "whole_word": true,
+     "match_case": false,
+     "engine": "",
+     "enabled": true
+    },
+    {
+     "text": "[2]",
+     "mode": "skip",
+     "say": "",
+     "whole_word": true,
+     "match_case": false,
+     "engine": "",
+     "enabled": true
+    },
+    {
+     "text": "[3]",
+     "mode": "skip",
+     "say": "",
+     "whole_word": true,
+     "match_case": false,
+     "engine": "",
+     "enabled": true
+    }
+   ],
+   "engine": null,
+   "filters": null,
+   "expected": "see plus plus is fun and R and D, see, or."
+  },
+  {
+   "text": "Café CAFÉ café",
+   "rules": [
+    {
+     "text": "café",
+     "mode": "spell",
+     "say": "",
+     "whole_word": true,
+     "match_case": false,
+     "engine": "",
+     "enabled": true
+    }
+   ],
+   "engine": null,
+   "filters": null,
+   "expected": "see ay eff see ay eff see ay eff"
+  },
+  {
+   "text": "Open https://github.com/masonje/textReader/pull/6 on github",
+   "rules": [
+    {
+     "text": "github",
+     "mode": "say",
+     "say": "git hub",
+     "whole_word": true,
+     "match_case": false,
+     "engine": "",
+     "enabled": true
+    }
+   ],
+   "engine": null,
+   "filters": {
+    "urls": "site_end",
+    "emails": "full",
+    "paths": "tail",
+    "codes": "length"
+   },
+   "expected": "Open github.com path 6 on git hub"
+  }
+ ],
+ "examples": {
+  "urls": {
+   "site_end": "github.com path 6",
+   "site": "github.com weblink",
+   "link": "link",
+   "full": "https://github.com/masonje/textReader/pull/6"
+  },
+  "emails": {
+   "full": "jane.doe@example.com",
+   "user": "jane doe",
+   "name": "email to jane doe",
+   "email": "email address"
+  },
+  "paths": {
+   "tail": "path slash textReader slash reader dot py",
+   "file_path": "file path slash textReader slash reader.py",
+   "name": "path to reader.py",
+   "path": "file path",
+   "full_slash": "file path home slash jane slash projects slash textReader slash reader.py",
+   "full_words": "file path home jane projects textReader reader.py"
+  },
+  "codes": {
+   "length": "40 character code six five seven zero",
+   "short": "code six bee bee six",
+   "code": "code",
+   "full": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+  }
+ }
+}

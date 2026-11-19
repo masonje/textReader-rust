@@ -1,21 +1,29 @@
 //! The Compact view: engine, voice, speed and the playback buttons.
 
 use crate::controller::{Controller, Status};
+use crate::hotkeys::Hotkeys;
+use crate::options::Options;
 use eframe::egui;
 use std::sync::Arc;
 use std::time::Duration;
 
 pub struct ReaderApp {
     controller: Arc<Controller>,
+    hotkeys: Option<Hotkeys>,
+    options: Options,
     speed: f64,
 }
 
 impl ReaderApp {
-    pub fn new(controller: Arc<Controller>, ctx: &egui::Context) -> Self {
+    pub fn new(controller: Arc<Controller>, hotkeys: Option<Hotkeys>, ctx: &egui::Context) -> Self {
         let repaint_ctx = ctx.clone();
         controller.set_repaint(move || repaint_ctx.request_repaint());
         let speed = controller.settings.lock().unwrap().speed();
-        ReaderApp { controller, speed }
+        let mut options = Options::new();
+        if let Some(tab) = std::env::args().find_map(|a| a.strip_prefix("--options").map(|t| t.trim_start_matches('=').to_string())) {
+            options.open_tab(&controller, &tab);
+        }
+        ReaderApp { controller, hotkeys, options, speed }
     }
 
     fn hint(&self, what: &str, action: &str) -> String {
@@ -36,6 +44,7 @@ impl eframe::App for ReaderApp {
         if reading {
             ui.ctx().request_repaint_after(Duration::from_millis(100));
         }
+        let ctx = ui.ctx().clone();
         egui::CentralPanel::default().show(ui, |ui| {
             ui.spacing_mut().item_spacing = egui::vec2(8.0, 8.0);
             let c = &self.controller;
@@ -111,6 +120,14 @@ impl eframe::App for ReaderApp {
                 }
             });
 
+            if ui
+                .add_sized(egui::vec2(ui.available_width(), 26.0), egui::Button::new("⚙  Options…"))
+                .on_hover_text("Engines & voices, pronunciations, links/paths/codes, and keyboard shortcuts")
+                .clicked()
+            {
+                self.options.open(c, None);
+            }
+
             let fraction = match (snap.position, snap.duration) {
                 (Some(p), Some(d)) if d > 0.0 => (p / d) as f32,
                 _ => 0.0,
@@ -142,5 +159,6 @@ impl eframe::App for ReaderApp {
                 ui.weak(format!("Clipboard Reader {} (Rust preview)", env!("CARGO_PKG_VERSION")));
             });
         });
+        self.options.show(&ctx, &self.controller, &mut self.hotkeys, reading);
     }
 }

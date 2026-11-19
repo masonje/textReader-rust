@@ -4,7 +4,9 @@ mod clipboard;
 mod controller;
 mod engines;
 mod hotkeys;
+mod options;
 mod player;
+mod pronunciation;
 mod settings;
 mod tray;
 mod ui;
@@ -96,7 +98,7 @@ fn main() {
     println!("Clipboard Reader {} (Rust) started", env!("CARGO_PKG_VERSION"));
     println!("==================================================");
     println!("🎮 Keyboard Controls:");
-    let _hotkeys = hotkeys::register(controller.clone());
+    let hotkeys = hotkeys::Hotkeys::start(controller.clone());
 
     let icon = decode_icon();
     let _tray = icon.as_ref().and_then(|(rgba, w, h)| tray::start(controller.clone(), rgba, *w, *h));
@@ -104,8 +106,8 @@ fn main() {
     let mut viewport = egui::ViewportBuilder::default()
         .with_title("Clipboard Reader")
         .with_app_id("clipboard-reader")
-        .with_inner_size([340.0, 300.0])
-        .with_min_inner_size([300.0, 280.0]);
+        .with_inner_size([340.0, 340.0])
+        .with_min_inner_size([300.0, 320.0]);
     if let Some((rgba, width, height)) = icon {
         viewport = viewport.with_icon(egui::IconData { rgba, width, height });
     }
@@ -114,7 +116,7 @@ fn main() {
     let result = eframe::run_native(
         "Clipboard Reader",
         options,
-        Box::new(move |cc| Ok(Box::new(ui::ReaderApp::new(app_controller, &cc.egui_ctx)))),
+        Box::new(move |cc| Ok(Box::new(ui::ReaderApp::new(app_controller, hotkeys, &cc.egui_ctx)))),
     );
     controller.shutdown();
     if let Err(e) = result {

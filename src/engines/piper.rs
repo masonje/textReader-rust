@@ -173,6 +173,30 @@ impl Engine for Piper {
     fn ext(&self) -> &'static str {
         "wav"
     }
+    fn quality(&self) -> u8 {
+        4
+    }
+    fn about(&self) -> &'static str {
+        "Fast neural voices that run entirely on your computer. Each voice is a separate ~63 MB download."
+    }
+    fn download_state(&self, voice: &str) -> Option<(bool, u64)> {
+        let files = [voice_dir().join(format!("{voice}.onnx")), voice_dir().join(format!("{voice}.onnx.json"))];
+        if files[0].exists() {
+            Some((true, files.iter().filter_map(|f| std::fs::metadata(f).ok()).map(|m| m.len()).sum()))
+        } else {
+            Some((false, 63_200_000))
+        }
+    }
+    fn download(&self, voice: &str, build: &Build) -> Result<()> {
+        download(voice, build)
+    }
+    fn delete(&self, voice: &str) -> Result<()> {
+        self.models.lock().unwrap().remove(voice);
+        for ext in [".onnx", ".onnx.json"] {
+            let _ = std::fs::remove_file(voice_dir().join(format!("{voice}{ext}")));
+        }
+        Ok(())
+    }
     fn missing(&self) -> Option<String> {
         espeak::phonemize("en-us", "test").err().map(|e| e.to_string())
     }

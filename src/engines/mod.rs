@@ -55,6 +55,27 @@ pub trait Engine: Send + Sync {
     fn missing(&self) -> Option<String>;
     fn voices(&self) -> Vec<Voice>;
     fn synthesize(&self, text: &str, voice: &str, out: &Path, build: &Build) -> Result<()>;
+    /// The company whose servers make the speech, or None if it's made on this computer.
+    fn online(&self) -> Option<&'static str> {
+        None
+    }
+    /// Typical quality, 1 to 5 stars.
+    fn quality(&self) -> u8 {
+        3
+    }
+    fn about(&self) -> &'static str {
+        ""
+    }
+    /// For voices that are downloaded: (downloaded?, size in bytes). None if not applicable.
+    fn download_state(&self, _voice: &str) -> Option<(bool, u64)> {
+        None
+    }
+    fn download(&self, _voice: &str, _build: &Build) -> Result<()> {
+        Ok(())
+    }
+    fn delete(&self, _voice: &str) -> Result<()> {
+        Ok(())
+    }
 }
 
 pub fn all() -> Vec<Arc<dyn Engine>> {

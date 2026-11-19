@@ -40,6 +40,12 @@ impl Engine for EspeakEngine {
     fn ext(&self) -> &'static str {
         "wav"
     }
+    fn quality(&self) -> u8 {
+        2
+    }
+    fn about(&self) -> &'static str {
+        "A formant synthesizer: extremely fast and very clear, even at high speeds, but sounds robotic."
+    }
     fn missing(&self) -> Option<String> {
         (!which("espeak-ng")).then(|| "espeak-ng (system package)".into())
     }

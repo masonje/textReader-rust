@@ -28,6 +28,8 @@ pub struct Player {
     api: Api,
     handle: Handle,
     loaded: AtomicBool, // a file was started and has not been stopped
+    stopping: std::sync::Arc<AtomicBool>,
+    events: Option<std::thread::JoinHandle<()>>,
 }
 
 // libmpv's client API is thread-safe.
@@ -97,17 +99,18 @@ impl Player {
             unsafe { (api.terminate_destroy)(handle) };
             return Err(anyhow!("mpv_initialize failed"));
         }
-        let player = Player { api, handle, loaded: AtomicBool::new(false) };
-        // Drain mpv's event queue so it never fills up.
-        let wait = player.api.wait_event;
-        let handle_addr = handle as usize;
-        std::thread::spawn(move || loop {
-            let event = unsafe { wait(handle_addr as Handle, -1.0) };
-            if event.is_null() || unsafe { *event } == 1 {
-                break; // MPV_EVENT_SHUTDOWN
+        // Drain mpv's event queue so it never fills up (stopping before mpv is destroyed).
+        let stopping = std::sync::Arc::new(AtomicBool::new(false));
+        let (wait, handle_addr, stop) = (api.wait_event, handle as usize, stopping.clone());
+        let events = std::thread::spawn(move || {
+            while !stop.load(Ordering::SeqCst) {
+                let event = unsafe { wait(handle_addr as Handle, 0.2) };
+                if !event.is_null() && unsafe { *event } == 1 {
+                    break; // MPV_EVENT_SHUTDOWN
+                }
             }
         });
-        Ok(player)
+        Ok(Player { api, handle, loaded: AtomicBool::new(false), stopping, events: Some(events) })
     }
 
     fn get(&self, name: &str) -> Option<String> {
@@ -190,6 +193,10 @@ impl Player {
 
 impl Drop for Player {
     fn drop(&mut self) {
+        self.stopping.store(true, Ordering::SeqCst);
+        if let Some(events) = self.events.take() {
+            let _ = events.join();
+        }
         unsafe { (self.api.terminate_destroy)(self.handle) };
     }
 }
