@@ -10,7 +10,10 @@
     "paths": "tail",
     "codes": "length"
    },
-   "expected": "github.com path 6"
+   "expected": "github.com path 6",
+   "spoken_words": [
+    "github.com path 6"
+   ]
   },
   {
    "text": "https://github.com/masonje/textReader/pull/6",
@@ -22,7 +25,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "github.com path 6"
+   "expected": "github.com path 6",
+   "spoken_words": [
+    "github.com path 6"
+   ]
   },
   {
    "text": "https://github.com/masonje/textReader/pull/6",
@@ -34,7 +40,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "github.com weblink"
+   "expected": "github.com weblink",
+   "spoken_words": [
+    "github.com weblink"
+   ]
   },
   {
    "text": "https://github.com/masonje/textReader/pull/6",
@@ -46,7 +55,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "link"
+   "expected": "link",
+   "spoken_words": [
+    "link"
+   ]
   },
   {
    "text": "https://github.com/masonje/textReader/pull/6",
@@ -58,7 +70,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "https://github.com/masonje/textReader/pull/6"
+   "expected": "https://github.com/masonje/textReader/pull/6",
+   "spoken_words": [
+    "https://github.com/masonje/textReader/pull/6"
+   ]
   },
   {
    "text": "https://github.com/masonje/textReader/pull/6",
@@ -70,7 +85,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "https://github.com/masonje/textReader/pull/6"
+   "expected": "https://github.com/masonje/textReader/pull/6",
+   "spoken_words": [
+    "https://github.com/masonje/textReader/pull/6"
+   ]
   },
   {
    "text": "https://github.com/masonje/textReader/pull/6",
@@ -82,7 +100,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "https://github.com/masonje/textReader/pull/6"
+   "expected": "https://github.com/masonje/textReader/pull/6",
+   "spoken_words": [
+    "https://github.com/masonje/textReader/pull/6"
+   ]
   },
   {
    "text": "https://github.com/masonje/textReader/pull/6",
@@ -94,7 +115,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "https://github.com/masonje/textReader/pull/6"
+   "expected": "https://github.com/masonje/textReader/pull/6",
+   "spoken_words": [
+    "https://github.com/masonje/textReader/pull/6"
+   ]
   },
   {
    "text": "https://github.com/masonje/textReader/pull/6",
@@ -106,7 +130,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "https://github.com/masonje/textReader/pull/6"
+   "expected": "https://github.com/masonje/textReader/pull/6",
+   "spoken_words": [
+    "https://github.com/masonje/textReader/pull/6"
+   ]
   },
   {
    "text": "https://github.com/masonje/textReader/pull/6",
@@ -118,7 +145,10 @@
     "paths": "tail",
     "codes": "full"
    },
-   "expected": "https://github.com/masonje/textReader/pull/6"
+   "expected": "https://github.com/masonje/textReader/pull/6",
+   "spoken_words": [
+    "https://github.com/masonje/textReader/pull/6"
+   ]
   },
   {
    "text": "https://github.com/masonje/textReader/pull/6",
@@ -130,7 +160,10 @@
     "paths": "file_path",
     "codes": "full"
    },
-   "expected": "https://github.com/masonje/textReader/pull/6"
+   "expected": "https://github.com/masonje/textReader/pull/6",
+   "spoken_words": [
+    "https://github.com/masonje/textReader/pull/6"
+   ]
   },
   {
    "text": "https://github.com/masonje/textReader/pull/6",
@@ -142,7 +175,10 @@
     "paths": "name",
     "codes": "full"
    },
-   "expected": "https://github.com/masonje/textReader/pull/6"
+   "expected": "https://github.com/masonje/textReader/pull/6",
+   "spoken_words": [
+    "https://github.com/masonje/textReader/pull/6"
+   ]
   },
   {
    "text": "https://github.com/masonje/textReader/pull/6",
@@ -154,7 +190,10 @@
     "paths": "path",
     "codes": "full"
    },
-   "expected": "https://github.com/masonje/textReader/pull/6"
+   "expected": "https://github.com/masonje/textReader/pull/6",
+   "spoken_words": [
+    "https://github.com/masonje/textReader/pull/6"
+   ]
   },
   {
    "text": "https://github.com/masonje/textReader/pull/6",
@@ -166,7 +205,10 @@
     "paths": "full_slash",
     "codes": "full"
    },
-   "expected": "https://github.com/masonje/textReader/pull/6"
+   "expected": "https://github.com/masonje/textReader/pull/6",
+   "spoken_words": [
+    "https://github.com/masonje/textReader/pull/6"
+   ]
   },
   {
    "text": "https://github.com/masonje/textReader/pull/6",
@@ -178,7 +220,10 @@
     "paths": "full_words",
     "codes": "full"
    },
-   "expected": "https://github.com/masonje/textReader/pull/6"
+   "expected": "https://github.com/masonje/textReader/pull/6",
+   "spoken_words": [
+    "https://github.com/masonje/textReader/pull/6"
+   ]
   },
   {
    "text": "https://github.com/masonje/textReader/pull/6",
@@ -190,7 +235,10 @@
     "paths": "full",
     "codes": "length"
    },
-   "expected": "https://github.com/masonje/textReader/pull/6"
+   "expected": "https://github.com/masonje/textReader/pull/6",
+   "spoken_words": [
+    "https://github.com/masonje/textReader/pull/6"
+   ]
   },
   {
    "text": "https://github.com/masonje/textReader/pull/6",
@@ -202,7 +250,10 @@
     "paths": "full",
     "codes": "short"
    },
-   "expected": "https://github.com/masonje/textReader/pull/6"
+   "expected": "https://github.com/masonje/textReader/pull/6",
+   "spoken_words": [
+    "https://github.com/masonje/textReader/pull/6"
+   ]
   },
   {
    "text": "https://github.com/masonje/textReader/pull/6",
@@ -214,7 +265,10 @@
     "paths": "full",
     "codes": "code"
    },
-   "expected": "https://github.com/masonje/textReader/pull/6"
+   "expected": "https://github.com/masonje/textReader/pull/6",
+   "spoken_words": [
+    "https://github.com/masonje/textReader/pull/6"
+   ]
   },
   {
    "text": "https://github.com/masonje/textReader/pull/6",
@@ -226,7 +280,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "https://github.com/masonje/textReader/pull/6"
+   "expected": "https://github.com/masonje/textReader/pull/6",
+   "spoken_words": [
+    "https://github.com/masonje/textReader/pull/6"
+   ]
   },
   {
    "text": "jane.doe@example.com",
@@ -238,7 +295,10 @@
     "paths": "tail",
     "codes": "length"
    },
-   "expected": "jane.doe@example.com"
+   "expected": "jane.doe@example.com",
+   "spoken_words": [
+    "jane.doe@example.com"
+   ]
   },
   {
    "text": "jane.doe@example.com",
@@ -250,7 +310,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "jane.doe@example.com"
+   "expected": "jane.doe@example.com",
+   "spoken_words": [
+    "jane.doe@example.com"
+   ]
   },
   {
    "text": "jane.doe@example.com",
@@ -262,7 +325,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "jane.doe@example.com"
+   "expected": "jane.doe@example.com",
+   "spoken_words": [
+    "jane.doe@example.com"
+   ]
   },
   {
    "text": "jane.doe@example.com",
@@ -274,7 +340,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "jane.doe@example.com"
+   "expected": "jane.doe@example.com",
+   "spoken_words": [
+    "jane.doe@example.com"
+   ]
   },
   {
    "text": "jane.doe@example.com",
@@ -286,7 +355,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "jane.doe@example.com"
+   "expected": "jane.doe@example.com",
+   "spoken_words": [
+    "jane.doe@example.com"
+   ]
   },
   {
    "text": "jane.doe@example.com",
@@ -298,7 +370,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "jane.doe@example.com"
+   "expected": "jane.doe@example.com",
+   "spoken_words": [
+    "jane.doe@example.com"
+   ]
   },
   {
    "text": "jane.doe@example.com",
@@ -310,7 +385,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "jane doe"
+   "expected": "jane doe",
+   "spoken_words": [
+    "jane doe"
+   ]
   },
   {
    "text": "jane.doe@example.com",
@@ -322,7 +400,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "email to jane doe"
+   "expected": "email to jane doe",
+   "spoken_words": [
+    "email to jane doe"
+   ]
   },
   {
    "text": "jane.doe@example.com",
@@ -334,7 +415,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "email address"
+   "expected": "email address",
+   "spoken_words": [
+    "email address"
+   ]
   },
   {
    "text": "jane.doe@example.com",
@@ -346,7 +430,10 @@
     "paths": "tail",
     "codes": "full"
    },
-   "expected": "jane.doe@example.com"
+   "expected": "jane.doe@example.com",
+   "spoken_words": [
+    "jane.doe@example.com"
+   ]
   },
   {
    "text": "jane.doe@example.com",
@@ -358,7 +445,10 @@
     "paths": "file_path",
     "codes": "full"
    },
-   "expected": "jane.doe@example.com"
+   "expected": "jane.doe@example.com",
+   "spoken_words": [
+    "jane.doe@example.com"
+   ]
   },
   {
    "text": "jane.doe@example.com",
@@ -370,7 +460,10 @@
     "paths": "name",
     "codes": "full"
    },
-   "expected": "jane.doe@example.com"
+   "expected": "jane.doe@example.com",
+   "spoken_words": [
+    "jane.doe@example.com"
+   ]
   },
   {
    "text": "jane.doe@example.com",
@@ -382,7 +475,10 @@
     "paths": "path",
     "codes": "full"
    },
-   "expected": "jane.doe@example.com"
+   "expected": "jane.doe@example.com",
+   "spoken_words": [
+    "jane.doe@example.com"
+   ]
   },
   {
    "text": "jane.doe@example.com",
@@ -394,7 +490,10 @@
     "paths": "full_slash",
     "codes": "full"
    },
-   "expected": "jane.doe@example.com"
+   "expected": "jane.doe@example.com",
+   "spoken_words": [
+    "jane.doe@example.com"
+   ]
   },
   {
    "text": "jane.doe@example.com",
@@ -406,7 +505,10 @@
     "paths": "full_words",
     "codes": "full"
    },
-   "expected": "jane.doe@example.com"
+   "expected": "jane.doe@example.com",
+   "spoken_words": [
+    "jane.doe@example.com"
+   ]
   },
   {
    "text": "jane.doe@example.com",
@@ -418,7 +520,10 @@
     "paths": "full",
     "codes": "length"
    },
-   "expected": "jane.doe@example.com"
+   "expected": "jane.doe@example.com",
+   "spoken_words": [
+    "jane.doe@example.com"
+   ]
   },
   {
    "text": "jane.doe@example.com",
@@ -430,7 +535,10 @@
     "paths": "full",
     "codes": "short"
    },
-   "expected": "jane.doe@example.com"
+   "expected": "jane.doe@example.com",
+   "spoken_words": [
+    "jane.doe@example.com"
+   ]
   },
   {
    "text": "jane.doe@example.com",
@@ -442,7 +550,10 @@
     "paths": "full",
     "codes": "code"
    },
-   "expected": "jane.doe@example.com"
+   "expected": "jane.doe@example.com",
+   "spoken_words": [
+    "jane.doe@example.com"
+   ]
   },
   {
    "text": "jane.doe@example.com",
@@ -454,7 +565,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "jane.doe@example.com"
+   "expected": "jane.doe@example.com",
+   "spoken_words": [
+    "jane.doe@example.com"
+   ]
   },
   {
    "text": "/home/jane/projects/textReader/reader.py",
@@ -466,7 +580,10 @@
     "paths": "tail",
     "codes": "length"
    },
-   "expected": "path slash textReader slash reader dot py"
+   "expected": "path slash textReader slash reader dot py",
+   "spoken_words": [
+    "path slash textReader slash reader dot py"
+   ]
   },
   {
    "text": "/home/jane/projects/textReader/reader.py",
@@ -478,7 +595,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "/home/jane/projects/textReader/reader.py"
+   "expected": "/home/jane/projects/textReader/reader.py",
+   "spoken_words": [
+    "/home/jane/projects/textReader/reader.py"
+   ]
   },
   {
    "text": "/home/jane/projects/textReader/reader.py",
@@ -490,7 +610,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "/home/jane/projects/textReader/reader.py"
+   "expected": "/home/jane/projects/textReader/reader.py",
+   "spoken_words": [
+    "/home/jane/projects/textReader/reader.py"
+   ]
   },
   {
    "text": "/home/jane/projects/textReader/reader.py",
@@ -502,7 +625,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "/home/jane/projects/textReader/reader.py"
+   "expected": "/home/jane/projects/textReader/reader.py",
+   "spoken_words": [
+    "/home/jane/projects/textReader/reader.py"
+   ]
   },
   {
    "text": "/home/jane/projects/textReader/reader.py",
@@ -514,7 +640,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "/home/jane/projects/textReader/reader.py"
+   "expected": "/home/jane/projects/textReader/reader.py",
+   "spoken_words": [
+    "/home/jane/projects/textReader/reader.py"
+   ]
   },
   {
    "text": "/home/jane/projects/textReader/reader.py",
@@ -526,7 +655,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "/home/jane/projects/textReader/reader.py"
+   "expected": "/home/jane/projects/textReader/reader.py",
+   "spoken_words": [
+    "/home/jane/projects/textReader/reader.py"
+   ]
   },
   {
    "text": "/home/jane/projects/textReader/reader.py",
@@ -538,7 +670,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "/home/jane/projects/textReader/reader.py"
+   "expected": "/home/jane/projects/textReader/reader.py",
+   "spoken_words": [
+    "/home/jane/projects/textReader/reader.py"
+   ]
   },
   {
    "text": "/home/jane/projects/textReader/reader.py",
@@ -550,7 +685,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "/home/jane/projects/textReader/reader.py"
+   "expected": "/home/jane/projects/textReader/reader.py",
+   "spoken_words": [
+    "/home/jane/projects/textReader/reader.py"
+   ]
   },
   {
    "text": "/home/jane/projects/textReader/reader.py",
@@ -562,7 +700,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "/home/jane/projects/textReader/reader.py"
+   "expected": "/home/jane/projects/textReader/reader.py",
+   "spoken_words": [
+    "/home/jane/projects/textReader/reader.py"
+   ]
   },
   {
    "text": "/home/jane/projects/textReader/reader.py",
@@ -574,7 +715,10 @@
     "paths": "tail",
     "codes": "full"
    },
-   "expected": "path slash textReader slash reader dot py"
+   "expected": "path slash textReader slash reader dot py",
+   "spoken_words": [
+    "path slash textReader slash reader dot py"
+   ]
   },
   {
    "text": "/home/jane/projects/textReader/reader.py",
@@ -586,7 +730,10 @@
     "paths": "file_path",
     "codes": "full"
    },
-   "expected": "file path slash textReader slash reader.py"
+   "expected": "file path slash textReader slash reader.py",
+   "spoken_words": [
+    "file path slash textReader slash reader.py"
+   ]
   },
   {
    "text": "/home/jane/projects/textReader/reader.py",
@@ -598,7 +745,10 @@
     "paths": "name",
     "codes": "full"
    },
-   "expected": "path to reader.py"
+   "expected": "path to reader.py",
+   "spoken_words": [
+    "path to reader.py"
+   ]
   },
   {
    "text": "/home/jane/projects/textReader/reader.py",
@@ -610,7 +760,10 @@
     "paths": "path",
     "codes": "full"
    },
-   "expected": "file path"
+   "expected": "file path",
+   "spoken_words": [
+    "file path"
+   ]
   },
   {
    "text": "/home/jane/projects/textReader/reader.py",
@@ -622,7 +775,10 @@
     "paths": "full_slash",
     "codes": "full"
    },
-   "expected": "file path home slash jane slash projects slash textReader slash reader.py"
+   "expected": "file path home slash jane slash projects slash textReader slash reader.py",
+   "spoken_words": [
+    "file path home slash jane slash projects slash textReader slash reader.py"
+   ]
   },
   {
    "text": "/home/jane/projects/textReader/reader.py",
@@ -634,7 +790,10 @@
     "paths": "full_words",
     "codes": "full"
    },
-   "expected": "file path home jane projects textReader reader.py"
+   "expected": "file path home jane projects textReader reader.py",
+   "spoken_words": [
+    "file path home jane projects textReader reader.py"
+   ]
   },
   {
    "text": "/home/jane/projects/textReader/reader.py",
@@ -646,7 +805,10 @@
     "paths": "full",
     "codes": "length"
    },
-   "expected": "/home/jane/projects/textReader/reader.py"
+   "expected": "/home/jane/projects/textReader/reader.py",
+   "spoken_words": [
+    "/home/jane/projects/textReader/reader.py"
+   ]
   },
   {
    "text": "/home/jane/projects/textReader/reader.py",
@@ -658,7 +820,10 @@
     "paths": "full",
     "codes": "short"
    },
-   "expected": "/home/jane/projects/textReader/reader.py"
+   "expected": "/home/jane/projects/textReader/reader.py",
+   "spoken_words": [
+    "/home/jane/projects/textReader/reader.py"
+   ]
   },
   {
    "text": "/home/jane/projects/textReader/reader.py",
@@ -670,7 +835,10 @@
     "paths": "full",
     "codes": "code"
    },
-   "expected": "/home/jane/projects/textReader/reader.py"
+   "expected": "/home/jane/projects/textReader/reader.py",
+   "spoken_words": [
+    "/home/jane/projects/textReader/reader.py"
+   ]
   },
   {
    "text": "/home/jane/projects/textReader/reader.py",
@@ -682,7 +850,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "/home/jane/projects/textReader/reader.py"
+   "expected": "/home/jane/projects/textReader/reader.py",
+   "spoken_words": [
+    "/home/jane/projects/textReader/reader.py"
+   ]
   },
   {
    "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
@@ -694,7 +865,10 @@
     "paths": "tail",
     "codes": "length"
    },
-   "expected": "40 character code six five seven zero"
+   "expected": "40 character code six five seven zero",
+   "spoken_words": [
+    "40 character code six five seven zero"
+   ]
   },
   {
    "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
@@ -706,7 +880,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "spoken_words": [
+    "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   ]
   },
   {
    "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
@@ -718,7 +895,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "spoken_words": [
+    "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   ]
   },
   {
    "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
@@ -730,7 +910,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "spoken_words": [
+    "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   ]
   },
   {
    "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
@@ -742,7 +925,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "spoken_words": [
+    "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   ]
   },
   {
    "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
@@ -754,7 +940,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "spoken_words": [
+    "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   ]
   },
   {
    "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
@@ -766,7 +955,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "spoken_words": [
+    "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   ]
   },
   {
    "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
@@ -778,7 +970,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "spoken_words": [
+    "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   ]
   },
   {
    "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
@@ -790,7 +985,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "spoken_words": [
+    "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   ]
   },
   {
    "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
@@ -802,7 +1000,10 @@
     "paths": "tail",
     "codes": "full"
    },
-   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "spoken_words": [
+    "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   ]
   },
   {
    "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
@@ -814,7 +1015,10 @@
     "paths": "file_path",
     "codes": "full"
    },
-   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "spoken_words": [
+    "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   ]
   },
   {
    "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
@@ -826,7 +1030,10 @@
     "paths": "name",
     "codes": "full"
    },
-   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "spoken_words": [
+    "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   ]
   },
   {
    "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
@@ -838,7 +1045,10 @@
     "paths": "path",
     "codes": "full"
    },
-   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "spoken_words": [
+    "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   ]
   },
   {
    "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
@@ -850,7 +1060,10 @@
     "paths": "full_slash",
     "codes": "full"
    },
-   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "spoken_words": [
+    "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   ]
   },
   {
    "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
@@ -862,7 +1075,10 @@
     "paths": "full_words",
     "codes": "full"
    },
-   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "spoken_words": [
+    "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   ]
   },
   {
    "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
@@ -874,7 +1090,10 @@
     "paths": "full",
     "codes": "length"
    },
-   "expected": "40 character code six five seven zero"
+   "expected": "40 character code six five seven zero",
+   "spoken_words": [
+    "40 character code six five seven zero"
+   ]
   },
   {
    "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
@@ -886,7 +1105,10 @@
     "paths": "full",
     "codes": "short"
    },
-   "expected": "code six bee bee six"
+   "expected": "code six bee bee six",
+   "spoken_words": [
+    "code six bee bee six"
+   ]
   },
   {
    "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
@@ -898,7 +1120,10 @@
     "paths": "full",
     "codes": "code"
    },
-   "expected": "code"
+   "expected": "code",
+   "spoken_words": [
+    "code"
+   ]
   },
   {
    "text": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
@@ -910,7 +1135,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   "expected": "6bb6c43f139d6d0111b6d152aaaf150bcfc26570",
+   "spoken_words": [
+    "6bb6c43f139d6d0111b6d152aaaf150bcfc26570"
+   ]
   },
   {
    "text": "4111111111111111",
@@ -922,7 +1150,10 @@
     "paths": "tail",
     "codes": "length"
    },
-   "expected": "16 digit code one one one one"
+   "expected": "16 digit code one one one one",
+   "spoken_words": [
+    "16 digit code one one one one"
+   ]
   },
   {
    "text": "4111111111111111",
@@ -934,7 +1165,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "4111111111111111"
+   "expected": "4111111111111111",
+   "spoken_words": [
+    "4111111111111111"
+   ]
   },
   {
    "text": "4111111111111111",
@@ -946,7 +1180,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "4111111111111111"
+   "expected": "4111111111111111",
+   "spoken_words": [
+    "4111111111111111"
+   ]
   },
   {
    "text": "4111111111111111",
@@ -958,7 +1195,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "4111111111111111"
+   "expected": "4111111111111111",
+   "spoken_words": [
+    "4111111111111111"
+   ]
   },
   {
    "text": "4111111111111111",
@@ -970,7 +1210,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "4111111111111111"
+   "expected": "4111111111111111",
+   "spoken_words": [
+    "4111111111111111"
+   ]
   },
   {
    "text": "4111111111111111",
@@ -982,7 +1225,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "4111111111111111"
+   "expected": "4111111111111111",
+   "spoken_words": [
+    "4111111111111111"
+   ]
   },
   {
    "text": "4111111111111111",
@@ -994,7 +1240,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "4111111111111111"
+   "expected": "4111111111111111",
+   "spoken_words": [
+    "4111111111111111"
+   ]
   },
   {
    "text": "4111111111111111",
@@ -1006,7 +1255,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "4111111111111111"
+   "expected": "4111111111111111",
+   "spoken_words": [
+    "4111111111111111"
+   ]
   },
   {
    "text": "4111111111111111",
@@ -1018,7 +1270,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "4111111111111111"
+   "expected": "4111111111111111",
+   "spoken_words": [
+    "4111111111111111"
+   ]
   },
   {
    "text": "4111111111111111",
@@ -1030,7 +1285,10 @@
     "paths": "tail",
     "codes": "full"
    },
-   "expected": "4111111111111111"
+   "expected": "4111111111111111",
+   "spoken_words": [
+    "4111111111111111"
+   ]
   },
   {
    "text": "4111111111111111",
@@ -1042,7 +1300,10 @@
     "paths": "file_path",
     "codes": "full"
    },
-   "expected": "4111111111111111"
+   "expected": "4111111111111111",
+   "spoken_words": [
+    "4111111111111111"
+   ]
   },
   {
    "text": "4111111111111111",
@@ -1054,7 +1315,10 @@
     "paths": "name",
     "codes": "full"
    },
-   "expected": "4111111111111111"
+   "expected": "4111111111111111",
+   "spoken_words": [
+    "4111111111111111"
+   ]
   },
   {
    "text": "4111111111111111",
@@ -1066,7 +1330,10 @@
     "paths": "path",
     "codes": "full"
    },
-   "expected": "4111111111111111"
+   "expected": "4111111111111111",
+   "spoken_words": [
+    "4111111111111111"
+   ]
   },
   {
    "text": "4111111111111111",
@@ -1078,7 +1345,10 @@
     "paths": "full_slash",
     "codes": "full"
    },
-   "expected": "4111111111111111"
+   "expected": "4111111111111111",
+   "spoken_words": [
+    "4111111111111111"
+   ]
   },
   {
    "text": "4111111111111111",
@@ -1090,7 +1360,10 @@
     "paths": "full_words",
     "codes": "full"
    },
-   "expected": "4111111111111111"
+   "expected": "4111111111111111",
+   "spoken_words": [
+    "4111111111111111"
+   ]
   },
   {
    "text": "4111111111111111",
@@ -1102,7 +1375,10 @@
     "paths": "full",
     "codes": "length"
    },
-   "expected": "16 digit code one one one one"
+   "expected": "16 digit code one one one one",
+   "spoken_words": [
+    "16 digit code one one one one"
+   ]
   },
   {
    "text": "4111111111111111",
@@ -1114,7 +1390,10 @@
     "paths": "full",
     "codes": "short"
    },
-   "expected": "code four one one one"
+   "expected": "code four one one one",
+   "spoken_words": [
+    "code four one one one"
+   ]
   },
   {
    "text": "4111111111111111",
@@ -1126,7 +1405,10 @@
     "paths": "full",
     "codes": "code"
    },
-   "expected": "code"
+   "expected": "code",
+   "spoken_words": [
+    "code"
+   ]
   },
   {
    "text": "4111111111111111",
@@ -1138,7 +1420,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "4111111111111111"
+   "expected": "4111111111111111",
+   "spoken_words": [
+    "4111111111111111"
+   ]
   },
   {
    "text": "~/github/textReader/reader.py",
@@ -1150,7 +1435,10 @@
     "paths": "tail",
     "codes": "length"
    },
-   "expected": "path slash textReader slash reader dot py"
+   "expected": "path slash textReader slash reader dot py",
+   "spoken_words": [
+    "path slash textReader slash reader dot py"
+   ]
   },
   {
    "text": "~/github/textReader/reader.py",
@@ -1162,7 +1450,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "~/github/textReader/reader.py"
+   "expected": "~/github/textReader/reader.py",
+   "spoken_words": [
+    "~/github/textReader/reader.py"
+   ]
   },
   {
    "text": "~/github/textReader/reader.py",
@@ -1174,7 +1465,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "~/github/textReader/reader.py"
+   "expected": "~/github/textReader/reader.py",
+   "spoken_words": [
+    "~/github/textReader/reader.py"
+   ]
   },
   {
    "text": "~/github/textReader/reader.py",
@@ -1186,7 +1480,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "~/github/textReader/reader.py"
+   "expected": "~/github/textReader/reader.py",
+   "spoken_words": [
+    "~/github/textReader/reader.py"
+   ]
   },
   {
    "text": "~/github/textReader/reader.py",
@@ -1198,7 +1495,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "~/github/textReader/reader.py"
+   "expected": "~/github/textReader/reader.py",
+   "spoken_words": [
+    "~/github/textReader/reader.py"
+   ]
   },
   {
    "text": "~/github/textReader/reader.py",
@@ -1210,7 +1510,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "~/github/textReader/reader.py"
+   "expected": "~/github/textReader/reader.py",
+   "spoken_words": [
+    "~/github/textReader/reader.py"
+   ]
   },
   {
    "text": "~/github/textReader/reader.py",
@@ -1222,7 +1525,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "~/github/textReader/reader.py"
+   "expected": "~/github/textReader/reader.py",
+   "spoken_words": [
+    "~/github/textReader/reader.py"
+   ]
   },
   {
    "text": "~/github/textReader/reader.py",
@@ -1234,7 +1540,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "~/github/textReader/reader.py"
+   "expected": "~/github/textReader/reader.py",
+   "spoken_words": [
+    "~/github/textReader/reader.py"
+   ]
   },
   {
    "text": "~/github/textReader/reader.py",
@@ -1246,7 +1555,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "~/github/textReader/reader.py"
+   "expected": "~/github/textReader/reader.py",
+   "spoken_words": [
+    "~/github/textReader/reader.py"
+   ]
   },
   {
    "text": "~/github/textReader/reader.py",
@@ -1258,7 +1570,10 @@
     "paths": "tail",
     "codes": "full"
    },
-   "expected": "path slash textReader slash reader dot py"
+   "expected": "path slash textReader slash reader dot py",
+   "spoken_words": [
+    "path slash textReader slash reader dot py"
+   ]
   },
   {
    "text": "~/github/textReader/reader.py",
@@ -1270,7 +1585,10 @@
     "paths": "file_path",
     "codes": "full"
    },
-   "expected": "file path slash textReader slash reader.py"
+   "expected": "file path slash textReader slash reader.py",
+   "spoken_words": [
+    "file path slash textReader slash reader.py"
+   ]
   },
   {
    "text": "~/github/textReader/reader.py",
@@ -1282,7 +1600,10 @@
     "paths": "name",
     "codes": "full"
    },
-   "expected": "path to reader.py"
+   "expected": "path to reader.py",
+   "spoken_words": [
+    "path to reader.py"
+   ]
   },
   {
    "text": "~/github/textReader/reader.py",
@@ -1294,7 +1615,10 @@
     "paths": "path",
     "codes": "full"
    },
-   "expected": "file path"
+   "expected": "file path",
+   "spoken_words": [
+    "file path"
+   ]
   },
   {
    "text": "~/github/textReader/reader.py",
@@ -1306,7 +1630,10 @@
     "paths": "full_slash",
     "codes": "full"
    },
-   "expected": "file path home slash github slash textReader slash reader.py"
+   "expected": "file path home slash github slash textReader slash reader.py",
+   "spoken_words": [
+    "file path home slash github slash textReader slash reader.py"
+   ]
   },
   {
    "text": "~/github/textReader/reader.py",
@@ -1318,7 +1645,10 @@
     "paths": "full_words",
     "codes": "full"
    },
-   "expected": "file path home github textReader reader.py"
+   "expected": "file path home github textReader reader.py",
+   "spoken_words": [
+    "file path home github textReader reader.py"
+   ]
   },
   {
    "text": "~/github/textReader/reader.py",
@@ -1330,7 +1660,10 @@
     "paths": "full",
     "codes": "length"
    },
-   "expected": "~/github/textReader/reader.py"
+   "expected": "~/github/textReader/reader.py",
+   "spoken_words": [
+    "~/github/textReader/reader.py"
+   ]
   },
   {
    "text": "~/github/textReader/reader.py",
@@ -1342,7 +1675,10 @@
     "paths": "full",
     "codes": "short"
    },
-   "expected": "~/github/textReader/reader.py"
+   "expected": "~/github/textReader/reader.py",
+   "spoken_words": [
+    "~/github/textReader/reader.py"
+   ]
   },
   {
    "text": "~/github/textReader/reader.py",
@@ -1354,7 +1690,10 @@
     "paths": "full",
     "codes": "code"
    },
-   "expected": "~/github/textReader/reader.py"
+   "expected": "~/github/textReader/reader.py",
+   "spoken_words": [
+    "~/github/textReader/reader.py"
+   ]
   },
   {
    "text": "~/github/textReader/reader.py",
@@ -1366,7 +1705,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "~/github/textReader/reader.py"
+   "expected": "~/github/textReader/reader.py",
+   "spoken_words": [
+    "~/github/textReader/reader.py"
+   ]
   },
   {
    "text": "../notes/todo.txt",
@@ -1378,7 +1720,10 @@
     "paths": "tail",
     "codes": "length"
    },
-   "expected": "path slash notes slash todo dot txt"
+   "expected": "path slash notes slash todo dot txt",
+   "spoken_words": [
+    "path slash notes slash todo dot txt"
+   ]
   },
   {
    "text": "../notes/todo.txt",
@@ -1390,7 +1735,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "../notes/todo.txt"
+   "expected": "../notes/todo.txt",
+   "spoken_words": [
+    "../notes/todo.txt"
+   ]
   },
   {
    "text": "../notes/todo.txt",
@@ -1402,7 +1750,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "../notes/todo.txt"
+   "expected": "../notes/todo.txt",
+   "spoken_words": [
+    "../notes/todo.txt"
+   ]
   },
   {
    "text": "../notes/todo.txt",
@@ -1414,7 +1765,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "../notes/todo.txt"
+   "expected": "../notes/todo.txt",
+   "spoken_words": [
+    "../notes/todo.txt"
+   ]
   },
   {
    "text": "../notes/todo.txt",
@@ -1426,7 +1780,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "../notes/todo.txt"
+   "expected": "../notes/todo.txt",
+   "spoken_words": [
+    "../notes/todo.txt"
+   ]
   },
   {
    "text": "../notes/todo.txt",
@@ -1438,7 +1795,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "../notes/todo.txt"
+   "expected": "../notes/todo.txt",
+   "spoken_words": [
+    "../notes/todo.txt"
+   ]
   },
   {
    "text": "../notes/todo.txt",
@@ -1450,7 +1810,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "../notes/todo.txt"
+   "expected": "../notes/todo.txt",
+   "spoken_words": [
+    "../notes/todo.txt"
+   ]
   },
   {
    "text": "../notes/todo.txt",
@@ -1462,7 +1825,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "../notes/todo.txt"
+   "expected": "../notes/todo.txt",
+   "spoken_words": [
+    "../notes/todo.txt"
+   ]
   },
   {
    "text": "../notes/todo.txt",
@@ -1474,7 +1840,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "../notes/todo.txt"
+   "expected": "../notes/todo.txt",
+   "spoken_words": [
+    "../notes/todo.txt"
+   ]
   },
   {
    "text": "../notes/todo.txt",
@@ -1486,7 +1855,10 @@
     "paths": "tail",
     "codes": "full"
    },
-   "expected": "path slash notes slash todo dot txt"
+   "expected": "path slash notes slash todo dot txt",
+   "spoken_words": [
+    "path slash notes slash todo dot txt"
+   ]
   },
   {
    "text": "../notes/todo.txt",
@@ -1498,7 +1870,10 @@
     "paths": "file_path",
     "codes": "full"
    },
-   "expected": "file path slash notes slash todo.txt"
+   "expected": "file path slash notes slash todo.txt",
+   "spoken_words": [
+    "file path slash notes slash todo.txt"
+   ]
   },
   {
    "text": "../notes/todo.txt",
@@ -1510,7 +1885,10 @@
     "paths": "name",
     "codes": "full"
    },
-   "expected": "path to todo.txt"
+   "expected": "path to todo.txt",
+   "spoken_words": [
+    "path to todo.txt"
+   ]
   },
   {
    "text": "../notes/todo.txt",
@@ -1522,7 +1900,10 @@
     "paths": "path",
     "codes": "full"
    },
-   "expected": "file path"
+   "expected": "file path",
+   "spoken_words": [
+    "file path"
+   ]
   },
   {
    "text": "../notes/todo.txt",
@@ -1534,7 +1915,10 @@
     "paths": "full_slash",
     "codes": "full"
    },
-   "expected": "file path up a folder slash notes slash todo.txt"
+   "expected": "file path up a folder slash notes slash todo.txt",
+   "spoken_words": [
+    "file path up a folder slash notes slash todo.txt"
+   ]
   },
   {
    "text": "../notes/todo.txt",
@@ -1546,7 +1930,10 @@
     "paths": "full_words",
     "codes": "full"
    },
-   "expected": "file path up a folder notes todo.txt"
+   "expected": "file path up a folder notes todo.txt",
+   "spoken_words": [
+    "file path up a folder notes todo.txt"
+   ]
   },
   {
    "text": "../notes/todo.txt",
@@ -1558,7 +1945,10 @@
     "paths": "full",
     "codes": "length"
    },
-   "expected": "../notes/todo.txt"
+   "expected": "../notes/todo.txt",
+   "spoken_words": [
+    "../notes/todo.txt"
+   ]
   },
   {
    "text": "../notes/todo.txt",
@@ -1570,7 +1960,10 @@
     "paths": "full",
     "codes": "short"
    },
-   "expected": "../notes/todo.txt"
+   "expected": "../notes/todo.txt",
+   "spoken_words": [
+    "../notes/todo.txt"
+   ]
   },
   {
    "text": "../notes/todo.txt",
@@ -1582,7 +1975,10 @@
     "paths": "full",
     "codes": "code"
    },
-   "expected": "../notes/todo.txt"
+   "expected": "../notes/todo.txt",
+   "spoken_words": [
+    "../notes/todo.txt"
+   ]
   },
   {
    "text": "../notes/todo.txt",
@@ -1594,7 +1990,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "../notes/todo.txt"
+   "expected": "../notes/todo.txt",
+   "spoken_words": [
+    "../notes/todo.txt"
+   ]
   },
   {
    "text": "C:\\Users\\jane\\notes.txt",
@@ -1606,7 +2005,10 @@
     "paths": "tail",
     "codes": "length"
    },
-   "expected": "path slash jane slash notes dot txt"
+   "expected": "path slash jane slash notes dot txt",
+   "spoken_words": [
+    "path slash jane slash notes dot txt"
+   ]
   },
   {
    "text": "C:\\Users\\jane\\notes.txt",
@@ -1618,7 +2020,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "C:\\Users\\jane\\notes.txt"
+   "expected": "C:\\Users\\jane\\notes.txt",
+   "spoken_words": [
+    "C:\\Users\\jane\\notes.txt"
+   ]
   },
   {
    "text": "C:\\Users\\jane\\notes.txt",
@@ -1630,7 +2035,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "C:\\Users\\jane\\notes.txt"
+   "expected": "C:\\Users\\jane\\notes.txt",
+   "spoken_words": [
+    "C:\\Users\\jane\\notes.txt"
+   ]
   },
   {
    "text": "C:\\Users\\jane\\notes.txt",
@@ -1642,7 +2050,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "C:\\Users\\jane\\notes.txt"
+   "expected": "C:\\Users\\jane\\notes.txt",
+   "spoken_words": [
+    "C:\\Users\\jane\\notes.txt"
+   ]
   },
   {
    "text": "C:\\Users\\jane\\notes.txt",
@@ -1654,7 +2065,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "C:\\Users\\jane\\notes.txt"
+   "expected": "C:\\Users\\jane\\notes.txt",
+   "spoken_words": [
+    "C:\\Users\\jane\\notes.txt"
+   ]
   },
   {
    "text": "C:\\Users\\jane\\notes.txt",
@@ -1666,7 +2080,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "C:\\Users\\jane\\notes.txt"
+   "expected": "C:\\Users\\jane\\notes.txt",
+   "spoken_words": [
+    "C:\\Users\\jane\\notes.txt"
+   ]
   },
   {
    "text": "C:\\Users\\jane\\notes.txt",
@@ -1678,7 +2095,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "C:\\Users\\jane\\notes.txt"
+   "expected": "C:\\Users\\jane\\notes.txt",
+   "spoken_words": [
+    "C:\\Users\\jane\\notes.txt"
+   ]
   },
   {
    "text": "C:\\Users\\jane\\notes.txt",
@@ -1690,7 +2110,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "C:\\Users\\jane\\notes.txt"
+   "expected": "C:\\Users\\jane\\notes.txt",
+   "spoken_words": [
+    "C:\\Users\\jane\\notes.txt"
+   ]
   },
   {
    "text": "C:\\Users\\jane\\notes.txt",
@@ -1702,7 +2125,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "C:\\Users\\jane\\notes.txt"
+   "expected": "C:\\Users\\jane\\notes.txt",
+   "spoken_words": [
+    "C:\\Users\\jane\\notes.txt"
+   ]
   },
   {
    "text": "C:\\Users\\jane\\notes.txt",
@@ -1714,7 +2140,10 @@
     "paths": "tail",
     "codes": "full"
    },
-   "expected": "path slash jane slash notes dot txt"
+   "expected": "path slash jane slash notes dot txt",
+   "spoken_words": [
+    "path slash jane slash notes dot txt"
+   ]
   },
   {
    "text": "C:\\Users\\jane\\notes.txt",
@@ -1726,7 +2155,10 @@
     "paths": "file_path",
     "codes": "full"
    },
-   "expected": "file path slash jane slash notes.txt"
+   "expected": "file path slash jane slash notes.txt",
+   "spoken_words": [
+    "file path slash jane slash notes.txt"
+   ]
   },
   {
    "text": "C:\\Users\\jane\\notes.txt",
@@ -1738,7 +2170,10 @@
     "paths": "name",
     "codes": "full"
    },
-   "expected": "path to notes.txt"
+   "expected": "path to notes.txt",
+   "spoken_words": [
+    "path to notes.txt"
+   ]
   },
   {
    "text": "C:\\Users\\jane\\notes.txt",
@@ -1750,7 +2185,10 @@
     "paths": "path",
     "codes": "full"
    },
-   "expected": "file path"
+   "expected": "file path",
+   "spoken_words": [
+    "file path"
+   ]
   },
   {
    "text": "C:\\Users\\jane\\notes.txt",
@@ -1762,7 +2200,10 @@
     "paths": "full_slash",
     "codes": "full"
    },
-   "expected": "file path C drive slash Users slash jane slash notes.txt"
+   "expected": "file path C drive slash Users slash jane slash notes.txt",
+   "spoken_words": [
+    "file path C drive slash Users slash jane slash notes.txt"
+   ]
   },
   {
    "text": "C:\\Users\\jane\\notes.txt",
@@ -1774,7 +2215,10 @@
     "paths": "full_words",
     "codes": "full"
    },
-   "expected": "file path C drive Users jane notes.txt"
+   "expected": "file path C drive Users jane notes.txt",
+   "spoken_words": [
+    "file path C drive Users jane notes.txt"
+   ]
   },
   {
    "text": "C:\\Users\\jane\\notes.txt",
@@ -1786,7 +2230,10 @@
     "paths": "full",
     "codes": "length"
    },
-   "expected": "C:\\Users\\jane\\notes.txt"
+   "expected": "C:\\Users\\jane\\notes.txt",
+   "spoken_words": [
+    "C:\\Users\\jane\\notes.txt"
+   ]
   },
   {
    "text": "C:\\Users\\jane\\notes.txt",
@@ -1798,7 +2245,10 @@
     "paths": "full",
     "codes": "short"
    },
-   "expected": "C:\\Users\\jane\\notes.txt"
+   "expected": "C:\\Users\\jane\\notes.txt",
+   "spoken_words": [
+    "C:\\Users\\jane\\notes.txt"
+   ]
   },
   {
    "text": "C:\\Users\\jane\\notes.txt",
@@ -1810,7 +2260,10 @@
     "paths": "full",
     "codes": "code"
    },
-   "expected": "C:\\Users\\jane\\notes.txt"
+   "expected": "C:\\Users\\jane\\notes.txt",
+   "spoken_words": [
+    "C:\\Users\\jane\\notes.txt"
+   ]
   },
   {
    "text": "C:\\Users\\jane\\notes.txt",
@@ -1822,7 +2275,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "C:\\Users\\jane\\notes.txt"
+   "expected": "C:\\Users\\jane\\notes.txt",
+   "spoken_words": [
+    "C:\\Users\\jane\\notes.txt"
+   ]
   },
   {
    "text": "See https://github.com/masonje/textReader/pull/6.",
@@ -1834,7 +2290,11 @@
     "paths": "tail",
     "codes": "length"
    },
-   "expected": "See github.com path 6."
+   "expected": "See github.com path 6.",
+   "spoken_words": [
+    "See",
+    "github.com path 6 ."
+   ]
   },
   {
    "text": "See https://github.com/masonje/textReader/pull/6.",
@@ -1846,7 +2306,11 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "See github.com path 6."
+   "expected": "See github.com path 6.",
+   "spoken_words": [
+    "See",
+    "github.com path 6 ."
+   ]
   },
   {
    "text": "See https://github.com/masonje/textReader/pull/6.",
@@ -1858,7 +2322,11 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "See github.com weblink."
+   "expected": "See github.com weblink.",
+   "spoken_words": [
+    "See",
+    "github.com weblink ."
+   ]
   },
   {
    "text": "See https://github.com/masonje/textReader/pull/6.",
@@ -1870,7 +2338,11 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "See link."
+   "expected": "See link.",
+   "spoken_words": [
+    "See",
+    "link ."
+   ]
   },
   {
    "text": "See https://github.com/masonje/textReader/pull/6.",
@@ -1882,7 +2354,11 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "See https://github.com/masonje/textReader/pull/6."
+   "expected": "See https://github.com/masonje/textReader/pull/6.",
+   "spoken_words": [
+    "See",
+    "https://github.com/masonje/textReader/pull/6."
+   ]
   },
   {
    "text": "See https://github.com/masonje/textReader/pull/6.",
@@ -1894,7 +2370,11 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "See https://github.com/masonje/textReader/pull/6."
+   "expected": "See https://github.com/masonje/textReader/pull/6.",
+   "spoken_words": [
+    "See",
+    "https://github.com/masonje/textReader/pull/6."
+   ]
   },
   {
    "text": "See https://github.com/masonje/textReader/pull/6.",
@@ -1906,7 +2386,11 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "See https://github.com/masonje/textReader/pull/6."
+   "expected": "See https://github.com/masonje/textReader/pull/6.",
+   "spoken_words": [
+    "See",
+    "https://github.com/masonje/textReader/pull/6."
+   ]
   },
   {
    "text": "See https://github.com/masonje/textReader/pull/6.",
@@ -1918,7 +2402,11 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "See https://github.com/masonje/textReader/pull/6."
+   "expected": "See https://github.com/masonje/textReader/pull/6.",
+   "spoken_words": [
+    "See",
+    "https://github.com/masonje/textReader/pull/6."
+   ]
   },
   {
    "text": "See https://github.com/masonje/textReader/pull/6.",
@@ -1930,7 +2418,11 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "See https://github.com/masonje/textReader/pull/6."
+   "expected": "See https://github.com/masonje/textReader/pull/6.",
+   "spoken_words": [
+    "See",
+    "https://github.com/masonje/textReader/pull/6."
+   ]
   },
   {
    "text": "See https://github.com/masonje/textReader/pull/6.",
@@ -1942,7 +2434,11 @@
     "paths": "tail",
     "codes": "full"
    },
-   "expected": "See https://github.com/masonje/textReader/pull/6."
+   "expected": "See https://github.com/masonje/textReader/pull/6.",
+   "spoken_words": [
+    "See",
+    "https://github.com/masonje/textReader/pull/6."
+   ]
   },
   {
    "text": "See https://github.com/masonje/textReader/pull/6.",
@@ -1954,7 +2450,11 @@
     "paths": "file_path",
     "codes": "full"
    },
-   "expected": "See https://github.com/masonje/textReader/pull/6."
+   "expected": "See https://github.com/masonje/textReader/pull/6.",
+   "spoken_words": [
+    "See",
+    "https://github.com/masonje/textReader/pull/6."
+   ]
   },
   {
    "text": "See https://github.com/masonje/textReader/pull/6.",
@@ -1966,7 +2466,11 @@
     "paths": "name",
     "codes": "full"
    },
-   "expected": "See https://github.com/masonje/textReader/pull/6."
+   "expected": "See https://github.com/masonje/textReader/pull/6.",
+   "spoken_words": [
+    "See",
+    "https://github.com/masonje/textReader/pull/6."
+   ]
   },
   {
    "text": "See https://github.com/masonje/textReader/pull/6.",
@@ -1978,7 +2482,11 @@
     "paths": "path",
     "codes": "full"
    },
-   "expected": "See https://github.com/masonje/textReader/pull/6."
+   "expected": "See https://github.com/masonje/textReader/pull/6.",
+   "spoken_words": [
+    "See",
+    "https://github.com/masonje/textReader/pull/6."
+   ]
   },
   {
    "text": "See https://github.com/masonje/textReader/pull/6.",
@@ -1990,7 +2498,11 @@
     "paths": "full_slash",
     "codes": "full"
    },
-   "expected": "See https://github.com/masonje/textReader/pull/6."
+   "expected": "See https://github.com/masonje/textReader/pull/6.",
+   "spoken_words": [
+    "See",
+    "https://github.com/masonje/textReader/pull/6."
+   ]
   },
   {
    "text": "See https://github.com/masonje/textReader/pull/6.",
@@ -2002,7 +2514,11 @@
     "paths": "full_words",
     "codes": "full"
    },
-   "expected": "See https://github.com/masonje/textReader/pull/6."
+   "expected": "See https://github.com/masonje/textReader/pull/6.",
+   "spoken_words": [
+    "See",
+    "https://github.com/masonje/textReader/pull/6."
+   ]
   },
   {
    "text": "See https://github.com/masonje/textReader/pull/6.",
@@ -2014,7 +2530,11 @@
     "paths": "full",
     "codes": "length"
    },
-   "expected": "See https://github.com/masonje/textReader/pull/6."
+   "expected": "See https://github.com/masonje/textReader/pull/6.",
+   "spoken_words": [
+    "See",
+    "https://github.com/masonje/textReader/pull/6."
+   ]
   },
   {
    "text": "See https://github.com/masonje/textReader/pull/6.",
@@ -2026,7 +2546,11 @@
     "paths": "full",
     "codes": "short"
    },
-   "expected": "See https://github.com/masonje/textReader/pull/6."
+   "expected": "See https://github.com/masonje/textReader/pull/6.",
+   "spoken_words": [
+    "See",
+    "https://github.com/masonje/textReader/pull/6."
+   ]
   },
   {
    "text": "See https://github.com/masonje/textReader/pull/6.",
@@ -2038,7 +2562,11 @@
     "paths": "full",
     "codes": "code"
    },
-   "expected": "See https://github.com/masonje/textReader/pull/6."
+   "expected": "See https://github.com/masonje/textReader/pull/6.",
+   "spoken_words": [
+    "See",
+    "https://github.com/masonje/textReader/pull/6."
+   ]
   },
   {
    "text": "See https://github.com/masonje/textReader/pull/6.",
@@ -2050,7 +2578,11 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "See https://github.com/masonje/textReader/pull/6."
+   "expected": "See https://github.com/masonje/textReader/pull/6.",
+   "spoken_words": [
+    "See",
+    "https://github.com/masonje/textReader/pull/6."
+   ]
   },
   {
    "text": "(see https://github.com/masonje/textReader/pull/6)",
@@ -2062,7 +2594,11 @@
     "paths": "tail",
     "codes": "length"
    },
-   "expected": "(see github.com path 6)"
+   "expected": "(see github.com path 6)",
+   "spoken_words": [
+    "(see",
+    "github.com path 6 )"
+   ]
   },
   {
    "text": "(see https://github.com/masonje/textReader/pull/6)",
@@ -2074,7 +2610,11 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "(see github.com path 6)"
+   "expected": "(see github.com path 6)",
+   "spoken_words": [
+    "(see",
+    "github.com path 6 )"
+   ]
   },
   {
    "text": "(see https://github.com/masonje/textReader/pull/6)",
@@ -2086,7 +2626,11 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "(see github.com weblink)"
+   "expected": "(see github.com weblink)",
+   "spoken_words": [
+    "(see",
+    "github.com weblink )"
+   ]
   },
   {
    "text": "(see https://github.com/masonje/textReader/pull/6)",
@@ -2098,7 +2642,11 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "(see link)"
+   "expected": "(see link)",
+   "spoken_words": [
+    "(see",
+    "link )"
+   ]
   },
   {
    "text": "(see https://github.com/masonje/textReader/pull/6)",
@@ -2110,7 +2658,11 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+   "expected": "(see https://github.com/masonje/textReader/pull/6)",
+   "spoken_words": [
+    "(see",
+    "https://github.com/masonje/textReader/pull/6)"
+   ]
   },
   {
    "text": "(see https://github.com/masonje/textReader/pull/6)",
@@ -2122,7 +2674,11 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+   "expected": "(see https://github.com/masonje/textReader/pull/6)",
+   "spoken_words": [
+    "(see",
+    "https://github.com/masonje/textReader/pull/6)"
+   ]
   },
   {
    "text": "(see https://github.com/masonje/textReader/pull/6)",
@@ -2134,7 +2690,11 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+   "expected": "(see https://github.com/masonje/textReader/pull/6)",
+   "spoken_words": [
+    "(see",
+    "https://github.com/masonje/textReader/pull/6)"
+   ]
   },
   {
    "text": "(see https://github.com/masonje/textReader/pull/6)",
@@ -2146,7 +2706,11 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+   "expected": "(see https://github.com/masonje/textReader/pull/6)",
+   "spoken_words": [
+    "(see",
+    "https://github.com/masonje/textReader/pull/6)"
+   ]
   },
   {
    "text": "(see https://github.com/masonje/textReader/pull/6)",
@@ -2158,7 +2722,11 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+   "expected": "(see https://github.com/masonje/textReader/pull/6)",
+   "spoken_words": [
+    "(see",
+    "https://github.com/masonje/textReader/pull/6)"
+   ]
   },
   {
    "text": "(see https://github.com/masonje/textReader/pull/6)",
@@ -2170,7 +2738,11 @@
     "paths": "tail",
     "codes": "full"
    },
-   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+   "expected": "(see https://github.com/masonje/textReader/pull/6)",
+   "spoken_words": [
+    "(see",
+    "https://github.com/masonje/textReader/pull/6)"
+   ]
   },
   {
    "text": "(see https://github.com/masonje/textReader/pull/6)",
@@ -2182,7 +2754,11 @@
     "paths": "file_path",
     "codes": "full"
    },
-   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+   "expected": "(see https://github.com/masonje/textReader/pull/6)",
+   "spoken_words": [
+    "(see",
+    "https://github.com/masonje/textReader/pull/6)"
+   ]
   },
   {
    "text": "(see https://github.com/masonje/textReader/pull/6)",
@@ -2194,7 +2770,11 @@
     "paths": "name",
     "codes": "full"
    },
-   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+   "expected": "(see https://github.com/masonje/textReader/pull/6)",
+   "spoken_words": [
+    "(see",
+    "https://github.com/masonje/textReader/pull/6)"
+   ]
   },
   {
    "text": "(see https://github.com/masonje/textReader/pull/6)",
@@ -2206,7 +2786,11 @@
     "paths": "path",
     "codes": "full"
    },
-   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+   "expected": "(see https://github.com/masonje/textReader/pull/6)",
+   "spoken_words": [
+    "(see",
+    "https://github.com/masonje/textReader/pull/6)"
+   ]
   },
   {
    "text": "(see https://github.com/masonje/textReader/pull/6)",
@@ -2218,7 +2802,11 @@
     "paths": "full_slash",
     "codes": "full"
    },
-   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+   "expected": "(see https://github.com/masonje/textReader/pull/6)",
+   "spoken_words": [
+    "(see",
+    "https://github.com/masonje/textReader/pull/6)"
+   ]
   },
   {
    "text": "(see https://github.com/masonje/textReader/pull/6)",
@@ -2230,7 +2818,11 @@
     "paths": "full_words",
     "codes": "full"
    },
-   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+   "expected": "(see https://github.com/masonje/textReader/pull/6)",
+   "spoken_words": [
+    "(see",
+    "https://github.com/masonje/textReader/pull/6)"
+   ]
   },
   {
    "text": "(see https://github.com/masonje/textReader/pull/6)",
@@ -2242,7 +2834,11 @@
     "paths": "full",
     "codes": "length"
    },
-   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+   "expected": "(see https://github.com/masonje/textReader/pull/6)",
+   "spoken_words": [
+    "(see",
+    "https://github.com/masonje/textReader/pull/6)"
+   ]
   },
   {
    "text": "(see https://github.com/masonje/textReader/pull/6)",
@@ -2254,7 +2850,11 @@
     "paths": "full",
     "codes": "short"
    },
-   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+   "expected": "(see https://github.com/masonje/textReader/pull/6)",
+   "spoken_words": [
+    "(see",
+    "https://github.com/masonje/textReader/pull/6)"
+   ]
   },
   {
    "text": "(see https://github.com/masonje/textReader/pull/6)",
@@ -2266,7 +2866,11 @@
     "paths": "full",
     "codes": "code"
    },
-   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+   "expected": "(see https://github.com/masonje/textReader/pull/6)",
+   "spoken_words": [
+    "(see",
+    "https://github.com/masonje/textReader/pull/6)"
+   ]
   },
   {
    "text": "(see https://github.com/masonje/textReader/pull/6)",
@@ -2278,7 +2882,11 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "(see https://github.com/masonje/textReader/pull/6)"
+   "expected": "(see https://github.com/masonje/textReader/pull/6)",
+   "spoken_words": [
+    "(see",
+    "https://github.com/masonje/textReader/pull/6)"
+   ]
   },
   {
    "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
@@ -2290,7 +2898,10 @@
     "paths": "tail",
     "codes": "length"
    },
-   "expected": "en.wikipedia.org path Python_(programming_language)"
+   "expected": "en.wikipedia.org path Python_(programming_language)",
+   "spoken_words": [
+    "en.wikipedia.org path Python_(programming_language)"
+   ]
   },
   {
    "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
@@ -2302,7 +2913,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "en.wikipedia.org path Python_(programming_language)"
+   "expected": "en.wikipedia.org path Python_(programming_language)",
+   "spoken_words": [
+    "en.wikipedia.org path Python_(programming_language)"
+   ]
   },
   {
    "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
@@ -2314,7 +2928,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "en.wikipedia.org weblink"
+   "expected": "en.wikipedia.org weblink",
+   "spoken_words": [
+    "en.wikipedia.org weblink"
+   ]
   },
   {
    "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
@@ -2326,7 +2943,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "link"
+   "expected": "link",
+   "spoken_words": [
+    "link"
+   ]
   },
   {
    "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
@@ -2338,7 +2958,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "spoken_words": [
+    "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   ]
   },
   {
    "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
@@ -2350,7 +2973,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "spoken_words": [
+    "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   ]
   },
   {
    "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
@@ -2362,7 +2988,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "spoken_words": [
+    "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   ]
   },
   {
    "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
@@ -2374,7 +3003,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "spoken_words": [
+    "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   ]
   },
   {
    "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
@@ -2386,7 +3018,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "spoken_words": [
+    "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   ]
   },
   {
    "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
@@ -2398,7 +3033,10 @@
     "paths": "tail",
     "codes": "full"
    },
-   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "spoken_words": [
+    "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   ]
   },
   {
    "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
@@ -2410,7 +3048,10 @@
     "paths": "file_path",
     "codes": "full"
    },
-   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "spoken_words": [
+    "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   ]
   },
   {
    "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
@@ -2422,7 +3063,10 @@
     "paths": "name",
     "codes": "full"
    },
-   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "spoken_words": [
+    "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   ]
   },
   {
    "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
@@ -2434,7 +3078,10 @@
     "paths": "path",
     "codes": "full"
    },
-   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "spoken_words": [
+    "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   ]
   },
   {
    "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
@@ -2446,7 +3093,10 @@
     "paths": "full_slash",
     "codes": "full"
    },
-   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "spoken_words": [
+    "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   ]
   },
   {
    "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
@@ -2458,7 +3108,10 @@
     "paths": "full_words",
     "codes": "full"
    },
-   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "spoken_words": [
+    "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   ]
   },
   {
    "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
@@ -2470,7 +3123,10 @@
     "paths": "full",
     "codes": "length"
    },
-   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "spoken_words": [
+    "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   ]
   },
   {
    "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
@@ -2482,7 +3138,10 @@
     "paths": "full",
     "codes": "short"
    },
-   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "spoken_words": [
+    "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   ]
   },
   {
    "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
@@ -2494,7 +3153,10 @@
     "paths": "full",
     "codes": "code"
    },
-   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "spoken_words": [
+    "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   ]
   },
   {
    "text": "https://en.wikipedia.org/wiki/Python_(programming_language)",
@@ -2506,7 +3168,10 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   "expected": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "spoken_words": [
+    "https://en.wikipedia.org/wiki/Python_(programming_language)"
+   ]
   },
   {
    "text": "version 1.8.1 ships today",
@@ -2518,7 +3183,13 @@
     "paths": "tail",
     "codes": "length"
    },
-   "expected": "version 1.8.1 ships today"
+   "expected": "version 1.8.1 ships today",
+   "spoken_words": [
+    "version",
+    "1.8.1",
+    "ships",
+    "today"
+   ]
   },
   {
    "text": "version 1.8.1 ships today",
@@ -2530,7 +3201,13 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "version 1.8.1 ships today"
+   "expected": "version 1.8.1 ships today",
+   "spoken_words": [
+    "version",
+    "1.8.1",
+    "ships",
+    "today"
+   ]
   },
   {
    "text": "version 1.8.1 ships today",
@@ -2542,7 +3219,13 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "version 1.8.1 ships today"
+   "expected": "version 1.8.1 ships today",
+   "spoken_words": [
+    "version",
+    "1.8.1",
+    "ships",
+    "today"
+   ]
   },
   {
    "text": "version 1.8.1 ships today",
@@ -2554,7 +3237,13 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "version 1.8.1 ships today"
+   "expected": "version 1.8.1 ships today",
+   "spoken_words": [
+    "version",
+    "1.8.1",
+    "ships",
+    "today"
+   ]
   },
   {
    "text": "version 1.8.1 ships today",
@@ -2566,7 +3255,13 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "version 1.8.1 ships today"
+   "expected": "version 1.8.1 ships today",
+   "spoken_words": [
+    "version",
+    "1.8.1",
+    "ships",
+    "today"
+   ]
   },
   {
    "text": "version 1.8.1 ships today",
@@ -2578,7 +3273,13 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "version 1.8.1 ships today"
+   "expected": "version 1.8.1 ships today",
+   "spoken_words": [
+    "version",
+    "1.8.1",
+    "ships",
+    "today"
+   ]
   },
   {
    "text": "version 1.8.1 ships today",
@@ -2590,7 +3291,13 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "version 1.8.1 ships today"
+   "expected": "version 1.8.1 ships today",
+   "spoken_words": [
+    "version",
+    "1.8.1",
+    "ships",
+    "today"
+   ]
   },
   {
    "text": "version 1.8.1 ships today",
@@ -2602,7 +3309,13 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "version 1.8.1 ships today"
+   "expected": "version 1.8.1 ships today",
+   "spoken_words": [
+    "version",
+    "1.8.1",
+    "ships",
+    "today"
+   ]
   },
   {
    "text": "version 1.8.1 ships today",
@@ -2614,7 +3327,13 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "version 1.8.1 ships today"
+   "expected": "version 1.8.1 ships today",
+   "spoken_words": [
+    "version",
+    "1.8.1",
+    "ships",
+    "today"
+   ]
   },
   {
    "text": "version 1.8.1 ships today",
@@ -2626,7 +3345,13 @@
     "paths": "tail",
     "codes": "full"
    },
-   "expected": "version 1.8.1 ships today"
+   "expected": "version 1.8.1 ships today",
+   "spoken_words": [
+    "version",
+    "1.8.1",
+    "ships",
+    "today"
+   ]
   },
   {
    "text": "version 1.8.1 ships today",
@@ -2638,7 +3363,13 @@
     "paths": "file_path",
     "codes": "full"
    },
-   "expected": "version 1.8.1 ships today"
+   "expected": "version 1.8.1 ships today",
+   "spoken_words": [
+    "version",
+    "1.8.1",
+    "ships",
+    "today"
+   ]
   },
   {
    "text": "version 1.8.1 ships today",
@@ -2650,7 +3381,13 @@
     "paths": "name",
     "codes": "full"
    },
-   "expected": "version 1.8.1 ships today"
+   "expected": "version 1.8.1 ships today",
+   "spoken_words": [
+    "version",
+    "1.8.1",
+    "ships",
+    "today"
+   ]
   },
   {
    "text": "version 1.8.1 ships today",
@@ -2662,7 +3399,13 @@
     "paths": "path",
     "codes": "full"
    },
-   "expected": "version 1.8.1 ships today"
+   "expected": "version 1.8.1 ships today",
+   "spoken_words": [
+    "version",
+    "1.8.1",
+    "ships",
+    "today"
+   ]
   },
   {
    "text": "version 1.8.1 ships today",
@@ -2674,7 +3417,13 @@
     "paths": "full_slash",
     "codes": "full"
    },
-   "expected": "version 1.8.1 ships today"
+   "expected": "version 1.8.1 ships today",
+   "spoken_words": [
+    "version",
+    "1.8.1",
+    "ships",
+    "today"
+   ]
   },
   {
    "text": "version 1.8.1 ships today",
@@ -2686,7 +3435,13 @@
     "paths": "full_words",
     "codes": "full"
    },
-   "expected": "version 1.8.1 ships today"
+   "expected": "version 1.8.1 ships today",
+   "spoken_words": [
+    "version",
+    "1.8.1",
+    "ships",
+    "today"
+   ]
   },
   {
    "text": "version 1.8.1 ships today",
@@ -2698,7 +3453,13 @@
     "paths": "full",
     "codes": "length"
    },
-   "expected": "version 1.8.1 ships today"
+   "expected": "version 1.8.1 ships today",
+   "spoken_words": [
+    "version",
+    "1.8.1",
+    "ships",
+    "today"
+   ]
   },
   {
    "text": "version 1.8.1 ships today",
@@ -2710,7 +3471,13 @@
     "paths": "full",
     "codes": "short"
    },
-   "expected": "version 1.8.1 ships today"
+   "expected": "version 1.8.1 ships today",
+   "spoken_words": [
+    "version",
+    "1.8.1",
+    "ships",
+    "today"
+   ]
   },
   {
    "text": "version 1.8.1 ships today",
@@ -2722,7 +3489,13 @@
     "paths": "full",
     "codes": "code"
    },
-   "expected": "version 1.8.1 ships today"
+   "expected": "version 1.8.1 ships today",
+   "spoken_words": [
+    "version",
+    "1.8.1",
+    "ships",
+    "today"
+   ]
   },
   {
    "text": "version 1.8.1 ships today",
@@ -2734,7 +3507,13 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "version 1.8.1 ships today"
+   "expected": "version 1.8.1 ships today",
+   "spoken_words": [
+    "version",
+    "1.8.1",
+    "ships",
+    "today"
+   ]
   },
   {
    "text": "call 555-1234 now",
@@ -2746,7 +3525,12 @@
     "paths": "tail",
     "codes": "length"
    },
-   "expected": "call 555-1234 now"
+   "expected": "call 555-1234 now",
+   "spoken_words": [
+    "call",
+    "555-1234",
+    "now"
+   ]
   },
   {
    "text": "call 555-1234 now",
@@ -2758,7 +3542,12 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "call 555-1234 now"
+   "expected": "call 555-1234 now",
+   "spoken_words": [
+    "call",
+    "555-1234",
+    "now"
+   ]
   },
   {
    "text": "call 555-1234 now",
@@ -2770,7 +3559,12 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "call 555-1234 now"
+   "expected": "call 555-1234 now",
+   "spoken_words": [
+    "call",
+    "555-1234",
+    "now"
+   ]
   },
   {
    "text": "call 555-1234 now",
@@ -2782,7 +3576,12 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "call 555-1234 now"
+   "expected": "call 555-1234 now",
+   "spoken_words": [
+    "call",
+    "555-1234",
+    "now"
+   ]
   },
   {
    "text": "call 555-1234 now",
@@ -2794,7 +3593,12 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "call 555-1234 now"
+   "expected": "call 555-1234 now",
+   "spoken_words": [
+    "call",
+    "555-1234",
+    "now"
+   ]
   },
   {
    "text": "call 555-1234 now",
@@ -2806,7 +3610,12 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "call 555-1234 now"
+   "expected": "call 555-1234 now",
+   "spoken_words": [
+    "call",
+    "555-1234",
+    "now"
+   ]
   },
   {
    "text": "call 555-1234 now",
@@ -2818,7 +3627,12 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "call 555-1234 now"
+   "expected": "call 555-1234 now",
+   "spoken_words": [
+    "call",
+    "555-1234",
+    "now"
+   ]
   },
   {
    "text": "call 555-1234 now",
@@ -2830,7 +3644,12 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "call 555-1234 now"
+   "expected": "call 555-1234 now",
+   "spoken_words": [
+    "call",
+    "555-1234",
+    "now"
+   ]
   },
   {
    "text": "call 555-1234 now",
@@ -2842,7 +3661,12 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "call 555-1234 now"
+   "expected": "call 555-1234 now",
+   "spoken_words": [
+    "call",
+    "555-1234",
+    "now"
+   ]
   },
   {
    "text": "call 555-1234 now",
@@ -2854,7 +3678,12 @@
     "paths": "tail",
     "codes": "full"
    },
-   "expected": "call 555-1234 now"
+   "expected": "call 555-1234 now",
+   "spoken_words": [
+    "call",
+    "555-1234",
+    "now"
+   ]
   },
   {
    "text": "call 555-1234 now",
@@ -2866,7 +3695,12 @@
     "paths": "file_path",
     "codes": "full"
    },
-   "expected": "call 555-1234 now"
+   "expected": "call 555-1234 now",
+   "spoken_words": [
+    "call",
+    "555-1234",
+    "now"
+   ]
   },
   {
    "text": "call 555-1234 now",
@@ -2878,7 +3712,12 @@
     "paths": "name",
     "codes": "full"
    },
-   "expected": "call 555-1234 now"
+   "expected": "call 555-1234 now",
+   "spoken_words": [
+    "call",
+    "555-1234",
+    "now"
+   ]
   },
   {
    "text": "call 555-1234 now",
@@ -2890,7 +3729,12 @@
     "paths": "path",
     "codes": "full"
    },
-   "expected": "call 555-1234 now"
+   "expected": "call 555-1234 now",
+   "spoken_words": [
+    "call",
+    "555-1234",
+    "now"
+   ]
   },
   {
    "text": "call 555-1234 now",
@@ -2902,7 +3746,12 @@
     "paths": "full_slash",
     "codes": "full"
    },
-   "expected": "call 555-1234 now"
+   "expected": "call 555-1234 now",
+   "spoken_words": [
+    "call",
+    "555-1234",
+    "now"
+   ]
   },
   {
    "text": "call 555-1234 now",
@@ -2914,7 +3763,12 @@
     "paths": "full_words",
     "codes": "full"
    },
-   "expected": "call 555-1234 now"
+   "expected": "call 555-1234 now",
+   "spoken_words": [
+    "call",
+    "555-1234",
+    "now"
+   ]
   },
   {
    "text": "call 555-1234 now",
@@ -2926,7 +3780,12 @@
     "paths": "full",
     "codes": "length"
    },
-   "expected": "call 555-1234 now"
+   "expected": "call 555-1234 now",
+   "spoken_words": [
+    "call",
+    "555-1234",
+    "now"
+   ]
   },
   {
    "text": "call 555-1234 now",
@@ -2938,7 +3797,12 @@
     "paths": "full",
     "codes": "short"
    },
-   "expected": "call 555-1234 now"
+   "expected": "call 555-1234 now",
+   "spoken_words": [
+    "call",
+    "555-1234",
+    "now"
+   ]
   },
   {
    "text": "call 555-1234 now",
@@ -2950,7 +3814,12 @@
     "paths": "full",
     "codes": "code"
    },
-   "expected": "call 555-1234 now"
+   "expected": "call 555-1234 now",
+   "spoken_words": [
+    "call",
+    "555-1234",
+    "now"
+   ]
   },
   {
    "text": "call 555-1234 now",
@@ -2962,7 +3831,12 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "call 555-1234 now"
+   "expected": "call 555-1234 now",
+   "spoken_words": [
+    "call",
+    "555-1234",
+    "now"
+   ]
   },
   {
    "text": "the and/or choice",
@@ -2974,7 +3848,12 @@
     "paths": "tail",
     "codes": "length"
    },
-   "expected": "the and/or choice"
+   "expected": "the and/or choice",
+   "spoken_words": [
+    "the",
+    "and/or",
+    "choice"
+   ]
   },
   {
    "text": "the and/or choice",
@@ -2986,7 +3865,12 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "the and/or choice"
+   "expected": "the and/or choice",
+   "spoken_words": [
+    "the",
+    "and/or",
+    "choice"
+   ]
   },
   {
    "text": "the and/or choice",
@@ -2998,7 +3882,12 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "the and/or choice"
+   "expected": "the and/or choice",
+   "spoken_words": [
+    "the",
+    "and/or",
+    "choice"
+   ]
   },
   {
    "text": "the and/or choice",
@@ -3010,7 +3899,12 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "the and/or choice"
+   "expected": "the and/or choice",
+   "spoken_words": [
+    "the",
+    "and/or",
+    "choice"
+   ]
   },
   {
    "text": "the and/or choice",
@@ -3022,7 +3916,12 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "the and/or choice"
+   "expected": "the and/or choice",
+   "spoken_words": [
+    "the",
+    "and/or",
+    "choice"
+   ]
   },
   {
    "text": "the and/or choice",
@@ -3034,7 +3933,12 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "the and/or choice"
+   "expected": "the and/or choice",
+   "spoken_words": [
+    "the",
+    "and/or",
+    "choice"
+   ]
   },
   {
    "text": "the and/or choice",
@@ -3046,7 +3950,12 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "the and/or choice"
+   "expected": "the and/or choice",
+   "spoken_words": [
+    "the",
+    "and/or",
+    "choice"
+   ]
   },
   {
    "text": "the and/or choice",
@@ -3058,7 +3967,12 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "the and/or choice"
+   "expected": "the and/or choice",
+   "spoken_words": [
+    "the",
+    "and/or",
+    "choice"
+   ]
   },
   {
    "text": "the and/or choice",
@@ -3070,7 +3984,12 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "the and/or choice"
+   "expected": "the and/or choice",
+   "spoken_words": [
+    "the",
+    "and/or",
+    "choice"
+   ]
   },
   {
    "text": "the and/or choice",
@@ -3082,7 +4001,12 @@
     "paths": "tail",
     "codes": "full"
    },
-   "expected": "the and/or choice"
+   "expected": "the and/or choice",
+   "spoken_words": [
+    "the",
+    "and/or",
+    "choice"
+   ]
   },
   {
    "text": "the and/or choice",
@@ -3094,7 +4018,12 @@
     "paths": "file_path",
     "codes": "full"
    },
-   "expected": "the and/or choice"
+   "expected": "the and/or choice",
+   "spoken_words": [
+    "the",
+    "and/or",
+    "choice"
+   ]
   },
   {
    "text": "the and/or choice",
@@ -3106,7 +4035,12 @@
     "paths": "name",
     "codes": "full"
    },
-   "expected": "the and/or choice"
+   "expected": "the and/or choice",
+   "spoken_words": [
+    "the",
+    "and/or",
+    "choice"
+   ]
   },
   {
    "text": "the and/or choice",
@@ -3118,7 +4052,12 @@
     "paths": "path",
     "codes": "full"
    },
-   "expected": "the and/or choice"
+   "expected": "the and/or choice",
+   "spoken_words": [
+    "the",
+    "and/or",
+    "choice"
+   ]
   },
   {
    "text": "the and/or choice",
@@ -3130,7 +4069,12 @@
     "paths": "full_slash",
     "codes": "full"
    },
-   "expected": "the and/or choice"
+   "expected": "the and/or choice",
+   "spoken_words": [
+    "the",
+    "and/or",
+    "choice"
+   ]
   },
   {
    "text": "the and/or choice",
@@ -3142,7 +4086,12 @@
     "paths": "full_words",
     "codes": "full"
    },
-   "expected": "the and/or choice"
+   "expected": "the and/or choice",
+   "spoken_words": [
+    "the",
+    "and/or",
+    "choice"
+   ]
   },
   {
    "text": "the and/or choice",
@@ -3154,7 +4103,12 @@
     "paths": "full",
     "codes": "length"
    },
-   "expected": "the and/or choice"
+   "expected": "the and/or choice",
+   "spoken_words": [
+    "the",
+    "and/or",
+    "choice"
+   ]
   },
   {
    "text": "the and/or choice",
@@ -3166,7 +4120,12 @@
     "paths": "full",
     "codes": "short"
    },
-   "expected": "the and/or choice"
+   "expected": "the and/or choice",
+   "spoken_words": [
+    "the",
+    "and/or",
+    "choice"
+   ]
   },
   {
    "text": "the and/or choice",
@@ -3178,7 +4137,12 @@
     "paths": "full",
     "codes": "code"
    },
-   "expected": "the and/or choice"
+   "expected": "the and/or choice",
+   "spoken_words": [
+    "the",
+    "and/or",
+    "choice"
+   ]
   },
   {
    "text": "the and/or choice",
@@ -3190,7 +4154,12 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "the and/or choice"
+   "expected": "the and/or choice",
+   "spoken_words": [
+    "the",
+    "and/or",
+    "choice"
+   ]
   },
   {
    "text": "a well-known example",
@@ -3202,7 +4171,12 @@
     "paths": "tail",
     "codes": "length"
    },
-   "expected": "a well-known example"
+   "expected": "a well-known example",
+   "spoken_words": [
+    "a",
+    "well-known",
+    "example"
+   ]
   },
   {
    "text": "a well-known example",
@@ -3214,7 +4188,12 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "a well-known example"
+   "expected": "a well-known example",
+   "spoken_words": [
+    "a",
+    "well-known",
+    "example"
+   ]
   },
   {
    "text": "a well-known example",
@@ -3226,7 +4205,12 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "a well-known example"
+   "expected": "a well-known example",
+   "spoken_words": [
+    "a",
+    "well-known",
+    "example"
+   ]
   },
   {
    "text": "a well-known example",
@@ -3238,7 +4222,12 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "a well-known example"
+   "expected": "a well-known example",
+   "spoken_words": [
+    "a",
+    "well-known",
+    "example"
+   ]
   },
   {
    "text": "a well-known example",
@@ -3250,7 +4239,12 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "a well-known example"
+   "expected": "a well-known example",
+   "spoken_words": [
+    "a",
+    "well-known",
+    "example"
+   ]
   },
   {
    "text": "a well-known example",
@@ -3262,7 +4256,12 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "a well-known example"
+   "expected": "a well-known example",
+   "spoken_words": [
+    "a",
+    "well-known",
+    "example"
+   ]
   },
   {
    "text": "a well-known example",
@@ -3274,7 +4273,12 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "a well-known example"
+   "expected": "a well-known example",
+   "spoken_words": [
+    "a",
+    "well-known",
+    "example"
+   ]
   },
   {
    "text": "a well-known example",
@@ -3286,7 +4290,12 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "a well-known example"
+   "expected": "a well-known example",
+   "spoken_words": [
+    "a",
+    "well-known",
+    "example"
+   ]
   },
   {
    "text": "a well-known example",
@@ -3298,7 +4307,12 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "a well-known example"
+   "expected": "a well-known example",
+   "spoken_words": [
+    "a",
+    "well-known",
+    "example"
+   ]
   },
   {
    "text": "a well-known example",
@@ -3310,7 +4324,12 @@
     "paths": "tail",
     "codes": "full"
    },
-   "expected": "a well-known example"
+   "expected": "a well-known example",
+   "spoken_words": [
+    "a",
+    "well-known",
+    "example"
+   ]
   },
   {
    "text": "a well-known example",
@@ -3322,7 +4341,12 @@
     "paths": "file_path",
     "codes": "full"
    },
-   "expected": "a well-known example"
+   "expected": "a well-known example",
+   "spoken_words": [
+    "a",
+    "well-known",
+    "example"
+   ]
   },
   {
    "text": "a well-known example",
@@ -3334,7 +4358,12 @@
     "paths": "name",
     "codes": "full"
    },
-   "expected": "a well-known example"
+   "expected": "a well-known example",
+   "spoken_words": [
+    "a",
+    "well-known",
+    "example"
+   ]
   },
   {
    "text": "a well-known example",
@@ -3346,7 +4375,12 @@
     "paths": "path",
     "codes": "full"
    },
-   "expected": "a well-known example"
+   "expected": "a well-known example",
+   "spoken_words": [
+    "a",
+    "well-known",
+    "example"
+   ]
   },
   {
    "text": "a well-known example",
@@ -3358,7 +4392,12 @@
     "paths": "full_slash",
     "codes": "full"
    },
-   "expected": "a well-known example"
+   "expected": "a well-known example",
+   "spoken_words": [
+    "a",
+    "well-known",
+    "example"
+   ]
   },
   {
    "text": "a well-known example",
@@ -3370,7 +4409,12 @@
     "paths": "full_words",
     "codes": "full"
    },
-   "expected": "a well-known example"
+   "expected": "a well-known example",
+   "spoken_words": [
+    "a",
+    "well-known",
+    "example"
+   ]
   },
   {
    "text": "a well-known example",
@@ -3382,7 +4426,12 @@
     "paths": "full",
     "codes": "length"
    },
-   "expected": "a well-known example"
+   "expected": "a well-known example",
+   "spoken_words": [
+    "a",
+    "well-known",
+    "example"
+   ]
   },
   {
    "text": "a well-known example",
@@ -3394,7 +4443,12 @@
     "paths": "full",
     "codes": "short"
    },
-   "expected": "a well-known example"
+   "expected": "a well-known example",
+   "spoken_words": [
+    "a",
+    "well-known",
+    "example"
+   ]
   },
   {
    "text": "a well-known example",
@@ -3406,7 +4460,12 @@
     "paths": "full",
     "codes": "code"
    },
-   "expected": "a well-known example"
+   "expected": "a well-known example",
+   "spoken_words": [
+    "a",
+    "well-known",
+    "example"
+   ]
   },
   {
    "text": "a well-known example",
@@ -3418,7 +4477,12 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "a well-known example"
+   "expected": "a well-known example",
+   "spoken_words": [
+    "a",
+    "well-known",
+    "example"
+   ]
   },
   {
    "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
@@ -3430,7 +4494,17 @@
     "paths": "tail",
     "codes": "length"
    },
-   "expected": "Visit example.com path b, then email bob_smith+news@mail.example.co.uk or open path slash src slash main dot rs."
+   "expected": "Visit example.com path b, then email bob_smith+news@mail.example.co.uk or open path slash src slash main dot rs.",
+   "spoken_words": [
+    "Visit",
+    "example.com path b ,",
+    "then",
+    "email",
+    "bob_smith+news@mail.example.co.uk",
+    "or",
+    "open",
+    "path slash src slash main dot rs ."
+   ]
   },
   {
    "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
@@ -3442,7 +4516,17 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Visit example.com path b, then email bob_smith+news@mail.example.co.uk or open./src/main.rs."
+   "expected": "Visit example.com path b, then email bob_smith+news@mail.example.co.uk or open./src/main.rs.",
+   "spoken_words": [
+    "Visit",
+    "example.com path b ,",
+    "then",
+    "email",
+    "bob_smith+news@mail.example.co.uk",
+    "or",
+    "open",
+    "./src/main.rs."
+   ]
   },
   {
    "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
@@ -3454,7 +4538,17 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Visit example.com weblink, then email bob_smith+news@mail.example.co.uk or open./src/main.rs."
+   "expected": "Visit example.com weblink, then email bob_smith+news@mail.example.co.uk or open./src/main.rs.",
+   "spoken_words": [
+    "Visit",
+    "example.com weblink ,",
+    "then",
+    "email",
+    "bob_smith+news@mail.example.co.uk",
+    "or",
+    "open",
+    "./src/main.rs."
+   ]
   },
   {
    "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
@@ -3466,7 +4560,17 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Visit link, then email bob_smith+news@mail.example.co.uk or open./src/main.rs."
+   "expected": "Visit link, then email bob_smith+news@mail.example.co.uk or open./src/main.rs.",
+   "spoken_words": [
+    "Visit",
+    "link ,",
+    "then",
+    "email",
+    "bob_smith+news@mail.example.co.uk",
+    "or",
+    "open",
+    "./src/main.rs."
+   ]
   },
   {
    "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
@@ -3478,7 +4582,17 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs."
+   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
+   "spoken_words": [
+    "Visit",
+    "www.example.com/a/b?x=1#top,",
+    "then",
+    "email",
+    "bob_smith+news@mail.example.co.uk",
+    "or",
+    "open",
+    "./src/main.rs."
+   ]
   },
   {
    "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
@@ -3490,7 +4604,17 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs."
+   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
+   "spoken_words": [
+    "Visit",
+    "www.example.com/a/b?x=1#top,",
+    "then",
+    "email",
+    "bob_smith+news@mail.example.co.uk",
+    "or",
+    "open",
+    "./src/main.rs."
+   ]
   },
   {
    "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
@@ -3502,7 +4626,17 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Visit www.example.com/a/b?x=1#top, then email bob smith news or open./src/main.rs."
+   "expected": "Visit www.example.com/a/b?x=1#top, then email bob smith news or open./src/main.rs.",
+   "spoken_words": [
+    "Visit",
+    "www.example.com/a/b?x=1#top,",
+    "then",
+    "email",
+    "bob smith news",
+    "or",
+    "open",
+    "./src/main.rs."
+   ]
   },
   {
    "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
@@ -3514,7 +4648,17 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Visit www.example.com/a/b?x=1#top, then email email to bob smith news or open./src/main.rs."
+   "expected": "Visit www.example.com/a/b?x=1#top, then email email to bob smith news or open./src/main.rs.",
+   "spoken_words": [
+    "Visit",
+    "www.example.com/a/b?x=1#top,",
+    "then",
+    "email",
+    "email to bob smith news",
+    "or",
+    "open",
+    "./src/main.rs."
+   ]
   },
   {
    "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
@@ -3526,7 +4670,17 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Visit www.example.com/a/b?x=1#top, then email email address or open./src/main.rs."
+   "expected": "Visit www.example.com/a/b?x=1#top, then email email address or open./src/main.rs.",
+   "spoken_words": [
+    "Visit",
+    "www.example.com/a/b?x=1#top,",
+    "then",
+    "email",
+    "email address",
+    "or",
+    "open",
+    "./src/main.rs."
+   ]
   },
   {
    "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
@@ -3538,7 +4692,17 @@
     "paths": "tail",
     "codes": "full"
    },
-   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open path slash src slash main dot rs."
+   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open path slash src slash main dot rs.",
+   "spoken_words": [
+    "Visit",
+    "www.example.com/a/b?x=1#top,",
+    "then",
+    "email",
+    "bob_smith+news@mail.example.co.uk",
+    "or",
+    "open",
+    "path slash src slash main dot rs ."
+   ]
   },
   {
    "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
@@ -3550,7 +4714,17 @@
     "paths": "file_path",
     "codes": "full"
    },
-   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open file path slash src slash main.rs."
+   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open file path slash src slash main.rs.",
+   "spoken_words": [
+    "Visit",
+    "www.example.com/a/b?x=1#top,",
+    "then",
+    "email",
+    "bob_smith+news@mail.example.co.uk",
+    "or",
+    "open",
+    "file path slash src slash main.rs ."
+   ]
   },
   {
    "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
@@ -3562,7 +4736,17 @@
     "paths": "name",
     "codes": "full"
    },
-   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open path to main.rs."
+   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open path to main.rs.",
+   "spoken_words": [
+    "Visit",
+    "www.example.com/a/b?x=1#top,",
+    "then",
+    "email",
+    "bob_smith+news@mail.example.co.uk",
+    "or",
+    "open",
+    "path to main.rs ."
+   ]
   },
   {
    "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
@@ -3574,7 +4758,17 @@
     "paths": "path",
     "codes": "full"
    },
-   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open file path."
+   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open file path.",
+   "spoken_words": [
+    "Visit",
+    "www.example.com/a/b?x=1#top,",
+    "then",
+    "email",
+    "bob_smith+news@mail.example.co.uk",
+    "or",
+    "open",
+    "file path ."
+   ]
   },
   {
    "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
@@ -3586,7 +4780,17 @@
     "paths": "full_slash",
     "codes": "full"
    },
-   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open file path src slash main.rs."
+   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open file path src slash main.rs.",
+   "spoken_words": [
+    "Visit",
+    "www.example.com/a/b?x=1#top,",
+    "then",
+    "email",
+    "bob_smith+news@mail.example.co.uk",
+    "or",
+    "open",
+    "file path src slash main.rs ."
+   ]
   },
   {
    "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
@@ -3598,7 +4802,17 @@
     "paths": "full_words",
     "codes": "full"
    },
-   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open file path src main.rs."
+   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open file path src main.rs.",
+   "spoken_words": [
+    "Visit",
+    "www.example.com/a/b?x=1#top,",
+    "then",
+    "email",
+    "bob_smith+news@mail.example.co.uk",
+    "or",
+    "open",
+    "file path src main.rs ."
+   ]
   },
   {
    "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
@@ -3610,7 +4824,17 @@
     "paths": "full",
     "codes": "length"
    },
-   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs."
+   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
+   "spoken_words": [
+    "Visit",
+    "www.example.com/a/b?x=1#top,",
+    "then",
+    "email",
+    "bob_smith+news@mail.example.co.uk",
+    "or",
+    "open",
+    "./src/main.rs."
+   ]
   },
   {
    "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
@@ -3622,7 +4846,17 @@
     "paths": "full",
     "codes": "short"
    },
-   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs."
+   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
+   "spoken_words": [
+    "Visit",
+    "www.example.com/a/b?x=1#top,",
+    "then",
+    "email",
+    "bob_smith+news@mail.example.co.uk",
+    "or",
+    "open",
+    "./src/main.rs."
+   ]
   },
   {
    "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
@@ -3634,7 +4868,17 @@
     "paths": "full",
     "codes": "code"
    },
-   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs."
+   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
+   "spoken_words": [
+    "Visit",
+    "www.example.com/a/b?x=1#top,",
+    "then",
+    "email",
+    "bob_smith+news@mail.example.co.uk",
+    "or",
+    "open",
+    "./src/main.rs."
+   ]
   },
   {
    "text": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
@@ -3646,7 +4890,17 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs."
+   "expected": "Visit www.example.com/a/b?x=1#top, then email bob_smith+news@mail.example.co.uk or open ./src/main.rs.",
+   "spoken_words": [
+    "Visit",
+    "www.example.com/a/b?x=1#top,",
+    "then",
+    "email",
+    "bob_smith+news@mail.example.co.uk",
+    "or",
+    "open",
+    "./src/main.rs."
+   ]
   },
   {
    "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
@@ -3658,7 +4912,17 @@
     "paths": "tail",
     "codes": "length"
    },
-   "expected": "Order 18 character code six seven eight four shipped; ticket 16 character code seven eight nine zero and uuid 32 character code four zero zero zero."
+   "expected": "Order 18 character code six seven eight four shipped; ticket 16 character code seven eight nine zero and uuid 32 character code four zero zero zero.",
+   "spoken_words": [
+    "Order",
+    "18 character code six seven eight four",
+    "shipped;",
+    "ticket",
+    "16 character code seven eight nine zero",
+    "and",
+    "uuid",
+    "32 character code four zero zero zero ."
+   ]
   },
   {
    "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
@@ -3670,7 +4934,17 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "spoken_words": [
+    "Order",
+    "1Z999AA10123456784",
+    "shipped;",
+    "ticket",
+    "ABC-12345-XYZ-67890",
+    "and",
+    "uuid",
+    "123e4567-e89b-12d3-a456-426614174000."
+   ]
   },
   {
    "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
@@ -3682,7 +4956,17 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "spoken_words": [
+    "Order",
+    "1Z999AA10123456784",
+    "shipped;",
+    "ticket",
+    "ABC-12345-XYZ-67890",
+    "and",
+    "uuid",
+    "123e4567-e89b-12d3-a456-426614174000."
+   ]
   },
   {
    "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
@@ -3694,7 +4978,17 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "spoken_words": [
+    "Order",
+    "1Z999AA10123456784",
+    "shipped;",
+    "ticket",
+    "ABC-12345-XYZ-67890",
+    "and",
+    "uuid",
+    "123e4567-e89b-12d3-a456-426614174000."
+   ]
   },
   {
    "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
@@ -3706,7 +5000,17 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "spoken_words": [
+    "Order",
+    "1Z999AA10123456784",
+    "shipped;",
+    "ticket",
+    "ABC-12345-XYZ-67890",
+    "and",
+    "uuid",
+    "123e4567-e89b-12d3-a456-426614174000."
+   ]
   },
   {
    "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
@@ -3718,7 +5022,17 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "spoken_words": [
+    "Order",
+    "1Z999AA10123456784",
+    "shipped;",
+    "ticket",
+    "ABC-12345-XYZ-67890",
+    "and",
+    "uuid",
+    "123e4567-e89b-12d3-a456-426614174000."
+   ]
   },
   {
    "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
@@ -3730,7 +5044,17 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "spoken_words": [
+    "Order",
+    "1Z999AA10123456784",
+    "shipped;",
+    "ticket",
+    "ABC-12345-XYZ-67890",
+    "and",
+    "uuid",
+    "123e4567-e89b-12d3-a456-426614174000."
+   ]
   },
   {
    "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
@@ -3742,7 +5066,17 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "spoken_words": [
+    "Order",
+    "1Z999AA10123456784",
+    "shipped;",
+    "ticket",
+    "ABC-12345-XYZ-67890",
+    "and",
+    "uuid",
+    "123e4567-e89b-12d3-a456-426614174000."
+   ]
   },
   {
    "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
@@ -3754,7 +5088,17 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "spoken_words": [
+    "Order",
+    "1Z999AA10123456784",
+    "shipped;",
+    "ticket",
+    "ABC-12345-XYZ-67890",
+    "and",
+    "uuid",
+    "123e4567-e89b-12d3-a456-426614174000."
+   ]
   },
   {
    "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
@@ -3766,7 +5110,17 @@
     "paths": "tail",
     "codes": "full"
    },
-   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "spoken_words": [
+    "Order",
+    "1Z999AA10123456784",
+    "shipped;",
+    "ticket",
+    "ABC-12345-XYZ-67890",
+    "and",
+    "uuid",
+    "123e4567-e89b-12d3-a456-426614174000."
+   ]
   },
   {
    "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
@@ -3778,7 +5132,17 @@
     "paths": "file_path",
     "codes": "full"
    },
-   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "spoken_words": [
+    "Order",
+    "1Z999AA10123456784",
+    "shipped;",
+    "ticket",
+    "ABC-12345-XYZ-67890",
+    "and",
+    "uuid",
+    "123e4567-e89b-12d3-a456-426614174000."
+   ]
   },
   {
    "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
@@ -3790,7 +5154,17 @@
     "paths": "name",
     "codes": "full"
    },
-   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "spoken_words": [
+    "Order",
+    "1Z999AA10123456784",
+    "shipped;",
+    "ticket",
+    "ABC-12345-XYZ-67890",
+    "and",
+    "uuid",
+    "123e4567-e89b-12d3-a456-426614174000."
+   ]
   },
   {
    "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
@@ -3802,7 +5176,17 @@
     "paths": "path",
     "codes": "full"
    },
-   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "spoken_words": [
+    "Order",
+    "1Z999AA10123456784",
+    "shipped;",
+    "ticket",
+    "ABC-12345-XYZ-67890",
+    "and",
+    "uuid",
+    "123e4567-e89b-12d3-a456-426614174000."
+   ]
   },
   {
    "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
@@ -3814,7 +5198,17 @@
     "paths": "full_slash",
     "codes": "full"
    },
-   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "spoken_words": [
+    "Order",
+    "1Z999AA10123456784",
+    "shipped;",
+    "ticket",
+    "ABC-12345-XYZ-67890",
+    "and",
+    "uuid",
+    "123e4567-e89b-12d3-a456-426614174000."
+   ]
   },
   {
    "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
@@ -3826,7 +5220,17 @@
     "paths": "full_words",
     "codes": "full"
    },
-   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "spoken_words": [
+    "Order",
+    "1Z999AA10123456784",
+    "shipped;",
+    "ticket",
+    "ABC-12345-XYZ-67890",
+    "and",
+    "uuid",
+    "123e4567-e89b-12d3-a456-426614174000."
+   ]
   },
   {
    "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
@@ -3838,7 +5242,17 @@
     "paths": "full",
     "codes": "length"
    },
-   "expected": "Order 18 character code six seven eight four shipped; ticket 16 character code seven eight nine zero and uuid 32 character code four zero zero zero."
+   "expected": "Order 18 character code six seven eight four shipped; ticket 16 character code seven eight nine zero and uuid 32 character code four zero zero zero.",
+   "spoken_words": [
+    "Order",
+    "18 character code six seven eight four",
+    "shipped;",
+    "ticket",
+    "16 character code seven eight nine zero",
+    "and",
+    "uuid",
+    "32 character code four zero zero zero ."
+   ]
   },
   {
    "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
@@ -3850,7 +5264,17 @@
     "paths": "full",
     "codes": "short"
    },
-   "expected": "Order code one zee nine nine shipped; ticket code ay bee see one and uuid code one two three ee."
+   "expected": "Order code one zee nine nine shipped; ticket code ay bee see one and uuid code one two three ee.",
+   "spoken_words": [
+    "Order",
+    "code one zee nine nine",
+    "shipped;",
+    "ticket",
+    "code ay bee see one",
+    "and",
+    "uuid",
+    "code one two three ee ."
+   ]
   },
   {
    "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
@@ -3862,7 +5286,17 @@
     "paths": "full",
     "codes": "code"
    },
-   "expected": "Order code shipped; ticket code and uuid code."
+   "expected": "Order code shipped; ticket code and uuid code.",
+   "spoken_words": [
+    "Order",
+    "code",
+    "shipped;",
+    "ticket",
+    "code",
+    "and",
+    "uuid",
+    "code ."
+   ]
   },
   {
    "text": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
@@ -3874,7 +5308,17 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000."
+   "expected": "Order 1Z999AA10123456784 shipped; ticket ABC-12345-XYZ-67890 and uuid 123e4567-e89b-12d3-a456-426614174000.",
+   "spoken_words": [
+    "Order",
+    "1Z999AA10123456784",
+    "shipped;",
+    "ticket",
+    "ABC-12345-XYZ-67890",
+    "and",
+    "uuid",
+    "123e4567-e89b-12d3-a456-426614174000."
+   ]
   },
   {
    "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
@@ -3886,7 +5330,15 @@
     "paths": "tail",
     "codes": "length"
    },
-   "expected": "Ünïcode café 例え.jp path ファイル dot html and naïve path slash x86_64-linux-gnu slash libmpv dot so dot 2!"
+   "expected": "Ünïcode café 例え.jp path ファイル dot html and naïve path slash x86_64-linux-gnu slash libmpv dot so dot 2!",
+   "spoken_words": [
+    "Ünïcode",
+    "café",
+    "例え.jp path ファイル dot html",
+    "and",
+    "naïve",
+    "path slash x86_64-linux-gnu slash libmpv dot so dot 2 !"
+   ]
   },
   {
    "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
@@ -3898,7 +5350,15 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Ünïcode café 例え.jp path ファイル dot html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+   "expected": "Ünïcode café 例え.jp path ファイル dot html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "spoken_words": [
+    "Ünïcode",
+    "café",
+    "例え.jp path ファイル dot html",
+    "and",
+    "naïve",
+    "/usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+   ]
   },
   {
    "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
@@ -3910,7 +5370,15 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Ünïcode café 例え.jp weblink and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+   "expected": "Ünïcode café 例え.jp weblink and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "spoken_words": [
+    "Ünïcode",
+    "café",
+    "例え.jp weblink",
+    "and",
+    "naïve",
+    "/usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+   ]
   },
   {
    "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
@@ -3922,7 +5390,15 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Ünïcode café link and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+   "expected": "Ünïcode café link and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "spoken_words": [
+    "Ünïcode",
+    "café",
+    "link",
+    "and",
+    "naïve",
+    "/usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+   ]
   },
   {
    "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
@@ -3934,7 +5410,15 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "spoken_words": [
+    "Ünïcode",
+    "café",
+    "https://例え.jp/パス/ファイル.html",
+    "and",
+    "naïve",
+    "/usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+   ]
   },
   {
    "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
@@ -3946,7 +5430,15 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "spoken_words": [
+    "Ünïcode",
+    "café",
+    "https://例え.jp/パス/ファイル.html",
+    "and",
+    "naïve",
+    "/usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+   ]
   },
   {
    "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
@@ -3958,7 +5450,15 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "spoken_words": [
+    "Ünïcode",
+    "café",
+    "https://例え.jp/パス/ファイル.html",
+    "and",
+    "naïve",
+    "/usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+   ]
   },
   {
    "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
@@ -3970,7 +5470,15 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "spoken_words": [
+    "Ünïcode",
+    "café",
+    "https://例え.jp/パス/ファイル.html",
+    "and",
+    "naïve",
+    "/usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+   ]
   },
   {
    "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
@@ -3982,7 +5490,15 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "spoken_words": [
+    "Ünïcode",
+    "café",
+    "https://例え.jp/パス/ファイル.html",
+    "and",
+    "naïve",
+    "/usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+   ]
   },
   {
    "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
@@ -3994,7 +5510,15 @@
     "paths": "tail",
     "codes": "full"
    },
-   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve path slash x86_64-linux-gnu slash libmpv dot so dot 2!"
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve path slash x86_64-linux-gnu slash libmpv dot so dot 2!",
+   "spoken_words": [
+    "Ünïcode",
+    "café",
+    "https://例え.jp/パス/ファイル.html",
+    "and",
+    "naïve",
+    "path slash x86_64-linux-gnu slash libmpv dot so dot 2 !"
+   ]
   },
   {
    "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
@@ -4006,7 +5530,15 @@
     "paths": "file_path",
     "codes": "full"
    },
-   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve file path slash x86_64-linux-gnu slash libmpv.so.2!"
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve file path slash x86_64-linux-gnu slash libmpv.so.2!",
+   "spoken_words": [
+    "Ünïcode",
+    "café",
+    "https://例え.jp/パス/ファイル.html",
+    "and",
+    "naïve",
+    "file path slash x86_64-linux-gnu slash libmpv.so.2 !"
+   ]
   },
   {
    "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
@@ -4018,7 +5550,15 @@
     "paths": "name",
     "codes": "full"
    },
-   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve path to libmpv.so.2!"
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve path to libmpv.so.2!",
+   "spoken_words": [
+    "Ünïcode",
+    "café",
+    "https://例え.jp/パス/ファイル.html",
+    "and",
+    "naïve",
+    "path to libmpv.so.2 !"
+   ]
   },
   {
    "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
@@ -4030,7 +5570,15 @@
     "paths": "path",
     "codes": "full"
    },
-   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve file path!"
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve file path!",
+   "spoken_words": [
+    "Ünïcode",
+    "café",
+    "https://例え.jp/パス/ファイル.html",
+    "and",
+    "naïve",
+    "file path !"
+   ]
   },
   {
    "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
@@ -4042,7 +5590,15 @@
     "paths": "full_slash",
     "codes": "full"
    },
-   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve file path usr slash lib slash x86_64-linux-gnu slash libmpv.so.2!"
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve file path usr slash lib slash x86_64-linux-gnu slash libmpv.so.2!",
+   "spoken_words": [
+    "Ünïcode",
+    "café",
+    "https://例え.jp/パス/ファイル.html",
+    "and",
+    "naïve",
+    "file path usr slash lib slash x86_64-linux-gnu slash libmpv.so.2 !"
+   ]
   },
   {
    "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
@@ -4054,7 +5610,15 @@
     "paths": "full_words",
     "codes": "full"
    },
-   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve file path usr lib x86_64-linux-gnu libmpv.so.2!"
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve file path usr lib x86_64-linux-gnu libmpv.so.2!",
+   "spoken_words": [
+    "Ünïcode",
+    "café",
+    "https://例え.jp/パス/ファイル.html",
+    "and",
+    "naïve",
+    "file path usr lib x86_64-linux-gnu libmpv.so.2 !"
+   ]
   },
   {
    "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
@@ -4066,7 +5630,15 @@
     "paths": "full",
     "codes": "length"
    },
-   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "spoken_words": [
+    "Ünïcode",
+    "café",
+    "https://例え.jp/パス/ファイル.html",
+    "and",
+    "naïve",
+    "/usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+   ]
   },
   {
    "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
@@ -4078,7 +5650,15 @@
     "paths": "full",
     "codes": "short"
    },
-   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "spoken_words": [
+    "Ünïcode",
+    "café",
+    "https://例え.jp/パス/ファイル.html",
+    "and",
+    "naïve",
+    "/usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+   ]
   },
   {
    "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
@@ -4090,7 +5670,15 @@
     "paths": "full",
     "codes": "code"
    },
-   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "spoken_words": [
+    "Ünïcode",
+    "café",
+    "https://例え.jp/パス/ファイル.html",
+    "and",
+    "naïve",
+    "/usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+   ]
   },
   {
    "text": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
@@ -4102,7 +5690,15 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+   "expected": "Ünïcode café https://例え.jp/パス/ファイル.html and naïve /usr/lib/x86_64-linux-gnu/libmpv.so.2!",
+   "spoken_words": [
+    "Ünïcode",
+    "café",
+    "https://例え.jp/パス/ファイル.html",
+    "and",
+    "naïve",
+    "/usr/lib/x86_64-linux-gnu/libmpv.so.2!"
+   ]
   },
   {
    "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
@@ -4114,7 +5710,16 @@
     "paths": "tail",
     "codes": "length"
    },
-   "expected": "Files: path slash etc slash hosts, path slash run dot sh, path slash up slash one, path slash notes dot md; also path slash Games slash save1 dot dat."
+   "expected": "Files: path slash etc slash hosts, path slash run dot sh, path slash up slash one, path slash notes dot md; also path slash Games slash save1 dot dat.",
+   "spoken_words": [
+    "Files:",
+    "path slash etc slash hosts ,",
+    "path slash run dot sh ,",
+    "path slash up slash one ,",
+    "path slash notes dot md ;",
+    "also",
+    "path slash Games slash save1 dot dat ."
+   ]
   },
   {
    "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
@@ -4126,7 +5731,16 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat."
+   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "spoken_words": [
+    "Files:",
+    "/etc/hosts,",
+    "./run.sh,",
+    "../up/one,",
+    "~/notes.md;",
+    "also",
+    "D:\\Games\\save1.dat."
+   ]
   },
   {
    "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
@@ -4138,7 +5752,16 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat."
+   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "spoken_words": [
+    "Files:",
+    "/etc/hosts,",
+    "./run.sh,",
+    "../up/one,",
+    "~/notes.md;",
+    "also",
+    "D:\\Games\\save1.dat."
+   ]
   },
   {
    "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
@@ -4150,7 +5773,16 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat."
+   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "spoken_words": [
+    "Files:",
+    "/etc/hosts,",
+    "./run.sh,",
+    "../up/one,",
+    "~/notes.md;",
+    "also",
+    "D:\\Games\\save1.dat."
+   ]
   },
   {
    "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
@@ -4162,7 +5794,16 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat."
+   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "spoken_words": [
+    "Files:",
+    "/etc/hosts,",
+    "./run.sh,",
+    "../up/one,",
+    "~/notes.md;",
+    "also",
+    "D:\\Games\\save1.dat."
+   ]
   },
   {
    "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
@@ -4174,7 +5815,16 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat."
+   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "spoken_words": [
+    "Files:",
+    "/etc/hosts,",
+    "./run.sh,",
+    "../up/one,",
+    "~/notes.md;",
+    "also",
+    "D:\\Games\\save1.dat."
+   ]
   },
   {
    "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
@@ -4186,7 +5836,16 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat."
+   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "spoken_words": [
+    "Files:",
+    "/etc/hosts,",
+    "./run.sh,",
+    "../up/one,",
+    "~/notes.md;",
+    "also",
+    "D:\\Games\\save1.dat."
+   ]
   },
   {
    "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
@@ -4198,7 +5857,16 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat."
+   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "spoken_words": [
+    "Files:",
+    "/etc/hosts,",
+    "./run.sh,",
+    "../up/one,",
+    "~/notes.md;",
+    "also",
+    "D:\\Games\\save1.dat."
+   ]
   },
   {
    "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
@@ -4210,7 +5878,16 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat."
+   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "spoken_words": [
+    "Files:",
+    "/etc/hosts,",
+    "./run.sh,",
+    "../up/one,",
+    "~/notes.md;",
+    "also",
+    "D:\\Games\\save1.dat."
+   ]
   },
   {
    "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
@@ -4222,7 +5899,16 @@
     "paths": "tail",
     "codes": "full"
    },
-   "expected": "Files: path slash etc slash hosts, path slash run dot sh, path slash up slash one, path slash notes dot md; also path slash Games slash save1 dot dat."
+   "expected": "Files: path slash etc slash hosts, path slash run dot sh, path slash up slash one, path slash notes dot md; also path slash Games slash save1 dot dat.",
+   "spoken_words": [
+    "Files:",
+    "path slash etc slash hosts ,",
+    "path slash run dot sh ,",
+    "path slash up slash one ,",
+    "path slash notes dot md ;",
+    "also",
+    "path slash Games slash save1 dot dat ."
+   ]
   },
   {
    "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
@@ -4234,7 +5920,16 @@
     "paths": "file_path",
     "codes": "full"
    },
-   "expected": "Files: file path slash etc slash hosts, file path slash run.sh, file path slash up slash one, file path slash notes.md; also file path slash Games slash save1.dat."
+   "expected": "Files: file path slash etc slash hosts, file path slash run.sh, file path slash up slash one, file path slash notes.md; also file path slash Games slash save1.dat.",
+   "spoken_words": [
+    "Files:",
+    "file path slash etc slash hosts ,",
+    "file path slash run.sh ,",
+    "file path slash up slash one ,",
+    "file path slash notes.md ;",
+    "also",
+    "file path slash Games slash save1.dat ."
+   ]
   },
   {
    "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
@@ -4246,7 +5941,16 @@
     "paths": "name",
     "codes": "full"
    },
-   "expected": "Files: path to hosts, path to run.sh, path to one, path to notes.md; also path to save1.dat."
+   "expected": "Files: path to hosts, path to run.sh, path to one, path to notes.md; also path to save1.dat.",
+   "spoken_words": [
+    "Files:",
+    "path to hosts ,",
+    "path to run.sh ,",
+    "path to one ,",
+    "path to notes.md ;",
+    "also",
+    "path to save1.dat ."
+   ]
   },
   {
    "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
@@ -4258,7 +5962,16 @@
     "paths": "path",
     "codes": "full"
    },
-   "expected": "Files: file path, file path, file path, file path; also file path."
+   "expected": "Files: file path, file path, file path, file path; also file path.",
+   "spoken_words": [
+    "Files:",
+    "file path ,",
+    "file path ,",
+    "file path ,",
+    "file path ;",
+    "also",
+    "file path ."
+   ]
   },
   {
    "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
@@ -4270,7 +5983,16 @@
     "paths": "full_slash",
     "codes": "full"
    },
-   "expected": "Files: file path etc slash hosts, file path run.sh, file path up a folder slash up slash one, file path home slash notes.md; also file path D drive slash Games slash save1.dat."
+   "expected": "Files: file path etc slash hosts, file path run.sh, file path up a folder slash up slash one, file path home slash notes.md; also file path D drive slash Games slash save1.dat.",
+   "spoken_words": [
+    "Files:",
+    "file path etc slash hosts ,",
+    "file path run.sh ,",
+    "file path up a folder slash up slash one ,",
+    "file path home slash notes.md ;",
+    "also",
+    "file path D drive slash Games slash save1.dat ."
+   ]
   },
   {
    "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
@@ -4282,7 +6004,16 @@
     "paths": "full_words",
     "codes": "full"
    },
-   "expected": "Files: file path etc hosts, file path run.sh, file path up a folder up one, file path home notes.md; also file path D drive Games save1.dat."
+   "expected": "Files: file path etc hosts, file path run.sh, file path up a folder up one, file path home notes.md; also file path D drive Games save1.dat.",
+   "spoken_words": [
+    "Files:",
+    "file path etc hosts ,",
+    "file path run.sh ,",
+    "file path up a folder up one ,",
+    "file path home notes.md ;",
+    "also",
+    "file path D drive Games save1.dat ."
+   ]
   },
   {
    "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
@@ -4294,7 +6025,16 @@
     "paths": "full",
     "codes": "length"
    },
-   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat."
+   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "spoken_words": [
+    "Files:",
+    "/etc/hosts,",
+    "./run.sh,",
+    "../up/one,",
+    "~/notes.md;",
+    "also",
+    "D:\\Games\\save1.dat."
+   ]
   },
   {
    "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
@@ -4306,7 +6046,16 @@
     "paths": "full",
     "codes": "short"
    },
-   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat."
+   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "spoken_words": [
+    "Files:",
+    "/etc/hosts,",
+    "./run.sh,",
+    "../up/one,",
+    "~/notes.md;",
+    "also",
+    "D:\\Games\\save1.dat."
+   ]
   },
   {
    "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
@@ -4318,7 +6067,16 @@
     "paths": "full",
     "codes": "code"
    },
-   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat."
+   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "spoken_words": [
+    "Files:",
+    "/etc/hosts,",
+    "./run.sh,",
+    "../up/one,",
+    "~/notes.md;",
+    "also",
+    "D:\\Games\\save1.dat."
+   ]
   },
   {
    "text": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
@@ -4330,7 +6088,16 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat."
+   "expected": "Files: /etc/hosts, ./run.sh, ../up/one, ~/notes.md; also D:\\Games\\save1.dat.",
+   "spoken_words": [
+    "Files:",
+    "/etc/hosts,",
+    "./run.sh,",
+    "../up/one,",
+    "~/notes.md;",
+    "also",
+    "D:\\Games\\save1.dat."
+   ]
   },
   {
    "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
@@ -4342,7 +6109,22 @@
     "paths": "tail",
     "codes": "length"
    },
-   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 12 character code eight nine ay bee gets read as a code."
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 12 character code eight nine ay bee gets read as a code.",
+   "spoken_words": [
+    "Short",
+    "codes",
+    "like",
+    "A1B2C3",
+    "or",
+    "2026-11-19",
+    "stay;",
+    "12 character code eight nine ay bee",
+    "gets",
+    "read",
+    "as",
+    "a",
+    "code."
+   ]
   },
   {
    "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
@@ -4354,7 +6136,22 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "spoken_words": [
+    "Short",
+    "codes",
+    "like",
+    "A1B2C3",
+    "or",
+    "2026-11-19",
+    "stay;",
+    "0123456789ab",
+    "gets",
+    "read",
+    "as",
+    "a",
+    "code."
+   ]
   },
   {
    "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
@@ -4366,7 +6163,22 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "spoken_words": [
+    "Short",
+    "codes",
+    "like",
+    "A1B2C3",
+    "or",
+    "2026-11-19",
+    "stay;",
+    "0123456789ab",
+    "gets",
+    "read",
+    "as",
+    "a",
+    "code."
+   ]
   },
   {
    "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
@@ -4378,7 +6190,22 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "spoken_words": [
+    "Short",
+    "codes",
+    "like",
+    "A1B2C3",
+    "or",
+    "2026-11-19",
+    "stay;",
+    "0123456789ab",
+    "gets",
+    "read",
+    "as",
+    "a",
+    "code."
+   ]
   },
   {
    "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
@@ -4390,7 +6217,22 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "spoken_words": [
+    "Short",
+    "codes",
+    "like",
+    "A1B2C3",
+    "or",
+    "2026-11-19",
+    "stay;",
+    "0123456789ab",
+    "gets",
+    "read",
+    "as",
+    "a",
+    "code."
+   ]
   },
   {
    "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
@@ -4402,7 +6244,22 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "spoken_words": [
+    "Short",
+    "codes",
+    "like",
+    "A1B2C3",
+    "or",
+    "2026-11-19",
+    "stay;",
+    "0123456789ab",
+    "gets",
+    "read",
+    "as",
+    "a",
+    "code."
+   ]
   },
   {
    "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
@@ -4414,7 +6271,22 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "spoken_words": [
+    "Short",
+    "codes",
+    "like",
+    "A1B2C3",
+    "or",
+    "2026-11-19",
+    "stay;",
+    "0123456789ab",
+    "gets",
+    "read",
+    "as",
+    "a",
+    "code."
+   ]
   },
   {
    "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
@@ -4426,7 +6298,22 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "spoken_words": [
+    "Short",
+    "codes",
+    "like",
+    "A1B2C3",
+    "or",
+    "2026-11-19",
+    "stay;",
+    "0123456789ab",
+    "gets",
+    "read",
+    "as",
+    "a",
+    "code."
+   ]
   },
   {
    "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
@@ -4438,7 +6325,22 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "spoken_words": [
+    "Short",
+    "codes",
+    "like",
+    "A1B2C3",
+    "or",
+    "2026-11-19",
+    "stay;",
+    "0123456789ab",
+    "gets",
+    "read",
+    "as",
+    "a",
+    "code."
+   ]
   },
   {
    "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
@@ -4450,7 +6352,22 @@
     "paths": "tail",
     "codes": "full"
    },
-   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "spoken_words": [
+    "Short",
+    "codes",
+    "like",
+    "A1B2C3",
+    "or",
+    "2026-11-19",
+    "stay;",
+    "0123456789ab",
+    "gets",
+    "read",
+    "as",
+    "a",
+    "code."
+   ]
   },
   {
    "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
@@ -4462,7 +6379,22 @@
     "paths": "file_path",
     "codes": "full"
    },
-   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "spoken_words": [
+    "Short",
+    "codes",
+    "like",
+    "A1B2C3",
+    "or",
+    "2026-11-19",
+    "stay;",
+    "0123456789ab",
+    "gets",
+    "read",
+    "as",
+    "a",
+    "code."
+   ]
   },
   {
    "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
@@ -4474,7 +6406,22 @@
     "paths": "name",
     "codes": "full"
    },
-   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "spoken_words": [
+    "Short",
+    "codes",
+    "like",
+    "A1B2C3",
+    "or",
+    "2026-11-19",
+    "stay;",
+    "0123456789ab",
+    "gets",
+    "read",
+    "as",
+    "a",
+    "code."
+   ]
   },
   {
    "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
@@ -4486,7 +6433,22 @@
     "paths": "path",
     "codes": "full"
    },
-   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "spoken_words": [
+    "Short",
+    "codes",
+    "like",
+    "A1B2C3",
+    "or",
+    "2026-11-19",
+    "stay;",
+    "0123456789ab",
+    "gets",
+    "read",
+    "as",
+    "a",
+    "code."
+   ]
   },
   {
    "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
@@ -4498,7 +6460,22 @@
     "paths": "full_slash",
     "codes": "full"
    },
-   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "spoken_words": [
+    "Short",
+    "codes",
+    "like",
+    "A1B2C3",
+    "or",
+    "2026-11-19",
+    "stay;",
+    "0123456789ab",
+    "gets",
+    "read",
+    "as",
+    "a",
+    "code."
+   ]
   },
   {
    "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
@@ -4510,7 +6487,22 @@
     "paths": "full_words",
     "codes": "full"
    },
-   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "spoken_words": [
+    "Short",
+    "codes",
+    "like",
+    "A1B2C3",
+    "or",
+    "2026-11-19",
+    "stay;",
+    "0123456789ab",
+    "gets",
+    "read",
+    "as",
+    "a",
+    "code."
+   ]
   },
   {
    "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
@@ -4522,7 +6514,22 @@
     "paths": "full",
     "codes": "length"
    },
-   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 12 character code eight nine ay bee gets read as a code."
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 12 character code eight nine ay bee gets read as a code.",
+   "spoken_words": [
+    "Short",
+    "codes",
+    "like",
+    "A1B2C3",
+    "or",
+    "2026-11-19",
+    "stay;",
+    "12 character code eight nine ay bee",
+    "gets",
+    "read",
+    "as",
+    "a",
+    "code."
+   ]
   },
   {
    "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
@@ -4534,7 +6541,22 @@
     "paths": "full",
     "codes": "short"
    },
-   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; code zero one two three gets read as a code."
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; code zero one two three gets read as a code.",
+   "spoken_words": [
+    "Short",
+    "codes",
+    "like",
+    "A1B2C3",
+    "or",
+    "2026-11-19",
+    "stay;",
+    "code zero one two three",
+    "gets",
+    "read",
+    "as",
+    "a",
+    "code."
+   ]
   },
   {
    "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
@@ -4546,7 +6568,22 @@
     "paths": "full",
     "codes": "code"
    },
-   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; code gets read as a code."
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; code gets read as a code.",
+   "spoken_words": [
+    "Short",
+    "codes",
+    "like",
+    "A1B2C3",
+    "or",
+    "2026-11-19",
+    "stay;",
+    "code",
+    "gets",
+    "read",
+    "as",
+    "a",
+    "code."
+   ]
   },
   {
    "text": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
@@ -4558,7 +6595,22 @@
     "paths": "full",
     "codes": "full"
    },
-   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code."
+   "expected": "Short codes like A1B2C3 or 2026-11-19 stay; 0123456789ab gets read as a code.",
+   "spoken_words": [
+    "Short",
+    "codes",
+    "like",
+    "A1B2C3",
+    "or",
+    "2026-11-19",
+    "stay;",
+    "0123456789ab",
+    "gets",
+    "read",
+    "as",
+    "a",
+    "code."
+   ]
   },
   {
    "text": "Nguyen called.",
@@ -4575,7 +6627,11 @@
    ],
    "engine": null,
    "filters": null,
-   "expected": "win called."
+   "expected": "win called.",
+   "spoken_words": [
+    "win",
+    "called."
+   ]
   },
   {
    "text": "Run the SQL query",
@@ -4592,7 +6648,13 @@
    ],
    "engine": null,
    "filters": null,
-   "expected": "Run the ess cue el query"
+   "expected": "Run the ess cue el query",
+   "spoken_words": [
+    "Run",
+    "the",
+    "ess cue el",
+    "query"
+   ]
   },
   {
    "text": "See York[1], then go.",
@@ -4609,7 +6671,13 @@
    ],
    "engine": null,
    "filters": null,
-   "expected": "See York, then go."
+   "expected": "See York, then go.",
+   "spoken_words": [
+    "See",
+    "York ,",
+    "then",
+    "go."
+   ]
   },
   {
    "text": "a GIF file",
@@ -4626,7 +6694,12 @@
    ],
    "engine": null,
    "filters": null,
-   "expected": "a jif file"
+   "expected": "a jif file",
+   "spoken_words": [
+    "a",
+    "jif",
+    "file"
+   ]
   },
   {
    "text": "GIFT shop",
@@ -4643,7 +6716,11 @@
    ],
    "engine": null,
    "filters": null,
-   "expected": "GIFT shop"
+   "expected": "GIFT shop",
+   "spoken_words": [
+    "GIFT",
+    "shop"
+   ]
   },
   {
    "text": "GIFT shop",
@@ -4660,7 +6737,11 @@
    ],
    "engine": null,
    "filters": null,
-   "expected": "jif T shop"
+   "expected": "jif T shop",
+   "spoken_words": [
+    "jif T",
+    "shop"
+   ]
   },
   {
    "text": "New York[1] is big",
@@ -4677,7 +6758,13 @@
    ],
    "engine": null,
    "filters": null,
-   "expected": "New York is big"
+   "expected": "New York is big",
+   "spoken_words": [
+    "New",
+    "York",
+    "is",
+    "big"
+   ]
   },
   {
    "text": "Rx filled",
@@ -4694,7 +6781,11 @@
    ],
    "engine": null,
    "filters": null,
-   "expected": "prescription filled"
+   "expected": "prescription filled",
+   "spoken_words": [
+    "prescription",
+    "filled"
+   ]
   },
   {
    "text": "RX filled",
@@ -4711,7 +6802,11 @@
    ],
    "engine": null,
    "filters": null,
-   "expected": "RX filled"
+   "expected": "RX filled",
+   "spoken_words": [
+    "RX",
+    "filled"
+   ]
   },
   {
    "text": "RX filled",
@@ -4728,7 +6823,11 @@
    ],
    "engine": null,
    "filters": null,
-   "expected": "prescription filled"
+   "expected": "prescription filled",
+   "spoken_words": [
+    "prescription",
+    "filled"
+   ]
   },
   {
    "text": "New York and New Jersey",
@@ -4754,7 +6853,14 @@
    ],
    "engine": null,
    "filters": null,
-   "expected": "the big apple and knew Jersey"
+   "expected": "the big apple and knew Jersey",
+   "spoken_words": [
+    "the big apple",
+    "",
+    "and",
+    "knew",
+    "Jersey"
+   ]
   },
   {
    "text": "GIF",
@@ -4771,7 +6877,10 @@
    ],
    "engine": null,
    "filters": null,
-   "expected": "GIF"
+   "expected": "GIF",
+   "spoken_words": [
+    "GIF"
+   ]
   },
   {
    "text": "GIF",
@@ -4788,7 +6897,10 @@
    ],
    "engine": "Piper",
    "filters": null,
-   "expected": "jif"
+   "expected": "jif",
+   "spoken_words": [
+    "jif"
+   ]
   },
   {
    "text": "GIF",
@@ -4805,7 +6917,10 @@
    ],
    "engine": "gTTS",
    "filters": null,
-   "expected": "GIF"
+   "expected": "GIF",
+   "spoken_words": [
+    "GIF"
+   ]
   },
   {
    "text": "C++is fun & R&D, see [2] , or [3].",
@@ -4849,7 +6964,18 @@
    ],
    "engine": null,
    "filters": null,
-   "expected": "see plus plus is fun and R and D, see, or."
+   "expected": "see plus plus is fun and R and D, see, or.",
+   "spoken_words": [
+    "see plus plus is",
+    "fun",
+    "and",
+    "R and D,",
+    "see",
+    "",
+    ",",
+    "or",
+    "."
+   ]
   },
   {
    "text": "Café CAFÉ café",
@@ -4866,7 +6992,12 @@
    ],
    "engine": null,
    "filters": null,
-   "expected": "see ay eff see ay eff see ay eff"
+   "expected": "see ay eff see ay eff see ay eff",
+   "spoken_words": [
+    "see ay eff",
+    "see ay eff",
+    "see ay eff"
+   ]
   },
   {
    "text": "Open https://github.com/masonje/textReader/pull/6 on github",
@@ -4888,7 +7019,13 @@
     "paths": "tail",
     "codes": "length"
    },
-   "expected": "Open github.com path 6 on git hub"
+   "expected": "Open github.com path 6 on git hub",
+   "spoken_words": [
+    "Open",
+    "github.com path 6",
+    "on",
+    "git hub"
+   ]
   }
  ],
  "examples": {

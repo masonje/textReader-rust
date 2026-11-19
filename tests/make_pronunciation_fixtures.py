@@ -5,7 +5,8 @@ same way. Run from the repository root:  .venv/bin/python rust/tests/make_pronun
 import json
 from pathlib import Path
 
-from textreader.pronunciation import FILTERS, apply, clean_filters, filter_example, new_rule
+from textreader.pronunciation import FILTERS, apply, clean_filters, filter_example, new_rule, spoken_words
+from textreader.word_timing import tokenize
 
 URL = "https://github.com/masonje/textReader/pull/6"
 TEXTS = [
@@ -49,13 +50,15 @@ settings = [clean_filters({})] + [
     for kind, spec in FILTERS.items() for choice in spec["choices"]]
 for text in TEXTS:
     for filters in settings:
-        cases.append({"text": text, "rules": [], "engine": None, "filters": filters,
-                      "expected": apply(text, [], filters=filters)[0]})
+        spoken, edits = apply(text, [], filters=filters)
+        cases.append({"text": text, "rules": [], "engine": None, "filters": filters, "expected": spoken,
+                      "spoken_words": spoken_words(text, tokenize(text), edits)})
 for text, rules, engine in RULE_CASES:
     filters = clean_filters({}) if engine == "filters" else None
     engine = None if engine == "filters" else engine
-    cases.append({"text": text, "rules": rules, "engine": engine, "filters": filters,
-                  "expected": apply(text, rules, engine, filters)[0]})
+    spoken, edits = apply(text, rules, engine, filters)
+    cases.append({"text": text, "rules": rules, "engine": engine, "filters": filters, "expected": spoken,
+                  "spoken_words": spoken_words(text, tokenize(text), edits)})
 examples = {kind: {choice: filter_example(kind, choice) for choice in spec["choices"]}
             for kind, spec in FILTERS.items()}
 

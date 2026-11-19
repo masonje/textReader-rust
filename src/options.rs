@@ -83,10 +83,26 @@ impl Options {
         self.open = true;
         self.shortcuts = DEFAULT_HOTKEYS.iter().map(|(a, _)| controller.settings.lock().unwrap().hotkey(a)).collect();
         if let Some(word) = word {
+            // Show the word's rule if it has one, or start a new one for it
             self.tab = Tab::Pronunciations;
-            self.editing = None;
-            self.form = Rule::new(word.trim(), "say", "");
+            self.rules_message = None;
+            let rules = Self::rules(controller);
+            match rules.iter().position(|r| r.text.to_lowercase() == word.trim().to_lowercase()) {
+                Some(i) => {
+                    self.editing = Some(i);
+                    self.form = rules[i].clone();
+                }
+                None => {
+                    self.editing = None;
+                    self.form = Rule::new(word.trim(), "say", "");
+                }
+            }
         }
+    }
+
+    /// Whether a pronunciation rule exists for `word` (any case).
+    pub fn has_rule(&self, controller: &Controller, word: &str) -> bool {
+        Self::rules(controller).iter().any(|r| r.text.to_lowercase() == word.to_lowercase())
     }
 
     /// `--options=<tab>` on the command line: open on that tab (engines, pronunciations, filters, shortcuts).
@@ -245,44 +261,7 @@ impl Options {
 
     fn rules_tab(&mut self, ui: &mut egui::Ui, c: &Arc<Controller>, reading: bool) {
         ui.label("Change how words, names, abbreviations and symbols are read. Rules apply to every read.");
-        let mut rules = Self::rules(c);
-        let mut changed = false;
-        egui::ScrollArea::vertical().max_height(180.0).auto_shrink([false, true]).show(ui, |ui| {
-            if rules.is_empty() {
-                ui.weak("No rules yet. Add one below.");
-            }
-            egui::Grid::new("rules").striped(true).spacing([10.0, 4.0]).show(ui, |ui| {
-                let mut delete = None;
-                for (i, rule) in rules.iter_mut().enumerate() {
-                    if ui.checkbox(&mut rule.enabled, "").on_hover_text("Turn this rule on or off").changed() {
-                        changed = true;
-                    }
-                    ui.label(egui::RichText::new(&rule.text).strong());
-                    ui.label(format!("→ {}", rule.describe()));
-                    ui.weak(if rule.engine.is_empty() { "all engines".to_string() } else { rule.engine.clone() });
-                    if ui.small_button("Edit").clicked() {
-                        self.editing = Some(i);
-                        self.form = rule.clone();
-                        self.rules_message = None;
-                    }
-                    if ui.small_button("Delete").clicked() {
-                        delete = Some(i);
-                    }
-                    ui.end_row();
-                }
-                if let Some(i) = delete {
-                    rules.remove(i);
-                    changed = true;
-                    if self.editing == Some(i) {
-                        self.editing = None;
-                    }
-                }
-            });
-        });
-        if changed {
-            Self::save_rules(c, &rules);
-        }
-        ui.separator();
+        ui.add_space(6.0);
         ui.strong(if self.editing.is_some() { "Edit rule" } else { "New rule" });
         egui::Grid::new("rule-form").num_columns(2).spacing([10.0, 6.0]).show(ui, |ui| {
             ui.label("Word or text");
@@ -359,6 +338,45 @@ impl Options {
         });
         if let Some(message) = &self.rules_message {
             ui.weak(message);
+        }
+        ui.separator();
+        ui.strong(format!("Your rules ({})", Self::rules(c).len()));
+        let mut rules = Self::rules(c);
+        let mut changed = false;
+        egui::ScrollArea::vertical().auto_shrink([false, false]).show(ui, |ui| {
+            if rules.is_empty() {
+                ui.weak("No rules yet. Add one above, or right-click a word in the Full view.");
+            }
+            egui::Grid::new("rules").striped(true).spacing([10.0, 4.0]).show(ui, |ui| {
+                let mut delete = None;
+                for (i, rule) in rules.iter_mut().enumerate() {
+                    if ui.checkbox(&mut rule.enabled, "").on_hover_text("Turn this rule on or off").changed() {
+                        changed = true;
+                    }
+                    ui.label(egui::RichText::new(&rule.text).strong());
+                    ui.label(format!("→ {}", rule.describe()));
+                    ui.weak(if rule.engine.is_empty() { "all engines".to_string() } else { rule.engine.clone() });
+                    if ui.small_button("Edit").clicked() {
+                        self.editing = Some(i);
+                        self.form = rule.clone();
+                        self.rules_message = None;
+                    }
+                    if ui.small_button("Delete").clicked() {
+                        delete = Some(i);
+                    }
+                    ui.end_row();
+                }
+                if let Some(i) = delete {
+                    rules.remove(i);
+                    changed = true;
+                    if self.editing == Some(i) {
+                        self.editing = None;
+                    }
+                }
+            });
+        });
+        if changed {
+            Self::save_rules(c, &rules);
         }
     }
 

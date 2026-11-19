@@ -454,6 +454,32 @@ pub fn apply(text: &str, rules: &[Rule], engine: Option<&str>, filters: Option<&
     (spoken, edits)
 }
 
+/// What is actually said for each word of the original text (used to time the highlighting).
+/// An edit that covers several words is credited to the first of them.
+pub fn spoken_words(text: &str, spans: &[(usize, usize)], edits: &[Edit]) -> Vec<String> {
+    spans
+        .iter()
+        .map(|&(start, end)| {
+            let mut joined = String::new();
+            let mut pos = start;
+            for (e_start, e_end, replacement) in edits {
+                if *e_end <= start || *e_start >= end {
+                    continue;
+                }
+                joined.push_str(&text[pos..pos.max(*e_start)]);
+                if *e_start >= start {
+                    joined.push_str(&format!(" {replacement} "));
+                }
+                pos = pos.max(*e_end);
+            }
+            if pos < end {
+                joined.push_str(&text[pos..end]);
+            }
+            joined.split_whitespace().collect::<Vec<_>>().join(" ")
+        })
+        .collect()
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -475,6 +501,12 @@ mod tests {
             let expected = case["expected"].as_str().unwrap();
             if spoken != expected {
                 failures.push(format!("{text:?} {filters:?}\n  python: {expected:?}\n  rust:   {spoken:?}"));
+            }
+            let (_, edits) = apply(text, &rules, engine, filters.as_ref());
+            let words = spoken_words(text, &crate::word_timing::tokenize(text), &edits);
+            let expected_words: Vec<&str> = case["spoken_words"].as_array().unwrap().iter().map(|w| w.as_str().unwrap()).collect();
+            if words != expected_words {
+                failures.push(format!("words of {text:?} {filters:?}\n  python: {expected_words:?}\n  rust:   {words:?}"));
             }
         }
         assert!(failures.is_empty(), "{} of {} differ:\n{}", failures.len(), cases.len(), failures.join("\n"));

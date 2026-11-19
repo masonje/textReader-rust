@@ -6,6 +6,7 @@ use crate::engines::{self, Build, Engine, Voice};
 use crate::player::Player;
 use crate::pronunciation;
 use crate::settings::{Settings, data_dir};
+use crate::word_timing::{self, Span};
 use serde_json::Value;
 use std::collections::HashMap;
 use std::path::PathBuf;
@@ -29,6 +30,24 @@ pub struct Snapshot {
     pub has_audio: bool,
     pub message: Option<String>,
     pub voice_used: Option<String>,
+    pub surprise: bool,
+    pub building_for: Option<f64>, // seconds the current build has been running
+}
+
+/// The text being read and when each word is spoken (for the Full view).
+#[derive(Default)]
+pub struct Reading {
+    pub text: String,
+    pub spans: Vec<Span>,
+    pub timeline: Vec<f64>,
+    pub seq: u64,
+}
+
+impl Reading {
+    /// The word being spoken at `position` seconds into the audio.
+    pub fn word_at(&self, position: f64) -> Option<usize> {
+        if self.timeline.is_empty() { None } else { Some(word_timing::word_at(&self.timeline, position).unwrap_or(0)) }
+    }
 }
 
 impl Snapshot {
@@ -45,8 +64,10 @@ struct State {
     message: Option<(String, Instant)>,
     cold: bool, // this build downloaded or loaded a voice
     downloads: HashMap<String, (Arc<AtomicBool>, String)>, // "engine|voice" -> (cancel, progress)
-    voice_used: Option<String>,
+    voice_used: Option<(String, String)>, // (engine, voice label) of the last read
     seq: u64,
+    reading: Arc<Reading>,
+    build_started: Option<Instant>,
 }
 
 pub struct Controller {
@@ -132,8 +153,50 @@ impl Controller {
             duration: self.player.duration(),
             has_audio: state.last_audio.as_ref().is_some_and(|p| p.exists()),
             message: state.message.as_ref().filter(|(_, t)| t.elapsed().as_secs() < 8).map(|(m, _)| m.clone()),
-            voice_used: state.voice_used.clone(),
+            voice_used: state.voice_used.as_ref().map(|(engine, voice)| format!("{voice} · {engine}")),
+            building_for: state.build.as_ref().and(state.build_started).map(|t| t.elapsed().as_secs_f64()),
+            surprise: self.settings.lock().unwrap().get("surprise_voice").and_then(Value::as_bool).unwrap_or(false),
         }
+    }
+
+    pub fn reading(&self) -> Arc<Reading> {
+        self.state.lock().unwrap().reading.clone()
+    }
+
+    pub fn set_surprise(&self, on: bool) {
+        self.settings.lock().unwrap().set("surprise_voice", Value::Bool(on));
+    }
+
+    /// A random engine and voice from those that are on and ready (no download needed), avoiding
+    /// the last one used when there's a choice, as the Python app's Surprise me does.
+    fn pick_surprise(&self, exclude: &[&str]) -> Option<(Arc<dyn Engine>, Voice)> {
+        let mut candidates = Vec::new();
+        for name in self.enabled_engines() {
+            let Some(engine) = self.engine(name) else { continue };
+            if exclude.contains(&name) || engine.missing().is_some() {
+                continue;
+            }
+            for voice in self.voices(name) {
+                if engine.download_state(&voice.0).is_some_and(|(downloaded, _)| !downloaded) {
+                    continue;
+                }
+                candidates.push((engine.clone(), voice));
+            }
+        }
+        let last = self.state.lock().unwrap().voice_used.clone();
+        if candidates.len() > 1 {
+            if let Some((engine, label)) = last {
+                let others: Vec<_> = candidates.iter().filter(|(e, v)| !(e.name() == engine && voice_label(&v.1) == label)).cloned().collect();
+                if !others.is_empty() {
+                    candidates = others;
+                }
+            }
+        }
+        if candidates.is_empty() {
+            return None;
+        }
+        let i = (uuid::Uuid::new_v4().as_u128() % candidates.len() as u128) as usize;
+        Some(candidates.swap_remove(i))
     }
 
     fn say(&self, message: impl Into<String>) {
@@ -157,6 +220,12 @@ impl Controller {
 
     /// Build audio for `text` with the current engine and voice, then play it.
     pub fn read(self: &Arc<Self>, text: String) {
+        if self.snapshot().surprise {
+            if let Some((engine, voice)) = self.pick_surprise(&[]) {
+                println!("🎲 Surprise voice: {} ({})", voice_label(&voice.1), engine.name());
+                return self.start(text, engine, voice, true, true);
+            }
+        }
         let engine = self.current_engine();
         let voice = self.current_voice(engine.name()).unwrap_or_default();
         self.speak(text, engine, voice, true);
@@ -165,6 +234,11 @@ impl Controller {
     /// Speak `text` with a given engine and voice (Preview and "Hear it" use this).
     /// `with_rules`: apply pronunciations and filters first.
     pub fn speak(self: &Arc<Self>, text: String, engine: Arc<dyn Engine>, voice: Voice, with_rules: bool) {
+        self.start(text, engine, voice, with_rules, false);
+    }
+
+    /// `surprise`: if the engine fails, try up to two other random ones instead of giving up.
+    fn start(self: &Arc<Self>, text: String, engine: Arc<dyn Engine>, voice: Voice, with_rules: bool, surprise: bool) {
         let cancel = Arc::new(AtomicBool::new(false));
         let seq = {
             let mut state = self.state.lock().unwrap();
@@ -172,6 +246,7 @@ impl Controller {
                 old.store(true, Ordering::SeqCst); // a new read cancels the previous build
             }
             state.progress = String::new();
+            state.build_started = Some(Instant::now());
             state.message = None;
             state.seq += 1;
             state.seq
@@ -179,62 +254,127 @@ impl Controller {
         self.player.stop();
         self.repaint();
         println!("Speaking: {}…", text.chars().take(50).collect::<String>().replace('\n', " "));
-        let spoken = if with_rules { self.spoken_text(&text, engine.name()) } else { text.clone() };
-        if spoken != text {
-            println!("  (after pronunciations and filters: {}…)", spoken.chars().take(60).collect::<String>().replace('\n', " "));
-        }
         let this = self.clone();
         std::thread::spawn(move || {
-            let out = data_dir().join(format!("clipboard_speech_rs.{}", engine.ext()));
-            let tmp = data_dir().join(format!("clipboard_speech_rs.building{seq}.{}", engine.ext()));
-            let progress_owner = this.clone();
-            let build = Build {
-                cancel: cancel.clone(),
-                progress: Box::new(move |text| {
-                    let mut state = progress_owner.state.lock().unwrap();
-                    state.progress = text;
-                    state.cold = true; // a download or model load: don't count this build's speed
-                    drop(state);
-                    progress_owner.repaint();
-                }),
-            };
-            this.state.lock().unwrap().cold = false;
-            let started = Instant::now();
-            let result = engine.synthesize(&spoken, &voice.0, &tmp, &build);
-            let mut state = this.state.lock().unwrap();
-            let current = state.seq == seq && !cancel.load(Ordering::SeqCst);
-            if current {
-                state.build = None;
-            }
-            match result {
-                Ok(()) if current => {
-                    let _ = std::fs::rename(&tmp, &out);
-                    state.last_audio = Some(out.clone());
-                    state.voice_used = Some(format!("{} · {}", voice.1.trim_end_matches(" · download"), engine.name()));
-                    drop(state);
-                    // A Piper voice that was just downloaded no longer needs "· download"
-                    this.voice_cache.lock().unwrap().remove(engine.name());
-                    println!("Built in {:.1}s with {}", started.elapsed().as_secs_f64(), engine.name());
-                    let speed = this.settings.lock().unwrap().speed();
-                    let build_seconds = started.elapsed().as_secs_f64();
-                    if this.player.play(&out, speed) && !this.state.lock().unwrap().cold {
-                        if let Some(audio_seconds) = this.player.duration() {
-                            this.record_speed(engine.name(), &voice.0, build_seconds, audio_seconds);
-                        }
+            let (mut engine, mut voice) = (engine, voice);
+            let mut failed: Vec<&'static str> = Vec::new();
+            loop {
+                match this.build_once(&text, &engine, &voice, with_rules, seq, &cancel) {
+                    Some(error) if surprise && failed.len() < 2 && !cancel.load(Ordering::SeqCst) => {
+                        // Surprise me: try a different engine instead of giving up
+                        failed.push(engine.name());
+                        let Some(pick) = this.pick_surprise(&failed) else {
+                            this.finish_failed(seq, error);
+                            break;
+                        };
+                        println!("⚠️ {} failed ({error}); trying {} ({})", engine.name(), voice_label(&pick.1.1), pick.0.name());
+                        this.state.lock().unwrap().progress = format!("{} didn't work. Trying {} instead…", engine.name(), pick.0.name());
+                        this.repaint();
+                        (engine, voice) = pick;
                     }
-                }
-                Err(e) if current && !engines::is_cancelled(&e) => {
-                    drop(state);
-                    let _ = std::fs::remove_file(&tmp);
-                    this.say(format!("{} couldn't read it: {e:#}", engine.name()));
-                }
-                _ => {
-                    drop(state);
-                    let _ = std::fs::remove_file(&tmp);
+                    Some(error) => {
+                        this.finish_failed(seq, error);
+                        break;
+                    }
+                    None => break,
                 }
             }
             this.repaint();
         });
+    }
+
+    fn finish_failed(&self, seq: u64, error: String) {
+        let mut state = self.state.lock().unwrap();
+        if state.seq != seq {
+            return;
+        }
+        state.build = None;
+        drop(state);
+        self.say(error);
+    }
+
+    /// Build and play once. Returns an error message if the engine failed (None when done or cancelled).
+    fn build_once(self: &Arc<Self>, text: &str, engine: &Arc<dyn Engine>, voice: &Voice, with_rules: bool, seq: u64, cancel: &Arc<AtomicBool>) -> Option<String> {
+        let (spoken, edits) = if with_rules { self.apply_rules(text, engine.name()) } else { (text.to_string(), Vec::new()) };
+        if spoken != text {
+            println!("  (after pronunciations and filters: {}…)", spoken.chars().take(60).collect::<String>().replace('\n', " "));
+        }
+        if spoken.trim().is_empty() {
+            return Some("Nothing left to read: your pronunciation settings skip all of this text".into());
+        }
+        let out = data_dir().join(format!("clipboard_speech_rs.{}", engine.ext()));
+        let tmp = data_dir().join(format!("clipboard_speech_rs.building{seq}.{}", engine.ext()));
+        let progress_owner = self.clone();
+        let build = Build {
+            cancel: cancel.clone(),
+            progress: Box::new(move |text| {
+                let mut state = progress_owner.state.lock().unwrap();
+                state.progress = text;
+                state.cold = true; // a download or model load: don't count this build's speed
+                drop(state);
+                progress_owner.repaint();
+            }),
+        };
+        self.state.lock().unwrap().cold = false;
+        let started = Instant::now();
+        let result = engine.synthesize(&spoken, &voice.0, &tmp, &build);
+        let mut state = self.state.lock().unwrap();
+        let current = state.seq == seq && !cancel.load(Ordering::SeqCst);
+        match result {
+            Ok(()) if current => {
+                state.build = None;
+                let _ = std::fs::rename(&tmp, &out);
+                state.last_audio = Some(out.clone());
+                state.voice_used = Some((engine.name().to_string(), voice_label(&voice.1)));
+                let spans = word_timing::tokenize(text);
+                let spoken_words = (!edits.is_empty()).then(|| pronunciation::spoken_words(text, &spans, &edits));
+                state.reading = Arc::new(Reading { text: text.to_string(), spans, timeline: Vec::new(), seq });
+                drop(state);
+                // A Piper voice that was just downloaded no longer needs "· download"
+                self.voice_cache.lock().unwrap().remove(engine.name());
+                let build_seconds = started.elapsed().as_secs_f64();
+                println!("Built in {build_seconds:.1}s with {}", engine.name());
+                let speed = self.settings.lock().unwrap().speed();
+                if self.player.play(&out, speed) {
+                    if let Some(audio_seconds) = self.player.duration() {
+                        if !self.state.lock().unwrap().cold {
+                            self.record_speed(engine.name(), &voice.0, build_seconds, audio_seconds);
+                        }
+                        self.time_words(seq, &out, audio_seconds, spoken_words);
+                    }
+                }
+                None
+            }
+            Err(e) if current && !engines::is_cancelled(&e) => {
+                drop(state);
+                let _ = std::fs::remove_file(&tmp);
+                Some(format!("{} couldn't read it: {e:#}", engine.name()))
+            }
+            _ => {
+                drop(state);
+                let _ = std::fs::remove_file(&tmp);
+                None
+            }
+        }
+    }
+
+    /// Estimate when each word is spoken: an even spread at once, then refined with the pauses in the audio.
+    fn time_words(&self, seq: u64, audio: &std::path::Path, duration: f64, spoken: Option<Vec<String>>) {
+        let set = |silences: &[word_timing::Silence]| {
+            let mut state = self.state.lock().unwrap();
+            if state.reading.seq != seq {
+                return false;
+            }
+            let r = &state.reading;
+            let timeline = word_timing::build_timeline(&r.text, duration, silences, &r.spans, spoken.as_deref());
+            state.reading = Arc::new(Reading { text: r.text.clone(), spans: r.spans.clone(), timeline, seq });
+            true
+        };
+        if set(&[]) {
+            self.repaint();
+            let silences = word_timing::detect_silences(audio);
+            set(&silences);
+        }
     }
 
     /// Fold one build into the voice's running average (recent reads count most), as the Python app does.
@@ -381,11 +521,15 @@ impl Controller {
 
     /// The text the voice is given: links/paths/codes shortened and word rules applied.
     pub fn spoken_text(&self, text: &str, engine: &str) -> String {
+        self.apply_rules(text, engine).0
+    }
+
+    fn apply_rules(&self, text: &str, engine: &str) -> (String, Vec<pronunciation::Edit>) {
         let settings = self.settings.lock().unwrap();
         let rules = pronunciation::clean_rules(settings.get("pronunciations"));
         let filters = pronunciation::clean_filters(settings.get("text_filters"));
         drop(settings);
-        pronunciation::apply(text, &rules, Some(engine), Some(&filters)).0
+        pronunciation::apply(text, &rules, Some(engine), Some(&filters))
     }
 
     /// Play: resume after a pause, or replay the last audio.
@@ -435,6 +579,11 @@ impl Controller {
         self.stop();
         cleanup();
     }
+}
+
+/// "Amy · medium · download" -> "Amy"
+fn voice_label(label: &str) -> String {
+    label.split(" · ").next().unwrap_or(label).to_string()
 }
 
 fn cleanup() {

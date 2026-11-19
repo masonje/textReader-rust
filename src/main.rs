@@ -10,6 +10,7 @@ mod pronunciation;
 mod settings;
 mod tray;
 mod ui;
+mod word_timing;
 
 use eframe::egui;
 use std::sync::Arc;
@@ -28,6 +29,44 @@ fn decode_icon() -> Option<(Vec<u8>, u32, u32)> {
         return None;
     }
     Some((buf, info.width, info.height))
+}
+
+/// `--write-icons <dir>`: the app icon at the usual sizes, as <dir>/<n>x<n>/apps/clipboard-reader.png
+/// (used by scripts/install.sh, so installing needs no image tools).
+fn write_icons(dir: &std::path::Path) -> anyhow::Result<()> {
+    let (rgba, w, h) = decode_icon().ok_or_else(|| anyhow::anyhow!("couldn't read the icon"))?;
+    for size in [16u32, 32, 48, 64, 128, 256, 512] {
+        // Average every source pixel that falls in each output pixel
+        let mut out = vec![0u8; (size * size * 4) as usize];
+        for y in 0..size {
+            let (y0, y1) = (y * h / size, ((y + 1) * h / size).max(y * h / size + 1));
+            for x in 0..size {
+                let (x0, x1) = (x * w / size, ((x + 1) * w / size).max(x * w / size + 1));
+                let mut sum = [0u64; 4];
+                for sy in y0..y1 {
+                    for sx in x0..x1 {
+                        let i = ((sy * w + sx) * 4) as usize;
+                        for c in 0..4 {
+                            sum[c] += rgba[i + c] as u64;
+                        }
+                    }
+                }
+                let n = ((y1 - y0) * (x1 - x0)) as u64;
+                let o = ((y * size + x) * 4) as usize;
+                for c in 0..4 {
+                    out[o + c] = (sum[c] / n) as u8;
+                }
+            }
+        }
+        let folder = dir.join(format!("{size}x{size}/apps"));
+        std::fs::create_dir_all(&folder)?;
+        let file = std::fs::File::create(folder.join("clipboard-reader.png"))?;
+        let mut encoder = png::Encoder::new(std::io::BufWriter::new(file), size, size);
+        encoder.set_color(png::ColorType::Rgba);
+        encoder.set_depth(png::BitDepth::Eight);
+        encoder.write_header()?.write_image_data(&out)?;
+    }
+    Ok(())
 }
 
 /// `--check-engines`: build a short phrase with every engine and report.
@@ -82,6 +121,17 @@ fn main() {
         }
         return;
     }
+    if args.first().map(String::as_str) == Some("--write-icons") {
+        let Some(dir) = args.get(1) else {
+            eprintln!("usage: clipboard-reader --write-icons <icon folder>");
+            std::process::exit(2);
+        };
+        if let Err(e) = write_icons(std::path::Path::new(dir)) {
+            eprintln!("❌ {e:#}");
+            std::process::exit(1);
+        }
+        return;
+    }
     if args.iter().any(|a| a == "--check-engines") {
         std::process::exit(check_engines());
     }
@@ -103,11 +153,12 @@ fn main() {
     let icon = decode_icon();
     let _tray = icon.as_ref().and_then(|(rgba, w, h)| tray::start(controller.clone(), rgba, *w, *h));
 
+    let (size, min_size) = ui::start_size(&controller);
     let mut viewport = egui::ViewportBuilder::default()
         .with_title("Clipboard Reader")
         .with_app_id("clipboard-reader")
-        .with_inner_size([340.0, 340.0])
-        .with_min_inner_size([300.0, 320.0]);
+        .with_inner_size(size)
+        .with_min_inner_size(min_size);
     if let Some((rgba, width, height)) = icon {
         viewport = viewport.with_icon(egui::IconData { rgba, width, height });
     }

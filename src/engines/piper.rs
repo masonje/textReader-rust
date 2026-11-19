@@ -101,7 +101,12 @@ fn download(name: &str, build: &Build) -> Result<()> {
             out.write_all(&buf[..n])?;
             done += n as u64;
             if ext == ".onnx" {
-                (build.progress)(format!("Downloading voice: {:.1} of {:.0} MB", done as f64 / 1e6, total.max(done) as f64 / 1e6));
+                (build.progress)(format!(
+                    "Downloading voice: {:.1} of {:.0} MB ({:.0}%)",
+                    done as f64 / 1e6,
+                    total.max(done) as f64 / 1e6,
+                    100.0 * done as f64 / total.max(done).max(1) as f64
+                ));
             }
         }
         drop(out);
