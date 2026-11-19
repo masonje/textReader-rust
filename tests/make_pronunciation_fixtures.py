@@ -1,6 +1,8 @@
 """Write tests/fixtures/pronunciation.json: what the Python app sends to the voice
 for many texts, rules and filter choices. The Rust tests check they read text the
-same way. Run from the repository root:  .venv/bin/python rust/tests/make_pronunciation_fixtures.py
+same way. These need the Python version's code. From a checkout of
+https://github.com/masonje/textReader next to this one, with its .venv set up:
+  cd ../textReader && .venv/bin/python ../textReader-rust/tests/make_pronunciation_fixtures.py
 """
 import json
 from pathlib import Path

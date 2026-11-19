@@ -1,8 +1,8 @@
 #!/bin/bash
 # Install the Rust version of Clipboard Reader for this user: build it, copy it to
 # ~/.local/bin, and add an app-menu launcher with its icon.
-#   rust/scripts/install.sh               install (or update)
-#   rust/scripts/install.sh --uninstall   remove it again (settings and voices are kept)
+#   scripts/install.sh               install (or update)
+#   scripts/install.sh --uninstall   remove it again (settings and voices are kept)
 # It sits beside the Python app's "reader" without replacing it; run one at a time.
 set -e
 

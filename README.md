@@ -1,10 +1,12 @@
-# Clipboard Reader (Rust version, preview)
+# Clipboard Reader (Rust)
 
-A rewrite of Clipboard Reader in Rust. It's a single program with no Python, `.venv` or PyInstaller. The Python app in the main folder is unchanged and is still the main version. This one is being built in stages until it does everything the Python app does.
+A rewrite of [Clipboard Reader](https://github.com/masonje/textReader) in Rust: it reads the selected text or the clipboard aloud. It's a single program with no Python, `.venv` or PyInstaller. The [Python version](https://github.com/masonje/textReader) is a separate project and is still the main version; this one is being built in stages until it does everything the Python app does.
 
 It uses the same `~/.textReader/settings.json`, the same downloaded Piper voices, and the same Edge voice list as the Python app. When it saves a setting, it changes only that key and leaves the Python app's other settings alone.
 
-## Status: stage 2 done, being tested
+## Status: stage 2 done
+
+It runs on Linux with X11 (tested on Ubuntu 26.04 with MATE). Windows and macOS come in stage 3.
 
 | | |
 |---|---|
@@ -23,7 +25,9 @@ It uses the same `~/.textReader/settings.json`, the same downloaded Piper voices
 ## Installing
 
 ```bash
-rust/scripts/install.sh
+git clone https://github.com/masonje/textReader-rust.git
+cd textReader-rust
+scripts/install.sh
 ```
 
 This builds the program and installs it for your user only (no sudo): the program goes in `~/.local/bin/clipboard-reader`, and **Clipboard Reader (Rust)** is added to your app menu with its icon. Run it again to update. It doesn't replace the Python app's `reader`. If you don't have Rust yet, or a package the app needs is missing, the script says what to install.
@@ -31,7 +35,7 @@ This builds the program and installs it for your user only (no sudo): the progra
 To remove it (your settings and voices stay):
 
 ```bash
-rust/scripts/install.sh --uninstall
+scripts/install.sh --uninstall
 ```
 
 ## Building and running
@@ -39,7 +43,6 @@ rust/scripts/install.sh --uninstall
 You need Rust (from [rustup.rs](https://rustup.rs)) and, on Linux, these packages, which are already installed if the Python app works: `libmpv2`, `libespeak-ng1` (Piper's phonemes), `espeak-ng` (the eSpeak engine) and `xclip`.
 
 ```bash
-cd rust
 cargo run --release
 ```
 
@@ -77,5 +80,5 @@ src/tray.rs            tray icon
 src/engines/           one file per engine; edge_drm.rs is Microsoft's token, checked against the Python package
 scripts/install.sh     install for this user, with an app-menu launcher
 tests/fixtures/        the Python app's results to check against; regenerate with tests/make_pronunciation_fixtures.py
-                       and tests/make_timing_fixtures.py
+                       and tests/make_timing_fixtures.py (they need a checkout of the Python version beside this one)
 ```

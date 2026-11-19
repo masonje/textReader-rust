@@ -1,6 +1,8 @@
 """Write tests/fixtures/word_timing.json: the Python app's word timelines for sample
 texts, audio lengths and detected pauses. The Rust tests check they come out the same.
-Run from the repository root:  .venv/bin/python rust/tests/make_timing_fixtures.py
+These need the Python version's code. From a checkout of
+https://github.com/masonje/textReader next to this one, with its .venv set up:
+  cd ../textReader && .venv/bin/python ../textReader-rust/tests/make_timing_fixtures.py
 """
 import json
 from pathlib import Path
