@@ -27,6 +27,10 @@ jobs:
       - name: Rust
         run: rustup toolchain install stable --profile minimal && rustup default stable
 
+      # libmpv is loaded at run time; the Options test starts the player, so it needs it
+      - name: Libraries for the tests
+        run: sudo apt-get update -q && sudo apt-get install -y -q libmpv2
+
       - name: Cache Rust downloads and builds
         uses: actions/cache@v4
         with:
