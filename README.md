@@ -14,11 +14,11 @@ The first version is written in Python. This Rust version does the same job as a
 
 ## Screenshots
 
-**Compact view**: just the controls, small enough to leave on screen. (The **Full view**, shown at the top, adds the text being read with the current word highlighted, plus Surprise me.)
+**Compact view**: just the controls, small enough to leave on screen. (The **Full view**, shown at the top, adds the text being read with the current word highlighted.)
 
 ![Compact view: engine, voice, speed and playback controls](docs/screenshots/compact.png)
 
-**Options** (the **Options…** button) has four tabs:
+**Options** (the **Options…** button) has five tabs:
 
 **Engines & Voices**: turn engines and voices on or off, preview them, download or delete voices, and see where audio is generated, speed and quality.
 
@@ -32,7 +32,11 @@ The first version is written in Python. This Rust version does the same job as a
 
 ![Options window, Links, paths & codes tab, with a Try it box](docs/screenshots/links-paths-codes.png)
 
-The fourth tab, **Shortcuts**, sets the keyboard shortcuts.
+**Shortcuts** sets the keyboard shortcuts.
+
+**Misc**: Surprise me with a random voice, and closing the window to the system tray.
+
+![Options window, Misc tab, with Surprise me and Close to the system tray](docs/screenshots/misc.png)
 
 ## Status
 
@@ -41,7 +45,7 @@ The fourth tab, **Shortcuts**, sets the keyboard shortcuts.
 | ✅ Engines | Piper (offline, downloadable voices), Edge TTS, gTTS, eSpeak-NG |
 | ✅ Playback | mpv, with speed changes while reading |
 | ✅ Views | Compact and Full, with word highlighting in the Full view |
-| ✅ Options | Engines & Voices, Pronunciations, Links/paths/codes, Shortcuts |
+| ✅ Options | Engines & Voices, Pronunciations, Links/paths/codes, Shortcuts, Misc |
 | ✅ Shortcuts, tray icon, Surprise me | as in the Python version |
 | ⏳ Stage 3 | Festival, system voices (pyttsx3), Coqui, Windows and macOS builds |
 
@@ -50,12 +54,13 @@ Not in this version yet: Debug mode, a theme setting, per-voice star ratings and
 ## Features
 - **Pronunciations:** change how words, names, abbreviations and symbols are read aloud (Options… → Pronunciations, or right-click a word in Now Reading). See [Pronunciations](#pronunciations).
 - **Links, paths & codes:** long web links, email addresses, file paths and codes (hashes, keys, account numbers) are read in a short form you choose, like "github.com path 6" or "40 character code six five seven zero". See [Links, paths and codes](#links-paths-and-codes).
-- **Surprise me:** tick "Surprise me with a random voice" (Full view, bottom left) and each read uses a random voice from the engines and voices you have turned on. Voices that would need a download first are skipped, and the same voice isn't picked twice in a row. Now Reading shows which voice was used. If the picked voice fails (for example, an online service doesn't answer), another engine is tried automatically.
+- **Surprise me:** tick "Surprise me with a random voice" (Options… → Misc) and each read uses a random voice from the engines and voices you have turned on. Voices that would need a download first are skipped, and the same voice isn't picked twice in a row. Now Reading shows which voice was used. If the picked voice fails (for example, an online service doesn't answer), another engine is tried automatically.
 - Two views: **Compact** (just the controls, small enough to leave on screen) and **Full** (adds a panel showing the text being read, with the current word highlighted). Switch with the Full View ▸ / ◂ Compact button.
 - Reads the selected text, or the clipboard if nothing is selected
 - Adjustable playback speed (0.5x–2x), which can be changed while reading without restarting it
 - A **Building Audio** window with progress and **Cancel** while the audio is made (shown after a moment, so quick reads don't flash it)
-- System tray icon with Read Clipboard, Stop and Quit
+- System tray icon with Show Window, Read Clipboard, Stop and Quit
+- **Close to the system tray** (Options… → Misc): closing the window keeps the app running in the tray, shortcuts and all. Bring it back with **Show Window** in the tray menu. Reading from a shortcut still shows the Building Audio window while it's in the tray.
 - Configurable keyboard shortcuts that work from any program (Options… → Shortcuts). Hover over Read Clipboard, Play, Pause or Stop to see its shortcut.
 - Shares settings, downloaded voices and pronunciation rules with the Python version
 
@@ -120,8 +125,13 @@ Change them in **Options… → Shortcuts**: type them like `Win+Shift+R`, `Ctrl
 
 The app notices shortcuts without taking the keys away from other programs (as the Python version does), so the Win key's own menu can't block them, and the keys still reach the window you're in.
 
+### Closing to the Tray
+With **Close to the system tray** ticked (Options… → Misc), closing the window hides it instead of quitting, and the terminal prints `📥 Closed to the tray`. The shortcuts keep working, and the Building Audio window still appears when you read. To bring the window back, choose **Show Window** from the tray icon's menu; **Quit** in the same menu exits.
+
+On Ubuntu MATE the tray icons are shown by the Ayatana indicator applet, which opens the menu on any left click, so clicking or double-clicking the icon can't open the window directly. On desktops whose tray sends clicks to the app (such as KDE), a click on the icon opens the window too. If the desktop has no tray, the option is greyed out and closing the window always quits.
+
 ### Checking the Version
-- The Compact view shows the version at the bottom of the window.
+- The window shows the version to the right of the playback status.
 - From a terminal: `clipboard-reader --version`.
 
 ## Speech Engines
@@ -198,6 +208,7 @@ Settings are saved in `~/.textReader/settings.json`, the same file the Python ve
 	"view_mode": "compact",
 	"full_window_size": "",
 	"surprise_voice": false,
+	"close_to_tray": false,
 	"pronunciations": [
 		{"text": "SQL", "mode": "spell", "say": "", "whole_word": true, "match_case": false, "engine": "", "enabled": true},
 		{"text": "Nguyen", "mode": "say", "say": "win", "whole_word": true, "match_case": false, "engine": "", "enabled": true}
@@ -212,7 +223,7 @@ Settings are saved in `~/.textReader/settings.json`, the same file the Python ve
 }
 ```
 
-`view_mode` is `"compact"` or `"full"`, and `full_window_size` remembers the Full view's size (for example `"860x460"`). Both are saved automatically.
+`view_mode` is `"compact"` or `"full"`, and `full_window_size` remembers the Full view's size (for example `"860x460"`). Both are saved automatically. `close_to_tray` is only used by the Rust version.
 
 ## Troubleshooting
 
@@ -224,7 +235,7 @@ Settings are saved in `~/.textReader/settings.json`, the same file the Python ve
 |---|---|
 | `--version` | Print the version and exit. |
 | `--check-engines` | Speak a short phrase with every engine and report which work and why the others don't. The quickest check after installing or updating. |
-| `--options=<tab>` | Open Options on a tab at start-up (`engines`, `pronunciations`, `filters` or `shortcuts`). |
+| `--options=<tab>` | Open Options on a tab at start-up (`engines`, `pronunciations`, `filters`, `shortcuts` or `misc`). |
 
 **Messages to look for:**
 
@@ -234,6 +245,7 @@ Settings are saved in `~/.textReader/settings.json`, the same file the Python ve
 | `🎲 Surprise voice: …` | Surprise me picked this voice. |
 | `Built in 2.3s with Piper` | The audio was made, and how long it took. |
 | `✖ Cancelled audio build` | Cancel was pressed in the Building Audio window. |
+| `📥 Closed to the tray` | The window was closed with Close to the system tray on; the app is still running. |
 | `❌ libmpv not found (install libmpv2)` | The app can't play audio. Install libmpv (see [Requirements](#requirements)). |
 | `⚠️ No text to read: select or copy some first.` | Nothing was selected and the clipboard was empty. |
 | `⚠️ The clipboard didn't answer …` | The program you copied from didn't respond within 2 seconds. Copy again. |
@@ -261,6 +273,12 @@ The version number is in [Cargo.toml](Cargo.toml). Versions continue from the Py
 
 ### 2.0.0-alpha.1 — 2026-11-19
 The first Rust version, built in stages.
+
+**Since stage 2:**
+- **Added:** Options → Misc tab, with Surprise me (moved from the Full view) and Close to the system tray.
+- **Added:** Close to the system tray: closing the window hides it; Show Window in the tray menu brings it back. The Building Audio window still shows for reads started while it's hidden.
+- **Changed:** The window shows the version beside the playback status, with the voice used on the last line, and the Compact view fits its controls instead of leaving space at the bottom.
+- **Fixed:** The tray icon showed as a broken-image sign on MATE: it's now sent at small sizes.
 
 **Stage 2:**
 - **Added:** Full view: the text being read, with words already read dimmed, the current word highlighted, and "Word N of M". Word timing is a port of the Python version's and its tests check the results match.

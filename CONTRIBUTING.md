@@ -19,7 +19,7 @@ Use `--release` for anything to do with speech: Piper is much slower in a debug 
 ```
 src/main.rs            start-up and the command-line options (--version, --check-engines, ...)
 src/ui.rs              the main window: Compact and Full views, word highlighting, Building Audio window (egui)
-src/options.rs         the Options window and its four tabs
+src/options.rs         the Options window and its five tabs
 src/controller.rs      reading, playback, Surprise me and settings; shared by the window, shortcuts and tray
 src/player.rs          mpv playback (libmpv loaded at run time)
 src/word_timing.rs     when each word is spoken, for the highlighting (port of word_timing.py)
@@ -27,7 +27,7 @@ src/pronunciation.rs   pronunciation rules and links/paths/codes filters (port o
 src/settings.rs        ~/.textReader/settings.json, shared with the Python version
 src/clipboard.rs       selected text / clipboard via xclip, with a time limit
 src/hotkeys.rs         global shortcuts (watches keys with X RECORD, like the Python version's pynput)
-src/tray.rs            tray icon (StatusNotifierItem)
+src/tray.rs            tray icon (StatusNotifierItem) and its menu; Show Window brings back a window closed to the tray
 src/engines/           one file per engine, plus mod.rs (the Engine trait and the list of engines)
 src/engines/edge_drm.rs  Microsoft's Sec-MS-GEC token for Edge TTS, checked against the Python edge-tts package
 assets/pireader.png    the app icon (built into the program)
@@ -80,7 +80,7 @@ As well as the user-facing [Troubleshooting](README.md#troubleshooting) options:
 | Setting | What it does |
 |---|---|
 | `--phonemes "some text"` | Print the phonemes Piper is given for the text. |
-| `--options=<tab>` | Open Options on a tab at start-up (`engines`, `pronunciations`, `filters`, `shortcuts`). |
+| `--options=<tab>` | Open Options on a tab at start-up (`engines`, `pronunciations`, `filters`, `shortcuts`, `misc`). |
 | `--write-icons <folder>` | Write the icon at each size into `<folder>/<n>x<n>/apps/`. |
 | `TR_MPV_LOG=/path/file.log` | Write mpv's full playback log to that file. |
 | `HOME=/some/test/folder` | Run with separate settings, voices and logs, so testing doesn't touch your own `~/.textReader`. Give a test copy different shortcuts (for example `Ctrl+Alt+Shift+F9`), or it answers the same keys as your real one. |
