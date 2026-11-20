@@ -31,7 +31,9 @@ src/tray.rs            tray icon (StatusNotifierItem) and its menu; Show Window 
 src/engines/           one file per engine, plus mod.rs (the Engine trait and the list of engines)
 src/engines/edge_drm.rs  Microsoft's Sec-MS-GEC token for Edge TTS, checked against the Python edge-tts package
 assets/pireader.png    the app icon (built into the program)
-scripts/install.sh     install for this user, with an app-menu launcher
+scripts/install.sh     install for this user, with an app-menu launcher (builds first, unless it's in a downloaded package)
+scripts/package.sh     pack the release build for downloading (used by the GitHub workflow)
+.github/workflows/     the automatic build: tests, builds and publishes the latest build
 tests/fixtures/        the Python version's results, which the tests compare against
 ```
 
@@ -73,6 +75,14 @@ Each engine is a file in `src/engines/` implementing the `Engine` trait in [mod.
 
 After building, check it with `clipboard-reader --version` and `clipboard-reader --check-engines`.
 
+### Automatic builds
+
+[.github/workflows/build.yml](.github/workflows/build.yml) runs on GitHub:
+- **Every pull request:** `cargo test --release`, a release build, and `scripts/package.sh`. The package is kept with the run (under **Artifacts**), so it can be tried before merging.
+- **Every push to `main`:** the same, then it replaces the `latest` pre-release with the new package, so [its download link](https://github.com/masonje/textReader-rust/releases/download/latest/clipboard-reader-linux-x86_64.tar.gz) always has the newest build.
+
+It builds on Ubuntu 24.04 rather than the newest Ubuntu, so the program needs only glibc 2.39 and runs on older systems too. `scripts/package.sh` packs the program, `install.sh` and the README into `dist/clipboard-reader-linux-x86_64.tar.gz` (with a `.sha256`); `install.sh` installs the program next to it when there is one, and builds from source otherwise.
+
 ## Debugging
 
 As well as the user-facing [Troubleshooting](README.md#troubleshooting) options:
@@ -90,4 +100,4 @@ As well as the user-facing [Troubleshooting](README.md#troubleshooting) options:
 1. Set the version in [Cargo.toml](Cargo.toml) and on the **Version** line of the README.
 2. Add an entry at the top of the README's Changelog.
 3. Run `cargo test --release` and `scripts/install.sh`, then check `clipboard-reader --version` and `clipboard-reader --check-engines`.
-4. Open a pull request into `main`.
+4. Open a pull request into `main`. Once it's merged, the workflow publishes the build as `latest`.
