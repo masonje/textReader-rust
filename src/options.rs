@@ -1,4 +1,4 @@
-//! The Options window: Engines & Voices, Pronunciations, Links/paths/codes, Shortcuts.
+//! The Options window: Engines & Voices, Pronunciations, Links/paths/codes, Shortcuts, Misc.
 
 use crate::controller::Controller;
 use crate::hotkeys::{self, Hotkeys};
@@ -14,6 +14,7 @@ enum Tab {
     Pronunciations,
     Filters,
     Shortcuts,
+    Misc,
 }
 
 pub struct Options {
@@ -105,13 +106,14 @@ impl Options {
         Self::rules(controller).iter().any(|r| r.text.to_lowercase() == word.to_lowercase())
     }
 
-    /// `--options=<tab>` on the command line: open on that tab (engines, pronunciations, filters, shortcuts).
+    /// `--options=<tab>` on the command line: open on that tab (engines, pronunciations, filters, shortcuts, misc).
     pub fn open_tab(&mut self, controller: &Controller, tab: &str) {
         self.open(controller, None);
         self.tab = match tab {
             "pronunciations" => Tab::Pronunciations,
             "filters" => Tab::Filters,
             "shortcuts" => Tab::Shortcuts,
+            "misc" => Tab::Misc,
             _ => Tab::Engines,
         };
     }
@@ -135,6 +137,7 @@ impl Options {
                     ui.selectable_value(&mut self.tab, Tab::Pronunciations, "Pronunciations");
                     ui.selectable_value(&mut self.tab, Tab::Filters, "Links, paths & codes");
                     ui.selectable_value(&mut self.tab, Tab::Shortcuts, "Shortcuts");
+                    ui.selectable_value(&mut self.tab, Tab::Misc, "Misc");
                 });
                 ui.separator();
                 match self.tab {
@@ -142,8 +145,32 @@ impl Options {
                     Tab::Pronunciations => self.rules_tab(ui, c, reading),
                     Tab::Filters => self.filters_tab(ui, c, reading),
                     Tab::Shortcuts => self.shortcuts_tab(ui, c, hotkeys),
+                    Tab::Misc => Self::misc_tab(ui, c),
                 }
             });
+        });
+    }
+
+    // ------------------------------------------------------------ Misc
+
+    fn misc_tab(ui: &mut egui::Ui, c: &Arc<Controller>) {
+        ui.add_space(4.0);
+        let mut surprise = c.snapshot().surprise;
+        if ui.checkbox(&mut surprise, "Surprise me with a random voice").changed() {
+            c.set_surprise(surprise);
+        }
+        ui.weak("Each read uses a random engine and voice from those turned on under Engines & Voices, skipping voices that still need a download.");
+        ui.add_space(12.0);
+
+        let tray = c.tray_ok.load(std::sync::atomic::Ordering::SeqCst);
+        let mut to_tray = c.close_to_tray();
+        if ui.add_enabled(tray, egui::Checkbox::new(&mut to_tray, "Close to the system tray")).changed() {
+            c.set_close_to_tray(to_tray);
+        }
+        ui.weak(if tray {
+            "Closing the window keeps Clipboard Reader running in the tray, with its shortcuts. To bring the window back, choose Show Window from the tray icon's menu; Quit there exits."
+        } else {
+            "There's no system tray on this desktop, so closing the window always quits."
         });
     }
 

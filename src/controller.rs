@@ -77,6 +77,8 @@ pub struct Controller {
     state: Mutex<State>,
     voice_cache: Mutex<HashMap<String, Vec<Voice>>>,
     repaint: OnceLock<Box<dyn Fn() + Send + Sync>>,
+    pub tray_ok: AtomicBool,        // the tray icon is up, so the window can close to it
+    show_requested: AtomicBool,     // the tray asked for the hidden window back
 }
 
 impl Controller {
@@ -90,6 +92,8 @@ impl Controller {
             state: Mutex::new(State::default()),
             voice_cache: Mutex::new(HashMap::new()),
             repaint: OnceLock::new(),
+            tray_ok: AtomicBool::new(false),
+            show_requested: AtomicBool::new(false),
         })
     }
 
@@ -161,6 +165,25 @@ impl Controller {
 
     pub fn reading(&self) -> Arc<Reading> {
         self.state.lock().unwrap().reading.clone()
+    }
+
+    /// The tray asks for the window to come back (it's picked up by the window's next frame).
+    pub fn request_show(&self) {
+        self.show_requested.store(true, Ordering::SeqCst);
+        self.repaint();
+    }
+
+    pub fn take_show_request(&self) -> bool {
+        self.show_requested.swap(false, Ordering::SeqCst)
+    }
+
+    /// Closing the window hides it to the tray instead of quitting (Options ▸ Misc).
+    pub fn close_to_tray(&self) -> bool {
+        self.settings.lock().unwrap().get("close_to_tray").and_then(Value::as_bool).unwrap_or(false)
+    }
+
+    pub fn set_close_to_tray(&self, on: bool) {
+        self.settings.lock().unwrap().set("close_to_tray", Value::Bool(on));
     }
 
     pub fn set_surprise(&self, on: bool) {

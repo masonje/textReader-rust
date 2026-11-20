@@ -9,7 +9,7 @@ use egui::text::{CCursor, LayoutJob, TextFormat};
 use std::sync::Arc;
 use std::time::Duration;
 
-pub const COMPACT_SIZE: [f32; 2] = [340.0, 340.0];
+pub const COMPACT_SIZE: [f32; 2] = [340.0, 280.0]; // the height then follows the content
 const CONTROLS_WIDTH: f32 = 320.0;
 const FULL_DEFAULT: [f32; 2] = [860.0, 460.0];
 const READING_MIN_WIDTH: f32 = 320.0;
@@ -26,6 +26,8 @@ pub struct ReaderApp {
     full_size: Option<egui::Vec2>, // the Full view's size, remembered between switches
     shown_word: Option<(u64, Option<usize>)>, // (reading, word) last scrolled to
     menu_word: Option<String>,                // the word right-clicked in the reading text
+    hidden: bool,                             // closed to the tray
+    content_bottom: f32,                      // where the controls end, to fit the Compact window to them
 }
 
 /// The window size to start with, from the saved view.
@@ -67,7 +69,7 @@ impl ReaderApp {
         if let Some(tab) = std::env::args().find_map(|a| a.strip_prefix("--options").map(|t| t.trim_start_matches('=').to_string())) {
             options.open_tab(&controller, &tab);
         }
-        ReaderApp { controller, hotkeys, options, speed, full, full_size, shown_word: None, menu_word: None }
+        ReaderApp { controller, hotkeys, options, speed, full, full_size, shown_word: None, menu_word: None, hidden: false, content_bottom: 0.0 }
     }
 
     fn hint(&self, what: &str, action: &str) -> String {
@@ -215,32 +217,21 @@ impl ReaderApp {
             ui.label(status);
             if let (Some(p), Some(d)) = (snap.position, snap.duration) {
                 // Shown in real time, so it follows the speed
-                ui.with_layout(egui::Layout::right_to_left(egui::Align::Center), |ui| {
-                    ui.label(format!("{} / {}", format_time(p / self.speed), format_time(d / self.speed)));
-                });
+                ui.label(format!("{} / {}", format_time(p / self.speed), format_time(d / self.speed)));
             }
+            ui.with_layout(egui::Layout::right_to_left(egui::Align::Center), |ui| {
+                ui.weak(concat!("v", env!("CARGO_PKG_VERSION"))).on_hover_text("Clipboard Reader (Rust preview)");
+            });
         });
         if let Some(message) = &snap.message {
             ui.colored_label(ui.visuals().warn_fg_color, message);
         } else if let Some(used) = &snap.voice_used {
             ui.weak(used);
+        } else {
+            ui.weak(" "); // keep the voice line's room, so the window doesn't grow at the first read
         }
-        ui.with_layout(egui::Layout::bottom_up(egui::Align::Min), |ui| {
-            if self.full {
-                // The Full view's settings, at the bottom of the controls
-                let mut surprise = snap.surprise;
-                if ui
-                    .checkbox(&mut surprise, "Surprise me with a random voice")
-                    .on_hover_text("Each read uses a random engine and voice from those turned on in Options (skipping voices that need a download)")
-                    .changed()
-                {
-                    c.set_surprise(surprise);
-                }
-                ui.separator();
-            } else {
-                ui.vertical_centered(|ui| ui.weak(format!("Clipboard Reader {} (Rust preview)", env!("CARGO_PKG_VERSION"))));
-            }
-        });
+        // Where the next widget would go (min_rect covers the whole panel, so it can't be used)
+        self.content_bottom = ui.cursor().top() - ui.spacing().item_spacing.y;
     }
 
     /// The Full view's reading panel: the text, words already spoken dimmed, the current one highlighted.
@@ -257,7 +248,7 @@ impl ReaderApp {
             }
             ui.with_layout(egui::Layout::right_to_left(egui::Align::Center), |ui| match word {
                 Some(i) => ui.weak(format!("Word {} of {}", i + 1, reading.spans.len())),
-                None if !reading.spans.is_empty() => ui.weak(format!("{} words", reading.spans.len())),
+                None if !reading.spans.is_empty() => ui.weak(format!("{} word{}", reading.spans.len(), if reading.spans.len() == 1 { "" } else { "s" })),
                 None => ui.weak(""),
             });
         });
@@ -318,17 +309,15 @@ impl ReaderApp {
 
 /// While audio builds: what's happening, and a way to cancel (like the Python app's Building Audio window).
 /// Shown after a moment, so quick builds don't flash it.
-fn building_window(ctx: &egui::Context, controller: &Controller, snap: &Snapshot) {
+/// A "deferred" viewport: eframe creates it from the event loop and runs it on its own, so it also
+/// works while the main window is hidden in the tray (an immediate viewport panics then).
+fn building_window(ctx: &egui::Context, controller: &Arc<Controller>, snap: &Snapshot) {
     let Status::Building(progress) = &snap.status else { return };
     if snap.building_for.is_none_or(|t| t < 0.3) {
         ctx.request_repaint_after(Duration::from_millis(100));
         return;
     }
     // "Downloading voice: 12.3 of 63 MB (19%)" -> 0.19
-    let percent = progress
-        .rsplit_once('(')
-        .and_then(|(_, p)| p.strip_suffix("%)"))
-        .and_then(|p| p.parse::<f32>().ok());
     let downloading = progress.starts_with("Downloading");
     let title = if downloading { "Downloading Voice" } else { "Building Audio" };
     let builder = egui::ViewportBuilder::default()
@@ -337,7 +326,14 @@ fn building_window(ctx: &egui::Context, controller: &Controller, snap: &Snapshot
         .with_inner_size([360.0, 118.0])
         .with_resizable(false)
         .with_window_level(egui::WindowLevel::AlwaysOnTop);
-    ctx.show_viewport_immediate(egui::ViewportId::from_hash_of("building"), builder, |ui, _class| {
+    let controller = controller.clone();
+    ctx.show_viewport_deferred(egui::ViewportId::from_hash_of("building"), builder, move |ui, _class| {
+        let snap = controller.snapshot();
+        let Status::Building(progress) = &snap.status else { return };
+        let percent = progress
+            .rsplit_once('(')
+            .and_then(|(_, p)| p.strip_suffix("%)"))
+            .and_then(|p| p.parse::<f32>().ok());
         let cancel = ui.ctx().input(|i| i.viewport().close_requested() || i.key_pressed(egui::Key::Escape));
         if cancel {
             ui.ctx().send_viewport_cmd(egui::ViewportCommand::CancelClose);
@@ -408,6 +404,21 @@ fn format_time(seconds: f64) -> String {
 }
 
 impl eframe::App for ReaderApp {
+    /// Runs every frame, and also while the window is hidden in the tray (when `ui` doesn't).
+    fn logic(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
+        if self.controller.take_show_request() {
+            self.hidden = false;
+            ctx.send_viewport_cmd(egui::ViewportCommand::Visible(true));
+            ctx.send_viewport_cmd(egui::ViewportCommand::Minimized(false));
+            ctx.send_viewport_cmd(egui::ViewportCommand::Focus);
+        }
+        if self.hidden && self.controller.snapshot().building_for.is_some() {
+            // Keep `ui` running while audio builds, so the Building Audio window shows even from the tray
+            ctx.send_viewport_cmd(egui::ViewportCommand::RequestPaintWhileHidden);
+            ctx.request_repaint_after(Duration::from_millis(100));
+        }
+    }
+
     fn ui(&mut self, ui: &mut egui::Ui, _frame: &mut eframe::Frame) {
         let snap = self.controller.snapshot();
         let reading = snap.reading();
@@ -415,6 +426,19 @@ impl eframe::App for ReaderApp {
             ui.ctx().request_repaint_after(Duration::from_millis(if self.full { 60 } else { 100 }));
         }
         let ctx = ui.ctx().clone();
+        // Close to the tray (Options ▸ Misc): hide instead of quitting, while there is a tray to come back from
+        if ctx.input(|i| i.viewport().close_requested())
+            && self.controller.tray_ok.load(std::sync::atomic::Ordering::SeqCst)
+            && self.controller.close_to_tray()
+        {
+            ctx.send_viewport_cmd(egui::ViewportCommand::CancelClose);
+            ctx.send_viewport_cmd(egui::ViewportCommand::Visible(false));
+            self.hidden = true;
+            if self.full {
+                self.save_full_size();
+            }
+            println!("📥 Closed to the tray");
+        }
         if self.full {
             if let Some(rect) = ctx.input(|i| i.viewport().inner_rect) {
                 self.full_size = Some(rect.size());
@@ -426,9 +450,19 @@ impl eframe::App for ReaderApp {
             egui::CentralPanel::default().show(ui, |ui| self.reading_panel(ui, &snap));
         } else {
             egui::CentralPanel::default().show(ui, |ui| self.controls(ui, &snap));
+            // Fit the window to the controls (they grow by a line when a message wraps)
+            let want = (self.content_bottom + 8.0).ceil();
+            let height = ctx.input(|i| i.viewport().inner_rect.map(|r| r.height()));
+            if self.content_bottom > 0.0 && height.is_some_and(|h| (h - want).abs() > 1.0) {
+                let size = egui::vec2(COMPACT_SIZE[0], want);
+                ctx.send_viewport_cmd(egui::ViewportCommand::MinInnerSize(size));
+                ctx.send_viewport_cmd(egui::ViewportCommand::InnerSize(size));
+            }
         }
         building_window(&ctx, &self.controller, &snap);
-        self.options.show(&ctx, &self.controller, &mut self.hotkeys, reading);
+        if !self.hidden {
+            self.options.show(&ctx, &self.controller, &mut self.hotkeys, reading);
+        }
     }
 
     fn on_exit(&mut self) {

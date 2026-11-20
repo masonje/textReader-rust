@@ -36,28 +36,7 @@ fn decode_icon() -> Option<(Vec<u8>, u32, u32)> {
 fn write_icons(dir: &std::path::Path) -> anyhow::Result<()> {
     let (rgba, w, h) = decode_icon().ok_or_else(|| anyhow::anyhow!("couldn't read the icon"))?;
     for size in [16u32, 32, 48, 64, 128, 256, 512] {
-        // Average every source pixel that falls in each output pixel
-        let mut out = vec![0u8; (size * size * 4) as usize];
-        for y in 0..size {
-            let (y0, y1) = (y * h / size, ((y + 1) * h / size).max(y * h / size + 1));
-            for x in 0..size {
-                let (x0, x1) = (x * w / size, ((x + 1) * w / size).max(x * w / size + 1));
-                let mut sum = [0u64; 4];
-                for sy in y0..y1 {
-                    for sx in x0..x1 {
-                        let i = ((sy * w + sx) * 4) as usize;
-                        for c in 0..4 {
-                            sum[c] += rgba[i + c] as u64;
-                        }
-                    }
-                }
-                let n = ((y1 - y0) * (x1 - x0)) as u64;
-                let o = ((y * size + x) * 4) as usize;
-                for c in 0..4 {
-                    out[o + c] = (sum[c] / n) as u8;
-                }
-            }
-        }
+        let out = shrink_icon(&rgba, w, h, size);
         let folder = dir.join(format!("{size}x{size}/apps"));
         std::fs::create_dir_all(&folder)?;
         let file = std::fs::File::create(folder.join("clipboard-reader.png"))?;
@@ -67,6 +46,32 @@ fn write_icons(dir: &std::path::Path) -> anyhow::Result<()> {
         encoder.write_header()?.write_image_data(&out)?;
     }
     Ok(())
+}
+
+/// Scale an RGBA image down to size x size, averaging every source pixel that falls in each output pixel.
+pub fn shrink_icon(rgba: &[u8], w: u32, h: u32, size: u32) -> Vec<u8> {
+    let mut out = vec![0u8; (size * size * 4) as usize];
+    for y in 0..size {
+        let (y0, y1) = (y * h / size, ((y + 1) * h / size).max(y * h / size + 1));
+        for x in 0..size {
+            let (x0, x1) = (x * w / size, ((x + 1) * w / size).max(x * w / size + 1));
+            let mut sum = [0u64; 4];
+            for sy in y0..y1 {
+                for sx in x0..x1 {
+                    let i = ((sy * w + sx) * 4) as usize;
+                    for c in 0..4 {
+                        sum[c] += rgba[i + c] as u64;
+                    }
+                }
+            }
+            let n = ((y1 - y0) * (x1 - x0)) as u64;
+            let o = ((y * size + x) * 4) as usize;
+            for c in 0..4 {
+                out[o + c] = (sum[c] / n) as u8;
+            }
+        }
+    }
+    out
 }
 
 /// `--check-engines`: build a short phrase with every engine and report.
