@@ -1,12 +1,14 @@
 #!/bin/bash
-# Install the Rust version of Clipboard Reader for this user: build it, copy it to
-# ~/.local/bin, and add an app-menu launcher with its icon.
+# Install the Rust version of Clipboard Reader for this user: copy it to ~/.local/bin
+# and add an app-menu launcher with its icon.
+# In a downloaded package (the program is next to this script) it installs that program;
+# in a checkout of the source it builds it first.
 #   scripts/install.sh               install (or update)
 #   scripts/install.sh --uninstall   remove it again (settings and voices are kept)
 # It sits beside the Python app's "reader" without replacing it; run one at a time.
 set -e
 
-RUST_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 NAME="clipboard-reader"
 BIN_DIR="$HOME/.local/bin"
 APPS_DIR="$HOME/.local/share/applications"
@@ -28,18 +30,11 @@ if [ "$1" = "--uninstall" ]; then
 	exit 0
 fi
 
-# Rust: from PATH, or rustup's default place
-CARGO="$(command -v cargo || true)"
-[ -z "$CARGO" ] && [ -x "$HOME/.cargo/bin/cargo" ] && CARGO="$HOME/.cargo/bin/cargo"
-if [ -z "$CARGO" ]; then
-	echo "Rust isn't installed. Install it with rustup (no sudo needed), then run this again:"
-	echo "  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh"
-	exit 1
-fi
 
 # What the app needs at run time (it still starts without the optional ones)
 missing=()
-have_lib() { ldconfig -p 2>/dev/null | grep -q "$1"; }
+LDCONFIG="$(command -v ldconfig || echo /sbin/ldconfig)" # /sbin may not be on PATH
+have_lib() { "$LDCONFIG" -p 2>/dev/null | grep -q "$1"; }
 have_lib "libmpv.so.2" || missing+=("libmpv2 (needed: plays the audio)")
 have_lib "libespeak-ng.so.1" || missing+=("libespeak-ng1 (needed by Piper voices)")
 command -v xclip >/dev/null || missing+=("xclip (needed: reads the selection and clipboard)")
@@ -52,9 +47,28 @@ if [ ${#missing[@]} -gt 0 ]; then
 	echo
 fi
 
-echo "Building (the first build takes about 6 minutes)..."
-(cd "$RUST_DIR" && "$CARGO" build --release)
-BUILT="$RUST_DIR/target/release/$NAME"
+if [ -x "$HERE/$NAME" ]; then
+	# A downloaded package: the program is already built
+	BUILT="$HERE/$NAME"
+	if ! "$BUILT" --version >/dev/null 2>&1; then
+		echo "❌ The downloaded program doesn't run on this computer. It needs glibc 2.39 or newer"
+		echo "   (Ubuntu 24.04, Linux Mint 22, Debian 13 or later). Build it from the source instead."
+		exit 1
+	fi
+else
+	# A checkout of the source: build it. Rust from PATH, or rustup's default place
+	CARGO="$(command -v cargo || true)"
+	[ -z "$CARGO" ] && [ -x "$HOME/.cargo/bin/cargo" ] && CARGO="$HOME/.cargo/bin/cargo"
+	if [ -z "$CARGO" ]; then
+		echo "Rust isn't installed. Install it with rustup (no sudo needed), then run this again:"
+		echo "  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh"
+		echo "Or download a built copy instead: https://github.com/masonje/textReader-rust/releases/tag/latest"
+		exit 1
+	fi
+	echo "Building (the first build takes about 6 minutes)..."
+	(cd "$HERE/.." && "$CARGO" build --release)
+	BUILT="$HERE/../target/release/$NAME"
+fi
 
 echo "Installing to $BIN_DIR/$NAME..."
 mkdir -p "$BIN_DIR"

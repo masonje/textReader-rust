@@ -71,7 +71,7 @@ Not in this version yet: Debug mode, a theme setting, per-voice star ratings and
 - libespeak-ng: Piper uses it to turn text into sounds
 - xclip: reads the selected text and the clipboard
 - espeak-ng (for the eSpeak-NG engine) and ffmpeg (for more accurate word highlighting), both optional
-- To build it: Rust, from [rustup.rs](https://rustup.rs) (no sudo needed)
+- To build it yourself: Rust, from [rustup.rs](https://rustup.rs) (no sudo needed). The [download](#download-no-rust-needed) doesn't need it.
 
 On Ubuntu/Debian:
 
@@ -95,6 +95,20 @@ If you try it on an untested platform, please open an issue saying whether it wo
 
 ## Installation
 
+### Download (no Rust needed)
+
+Every change to `main` is built automatically and published as the [latest build](https://github.com/masonje/textReader-rust/releases/tag/latest). It runs on Ubuntu 24.04, Linux Mint 22, Debian 13 or newer (x86-64):
+
+```bash
+curl -LO https://github.com/masonje/textReader-rust/releases/download/latest/clipboard-reader-linux-x86_64.tar.gz
+tar xzf clipboard-reader-linux-x86_64.tar.gz
+clipboard-reader-linux-x86_64/install.sh
+```
+
+This installs it for your user only (no sudo), the same way as building it below. Download it again and re-run `install.sh` to update. The build is a preview of the newest code, replaced on every change.
+
+### Build It Yourself
+
 ```bash
 git clone https://github.com/masonje/textReader-rust.git
 cd textReader-rust
@@ -103,7 +117,7 @@ scripts/install.sh
 
 This builds the program and installs it for your user only (no sudo). The program goes in `~/.local/bin/clipboard-reader`, and **Clipboard Reader (Rust)** is added to your app menu with its icon. The first build takes about 6 minutes, because it downloads ONNX Runtime (for Piper voices) and builds it into the program. If Rust or a package the app needs is missing, the script says what to install.
 
-Run the script again to update. To remove it (your settings and voices stay):
+Run the script again to update (after `git pull`). To remove it (your settings and voices stay):
 
 ```bash
 scripts/install.sh --uninstall
@@ -275,6 +289,7 @@ The version number is in [Cargo.toml](Cargo.toml). Versions continue from the Py
 The first Rust version, built in stages.
 
 **Since stage 2:**
+- **Added:** Every change to `main` is built on GitHub and published as the [latest build](https://github.com/masonje/textReader-rust/releases/tag/latest), with an `install.sh` that needs no Rust.
 - **Added:** Options → Misc tab, with Surprise me (moved from the Full view) and Close to the system tray.
 - **Added:** Close to the system tray: closing the window hides it; Show Window in the tray menu brings it back. The Building Audio window still shows for reads started while it's hidden.
 - **Changed:** The window shows the version beside the playback status, with the voice used on the last line, and the Compact view fits its controls instead of leaving space at the bottom.

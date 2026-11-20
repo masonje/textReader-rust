@@ -1,0 +1,86 @@
+# Test and build on every pull request; on every push to main, also publish the build
+# as the "latest" pre-release, replacing the previous one, so this link always has it:
+# https://github.com/masonje/textReader-rust/releases/download/latest/clipboard-reader-linux-x86_64.tar.gz
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+# One run per branch at a time; a newer push to main replaces a run still going
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    # Built on Ubuntu 24.04 so the program needs only glibc 2.39: it then runs on
+    # Ubuntu 24.04, Linux Mint 22, Debian 13 and newer.
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write # to publish the release
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Rust
+        run: rustup toolchain install stable --profile minimal && rustup default stable
+
+      # libmpv is loaded at run time; the Options test starts the player, so it needs it
+      - name: Libraries for the tests
+        run: sudo apt-get update -q && sudo apt-get install -y -q libmpv2
+
+      - name: Cache Rust downloads and builds
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            target
+          key: cargo-${{ runner.os }}-${{ hashFiles('Cargo.lock') }}
+          restore-keys: cargo-${{ runner.os }}-
+
+      - name: Test
+        run: cargo test --release
+
+      - name: Build
+        run: cargo build --release
+
+      - name: Check it starts
+        run: target/release/clipboard-reader --version
+
+      - name: Package
+        run: scripts/package.sh
+
+      - name: Keep the package with this run
+        uses: actions/upload-artifact@v4
+        with:
+          name: clipboard-reader-linux-x86_64
+          path: dist/clipboard-reader-linux-x86_64.tar.gz*
+
+      - name: Publish as the "latest" pre-release
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VERSION=$(target/release/clipboard-reader --version)
+          SHORT=${GITHUB_SHA::7}
+          cat > notes.md <<NOTES
+          **$VERSION**, built from [\`$SHORT\`](https://github.com/$GITHUB_REPOSITORY/commit/$GITHUB_SHA) on $(date -u '+%Y-%m-%d %H:%M UTC').
+
+          The newest build of \`main\`, replaced on every change. It's a preview, not a finished release.
+
+          **Install** (Linux x86-64 with X11; Ubuntu 24.04, Linux Mint 22, Debian 13 or newer):
+          \`\`\`bash
+          curl -LO https://github.com/$GITHUB_REPOSITORY/releases/download/latest/clipboard-reader-linux-x86_64.tar.gz
+          tar xzf clipboard-reader-linux-x86_64.tar.gz
+          clipboard-reader-linux-x86_64/install.sh
+          \`\`\`
+          It also needs \`sudo apt install libmpv2 libespeak-ng1 xclip espeak-ng ffmpeg\`; install.sh lists anything missing.
+          See the [README](https://github.com/$GITHUB_REPOSITORY#readme) for the rest.
+          NOTES
+          # Replace the previous build: delete it and its tag, then publish this one
+          gh release delete latest --cleanup-tag --yes || true
+          gh release create latest dist/clipboard-reader-linux-x86_64.tar.gz dist/clipboard-reader-linux-x86_64.tar.gz.sha256 \
+            --prerelease --target "$GITHUB_SHA" --title "Latest build ($VERSION, $SHORT)" --notes-file notes.md
